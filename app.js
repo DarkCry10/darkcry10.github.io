@@ -1,4 +1,4 @@
-// 1. BASE DE DATOS DE INTEGRANTES (CON TUS IMÁGENES REALES)
+// 1. BASE DE DATOS DE INTEGRANTES (CON TUS IMÁGENES EN ASSETS)
 const charactersData = [
   {
     id: "ib",
@@ -10,7 +10,7 @@ const charactersData = [
     traits: [
       "Paleta: Sepia melancólico y tonos vintage",
       "Símbolo: Reloj de bolsillo, león de peluche y cuaderno con gafas",
-      "Eras clave: My LIVE 'HOME', The Invisible Boy, Crimson Sky"
+      "Eras clave: My LIVE 'HOME', The Invisible Boy, Crimson Sky, The Horror Film"
     ]
   },
   {
@@ -36,7 +36,7 @@ const charactersData = [
     traits: [
       "Paleta: Neón bicolor rojo carmesí y azul eléctrico",
       "Símbolo: Máscara Kitsune tradicional y camisa blanca abierta",
-      "Eras clave: I'm bad, so bad, Therian Collection (WOW, Grrr grrr)"
+      "Eras clave: I'm bad, so bad, Therian Collection, Shadow & Ban"
     ]
   },
   {
@@ -54,69 +54,104 @@ const charactersData = [
   }
 ];
 
-// 2. CINTA MAESTRA: THE HORROR FILM THAT IS MY LIFE (3 TRACKING MARKERS)
+// 2. CINTA MAESTRA: THE HORROR FILM THAT IS MY LIFE (REPORTE CURATORIAL)
 const masterTapeData = [
   {
     marker: "Tracking Marker 1 (Pistas 1 - 6)",
-    stage: "Etapa I: Infancia y Pre-Adolescencia",
+    stage: "Cómo me poseyeron [Infancia y Pre-Adolescencia]",
     tracks: [
-      { num: 1, title: "Possession (TM 1)", trope: "Maldición de Sangre", desc: "La infección original y el trauma intergeneracional heredado desde el vientre." },
-      { num: 2, title: "Alien", trope: "Invasión / Desajuste", desc: "Incompatibilidad biológica frente a una madre que mira la TV sin comprenderlo." },
-      { num: 3, title: "The shape of water", trope: "Monstruo Sumergido", desc: "Acoso escolar, el corte forzado de su cabello largo y el deseo de permanecer bajo el agua." },
-      { num: 4, title: "Zombie", trope: "Body Horror / Apatía", desc: "Cuerpo frágil llamado 'zombie' en clase, prefiriendo las piedras escolares a la sombra de 'Ella'." },
-      { num: 5, title: "Sabbath", trope: "Aquelarre Doméstico", desc: "La sesión de cada sábado fingiendo ser una familia entera mientras sacrifican su juventud." },
-      { num: 6, title: "Poltergeist Vol. 2", trope: "Casa Embrujada / TEPT", desc: "Golpes y gritos en la madrugada; escondido tras la puerta abrazando a su león de peluche." }
+      { num: 1, title: "Possession (TM 1)", trope: "Maldición de Sangre", desc: "'From your bloody body, my own body was torn': no naciste, te arrancaron. Oscuridad heredada desde la semilla." },
+      { num: 2, title: "Alien", trope: "Desajuste / Queer", desc: "El niño que despierta al anochecer y se siente 'out of space' frente a una madre que mira la TV sin saber cómo verlo." },
+      { num: 3, title: "The shape of water", trope: "Reflejo Castigado", desc: "El intento de ser 'pretty' para ser amado y el corte forzado de su cabello largo en la escuela." },
+      { num: 4, title: "Zombie", trope: "Body Horror / 118 BPM", desc: "Enterrado vivo en el salón por no performar la masculinidad exigida ('too thin to be a proper man')." },
+      { num: 5, title: "Sabbath", trope: "Aquelarre Doméstico", desc: "El ritual de cada sábado: sacrificar pedazos de los hijos para fingir que la familia está entera." },
+      { num: 6, title: "Poltergeist Vol. 2", trope: "Ruido en la Cabeza", desc: "No es la casa embrujada, es el niño abrazando a su león de peluche detrás de la puerta pidiendo que lo escuchen." }
     ]
   },
   {
     marker: "Tracking Marker 2 (Pistas 7 - 12)",
-    stage: "Etapa II y III: Juventud y Adultez",
+    stage: "Cómo nombré a los monstruos [Juventud y Adultez]",
     tracks: [
-      { num: 7, title: "Exorcism (TM 2)", trope: "Ritual Médico Fallido", desc: "El médico y el sacerdote invalidan su dolor diciendo que 'solo exagera'; el demonio escribe con su sangre." },
-      { num: 8, title: "Vampire heart", trope: "Parasitismo Materno", desc: "'Lady of the night': la madre como vampiro que no bebe sangre, sino que devora el espíritu de sus hijos." },
-      { num: 9, title: "The Black Cat", trope: "Horror Gótico (Poe)", desc: "Paredes de concreto heladas, secretos enterrados y la soga al cuello llamada 'familia'." },
-      { num: 10, title: "Psycho", trope: "Psicosis / Disociación", desc: "Diálogo interno ('1, 2, 3... 4, 5, 6') y consolidación de la tríada: 'Me, you, and him'." },
-      { num: 11, title: "Succubus", trope: "Demonio Seductor", desc: "Del campo de cempasúchil y las sábanas de seda en otoño a devorar almas de hombres en la noche." },
-      { num: 12, title: "Frankenstein", trope: "Criatura Ensamblada", desc: "Autopsia consciente: reconocerse cosido a pedazos con el veneno de 'Ella' y el caos de 'Él'." }
+      { num: 7, title: "Exorcism (TM 2)", trope: "Negligencia Institucional", desc: "Pides ayuda al doctor y al sacerdote y responden que 'es un show y exageras'." },
+      { num: 8, title: "Vampire heart", trope: "La Madre Vampira", desc: "Primera confrontación directa en segunda persona ('You drank their souls'): devora el espíritu de sus hijos." },
+      { num: 9, title: "The Black Cat", trope: "Poe / Culpa Emparedada", desc: "Los crímenes ocultos bajo el concreto helado y la soga al cuello llamada 'familia'." },
+      { num: 10, title: "Psycho", trope: "Tríada Disociativa", desc: "Partirse en tres ('Me, you, and him') hablando solo en el pasillo para sobrevivir a la madre." },
+      { num: 11, title: "Succubus", trope: "El Corazón Real del Álbum", desc: "Tras el campo de cempasúchil y las sábanas de seda, el protagonista habita el insulto: se vuelve súcubo como armadura." },
+      { num: 12, title: "Frankenstein", trope: "El Cuerpo que Queda", desc: "El primogénito como experimento en el sótano, cosido con los traumas de ella y de él, cortado con tape rewind." }
     ]
   },
   {
     marker: "Tracking Marker 3 (Pista 13 - Cierre)",
-    stage: "Consumación y Necrosis de la Cinta",
+    stage: "El Apagado Final [Bad Ending / The Further]",
     tracks: [
-      { num: 13, title: "Insidious (TM 3)", trope: "Invasión Sombría Total", desc: "El dolor como droga letal y el demonio interno que usa su médula y sangre como tinta para escribir canciones." }
+      { num: 13, title: "Insidious (TM 3)", trope: "Crisis y Tinta de Sangre", desc: "En la alfombra del departamento solitario, olvida tomar sus pastillas para el corazón y la ansiedad. Siente frío y calma mientras el pulso baja y el demonio escribe con su sangre y médula." }
     ]
   }
 ];
 
-// 3. LOS 7 MANDAMIENTOS DE LA COLD LAW
+// 3. SISTEMA DE TRANSMUTACIÓN (MONEDA, ESPEJO Y VERSIÓN OSCURA)
+const transmutationData = [
+  {
+    title: "🪙 Concepto 1: Moneda (Dos Caras de una Idea)",
+    subtitle: "Comparten el núcleo conceptual pero mutan en ritmo, perspectiva y letra.",
+    items: [
+      "<strong>I don't wanna know 1.0 vs. 2.0:</strong> La 1.0 es evasión pasiva; la 2.0 es la victoria defensiva del ego.",
+      "<strong>Children's game / Hide & seek:</strong> Del acto de huir de casa a la mecánica táctica para que 'Ella' no lo encuentre.",
+      "<strong>Soul's fire / Fire:</strong> De luchar por una chispa de esperanza al deseo maníaco de quemar todos los recuerdos.",
+      "<strong>The water won't cleanse / The water:</strong> Una cara admite el 'trato silencioso' (vender el cuerpo) y la otra ejecuta el ritual inútil en la ducha.",
+      "<strong>Self love / My own skin:</strong> Dos perspectivas sobre el autodescubrimiento físico como único refugio cálido.",
+      "<strong>Fleeting Nights / Just for tonight:</strong> La transición rítmica hacia el deseo sin ataduras que abre la puerta a Dolly.",
+      "<strong>Angel in disguise / Fallen illusion:</strong> Dos caras de la máscara social tras tener las alas rotas por alguien conocido."
+    ]
+  },
+  {
+    title: "🪞 Concepto 2: Espejo (Misma Letra, Distinta Alma)",
+    subtitle: "Disonancia cognitiva donde el cambio de arreglo musical transforma el significado sin alterar las palabras.",
+    items: [
+      "<strong>Más/Age vs. Más/Ag:</strong> 'Hermanas siamesas'. La V1 crea un shock silencioso con ritmo hipnótico/relajante; la V2 explota en Electro-Hyperpop y Reguetón.",
+      "<strong>I'm Ok (1.0 vs. 2.0):</strong> La 1.0 es la mentira cotidiana para encajar; la 2.0 es el 'funeral de la paz mental' con cuerdas y coros de iglesia.",
+      "<strong>When I'm gone vs. Before I cry:</strong> Dos producciones opuestas para reflejar el bucle atrapado de la depresión clínica.",
+      "<strong>Sickness vs. My fault:</strong> La misma esencia de 'suciedad' que cambia de estilo para representar el momento terminal de la sobredosis en el clóset.",
+      "<strong>Ring Ring (The EP):</strong> 9 versiones (Toy Phone, Nokia, Stuart Hughes Gold) que reinterpretan la misma mentira telefónica."
+    ]
+  },
+  {
+    title: "🌑 Concepto 3: Versión Oscura (Corrupción X-Y-Z)",
+    subtitle: "La canción original de la Era 1 se oxida y afila en 'The Dark Side of the Moon' (Álbum 0).",
+    items: [
+      "<strong>Era X (Paralela al origen):</strong> <em>Corpse Party</em> (oscura de <em>Bittersweet Loneliness</em>) • <em>Poltergeist</em> (oscura de <em>Ghost Love</em>) • <em>The Way You Made Me</em> (oscura de <em>The Worst Son</em>).",
+      "<strong>Era Y (Puente de evasión):</strong> <em>Razor Heart</em> (oscura de <em>Paper Heart</em>) • <em>The Rusty Shell</em> (oscura de <em>Unseen Brilliance</em>) • <em>I Don't Wanna Know</em> (oscura de <em>Disappear</em>) • <em>Attention</em> (oscura de <em>Invisible Boy</em>) • <em>ADDICTED</em> (oscura de <em>Long Nights</em>).",
+      "<strong>Era Z (Sentencia final):</strong> <em>Immaculate Prison</em> (oscura de <em>Take Me Home</em>) • <em>Plastic Flowers</em> (oscura de <em>Withered Roses</em>) • <em>Broken Doll</em> (oscura de <em>Hide & Seek</em>)."
+    ]
+  }
+];
+
+// 4. LOS 7 MANDAMIENTOS DE LA COLD LAW
 const coldLawData = [
   { num: "1", rule: "No se habla de lo que te duele", lore: "La raíz del silencio forzado en 'Invisible Boy' y 'Cold at home'." },
   { num: "2", rule: "No se recuerdan los gritos pasados", lore: "La prohibición de evocar la violencia física documentada en 'Poltergeist' y 'Purple Crayon'." },
   { num: "3", rule: "Siempre una cara diferente para el público", lore: "El ritual de los sábados en 'Sabbath' y la máscara social en 'I'm Ok'." },
   { num: "4", rule: "Nunca dirás que estás mal", lore: "El firmware defectuoso que empuja a la ceguera voluntaria en 'Indifference' y 'Lenses'." },
-  { num: "5", rule: "Si lloras te daré razones para llorar", lore: "El terror doméstico en 'Hide & Seek' y 'Juegos de un niño'." },
-  { num: "6", rule: "Sé que te duele, pero me duele más a mí", lore: "Gaslighting materno y transferencia de culpa retratada en 'The Worst Son' y 'The Way You Made Me'." },
-  { num: "7", rule: "Te amo, aunque no lo diga y aunque te duela", lore: "La distorsión que fusionó amor con dolor, empujando a I.B. a 'Silk sheets' y 'Marigold Scent'." }
+  { num: "5", rule: "Si lloras te daré razones para llorar", lore: "El terror doméstico en 'Hide & Seek', 'Juegos de un niño' y 'Red/Blue Ball'." },
+  { num: "6", rule: "Sé que te duele, pero me duele más a mí", lore: "Gaslighting materno directo en 'Red Yoyo', 'The Worst Son' y 'The Way You Made Me'." },
+  { num: "7", rule: "Te amo, aunque no lo diga y aunque te duela", lore: "Manifiesto central de 'Mommy's Love' y 'Heavy Love' que empujó a I.B. a 'Silk sheets' y 'Marigold Scent'." }
 ];
 
-// 4. DISCOGRAFÍA COMPLETA POR ERAS Y LÍNEAS ALTERNATIVAS
+// 5. DISCOGRAFÍA COMPLETA POR ERAS Y EPs CONCEPTUALES
 const discographyData = [
   {
     id: "pre-era1",
-    eraName: "Raíz Pre-Era 1 (Side A & Side B)",
-    title: "My LIVE 'HOME' & A Plea for Shelter",
-    vocalist: "I.B. / Violet",
-    concept: "La deconstrucción del 'Hogar' (Side A) seguida de la fuga adolescente hacia la calle, el sexo por supervivencia y sus dos caminos finales (Side B).",
+    eraName: "Raíz Pre-Era 1 (Side A, Side B & Mommy's Playground)",
+    title: "My LIVE 'HOME', A Plea for Shelter & Mommy's Playground",
+    vocalist: "I.B. • Violet • 'Ella' (Perspectiva Materna)",
+    concept: "La deconstrucción del 'Hogar' (Side A), la voz manipuladora de la madre reduciendo al hijo a juguetes en 'Mommy's Playground', y la huida a la calle con dos finales en 'A Plea for Shelter' (Side B).",
     tracks: [
-      { name: "Side A: Cold at home / The empty plate", role: "Llegar de la escuela a una nevera emocional y hambre afectiva." },
-      { name: "Side A: Like the others / Purple Crayon", role: "Moretones morados ocultos bajo la excusa de 'me caí'." },
-      { name: "Side A: Stuffed lion / Scape (+ Purple Arms)", role: "Escondido en el clóset con el león de peluche antes de huir." },
-      { name: "Side B: Cold All Around / Eat Cigarettes", role: "Noche 0 de huida; fumar un cigarro para anestesiar el hambre conservando sus poemas." },
-      { name: "Side B: Locked Door / Need The Green", role: "Falsa ayuda bajo llave y la decisión de cobrar por su cuerpo." },
-      { name: "Side B: Hotel Bed 2.0 / Midnight Steps / Drenched 2.0", role: "Rutina disociada e inercia en hoteles." },
-      { name: "Side B: The Water Won't Wash (+ When you left & She)", role: "Quiebre en el suelo de la ducha." },
-      { name: "Final 9a (Soul Road) & 9b (Body Road)", role: "Crying In The Bubblebath vs. Captivity (Easter egg de Dolly)." }
+      { name: "Side A: Cold at home / The empty plate / Like the others", role: "Nevera emocional y hambre afectiva." },
+      { name: "Side A: Purple Crayon / Stuffed lion / Scape (+ Purple Arms)", role: "Moretones ocultos y el león en el clóset." },
+      { name: "Mommy's Playground: Red & Blue Yoyo / Red & Blue Top", role: "El niño manipulado arriba y abajo al antojo materno." },
+      { name: "Mommy's Playground: Red & Blue Ball / Mommy's Love / Heavy Love", role: "'¿Quién te amaría como yo? Mi amor es frío pero real'." },
+      { name: "Side B: Cold All Around / Eat Cigarettes / Locked Door / Need The Green", role: "Huida nocturna, hambre y supervivencia." },
+      { name: "Side B: Hotel Bed 2.0 / Midnight Steps / Drenched 2.0 / The Water Won't Wash", role: "Disociación en hoteles y los dos caminos (9a Bubblebath / 9b Captivity)." }
     ]
   },
   {
@@ -124,12 +159,12 @@ const discographyData = [
     eraName: "Álbum 0 (Espiral No Lineal X-Y-Z)",
     title: "The Invisible Boy 2.0: The Dark Side of the Moon",
     vocalist: "I.B. / Sad & Lofi Boy",
-    concept: "Dimensión transversal que corta toda la cronología en tres coordenadas: Era X (Paralela al Álbum 1), Era Y (Puente de evasión) y Era Z (Post-Álbum 8, Parte 9).",
+    concept: "Dimensión transversal donde las canciones originales de la Era 1 se corrompen en sus Versiones Oscuras a través de las coordenadas X, Y y Z.",
     tracks: [
-      { name: "Índice X1, X2, X3", role: "Corpse party • Poltergeist • The way you made me" },
-      { name: "Índice Y1, Y2, Y3", role: "Razor heart • The rusty shell • I don't wanna know" },
-      { name: "Índice Y4, Y5", role: "Attention • ADDICTED" },
-      { name: "Índice Z1, Z2, Z3 (Cierre)", role: "Immaculate prison • Plastic flowers • Broken doll" }
+      { name: "Era X (Paralela al Álbum 1)", role: "X1: Corpse party • X2: Poltergeist • X3: The way you made me" },
+      { name: "Era Y (Puente de la Evasión)", role: "Y1: Razor heart • Y2: The rusty shell • Y3: I don't wanna know" },
+      { name: "Era Y (Hambre de Validación)", role: "Y4: Attention • Y5: ADDICTED" },
+      { name: "Era Z (Post-Álbum 8 / Parte 9 Final)", role: "Z1: Immaculate prison • Z2: Plastic flowers • Z3: Broken doll" }
     ]
   },
   {
@@ -139,11 +174,11 @@ const discographyData = [
     vocalist: "Violet • I.B. • Sad & Lofi Boy",
     concept: "El aislamiento en el portón bajo la Cold Law y el despertar de la sed afectiva que desemboca en el ataque de 'Marigold Scent'.",
     tracks: [
-      { name: "The Invisible Boy / Paper Heart", role: "El corazón frágil quebrado por la ley fría." },
-      { name: "Hide & Seek / Juegos de un niño / Please stay away", role: "Esconderse en casa para sobrevivir." },
+      { name: "The Invisible Boy / Paper Heart / Bittersweet Loneliness", role: "El corazón de papel quebrado por la ley fría." },
+      { name: "Hide & Seek / Children's Game / Juegos de un niño", role: "Esconderse en casa para sobrevivir." },
       { name: "Unseen Brilliance / The Worst Son / Disappear", role: "Excelencia académica ignorada y deseo de evaporarse." },
-      { name: "My own skin / Self love / Curious for love", role: "Autoexploración en soledad y sed patológica de afecto." },
-      { name: "Marigold Scent / Sickness / After the shame", role: "La mancha de cempasúchil y alcohol que mata la inocencia." }
+      { name: "My own skin / Self love / Curious for love", role: "Autoexploración y sed patológica de afecto." },
+      { name: "Marigold Scent / Sickness / After the shame / Marigold tears", role: "La mancha de cempasúchil y alcohol." }
     ]
   },
   {
@@ -153,12 +188,10 @@ const discographyData = [
     vocalist: "I.B. / Violet",
     concept: "Doble acto sobre el romance a los 16 años con Toño (20 años), la opresión fanática de la madre de la cruz de plata y la quema del león de peluche.",
     tracks: [
-      { name: "Lado A: 1. Honey lonely / 2. Moon tune", role: "La trampa de miel por internet y la luna como madre." },
-      { name: "Lado A: 3. Intervals / 4. Otoño", role: "Anhelo a distancia y primer encuentro en otoño." },
-      { name: "Lado A: 5. Silk sheets / 6. The cross of love", role: "Entrega en el hotel y castigo con vara frente a la cruz." },
-      { name: "Lado B: 7. Ocean abyss / 8. Call waiting", role: "Ducha intentando lavar el cempasúchil y línea en espera." },
-      { name: "Lado B: 9. Sunday in the city / 10. The outstanding student", role: "Viaje en autobús con su león y visita a la escuela." },
-      { name: "Lado B: 11. The prayer / 12. Burn the heaven", role: "Toño llorando en su regazo e incineración del león y poemas." }
+      { name: "Lado A: 1. Honey lonely / 2. Moon tune / 3. Intervals", role: "Trampa de miel digital y la luna como madre." },
+      { name: "Lado A: 4. Otoño / 5. Silk sheets / 6. The cross of love", role: "Sábanas de seda y castigo con vara frente a la cruz." },
+      { name: "Lado B: 7. Ocean abyss / 8. Call waiting / 9. Sunday in the city", role: "Ducha que no lava el cempasúchil y viaje con el león." },
+      { name: "Lado B: 10. The outstanding student / 11. The prayer / 12. Burn the heaven", role: "Incineración del león de peluche y cuadernos." }
     ]
   },
   {
@@ -168,36 +201,40 @@ const discographyData = [
     vocalist: "Violet",
     concept: "El fracaso definitivo de la purificación por el agua y la construcción de la máscara social perfecta cuando las pastillas pierden efecto.",
     tracks: [
-      { name: "Fleeting Warmth / Fire / Drenched", role: "Calor fugaz en cuerpos extraños para silenciar la mente." },
-      { name: "The water won't cleanse / Wake up at 3:00 AM", role: "La ducha estéril y el insomnio de las 3:00 AM." },
-      { name: "S.O.S / Cry for help (Versión Espejo)", role: "Grito de auxilio con cintas rojas y ojos vendados." },
-      { name: "I'm Ok / Indifference / Blurred view / Fallen illusion", role: "La sonrisa ensayada y la vista borrosa como escudo." }
+      { name: "Fleeting Warmth / Fire / Soul's fire / Drenched", role: "Calor fugaz en cuerpos extraños para silenciar la mente." },
+      { name: "The water won't cleanse / The water / Wake up at 3:00 AM", role: "El ciclo de la transacción fallida en la regadera." },
+      { name: "S.O.S / Cry for help (Espejo) / Indifference", role: "Del grito de auxilio a la cinta adhesiva negra sobre la grieta." },
+      { name: "I'm Ok (1.0 & 2.0) / Blurred view / Fallen illusion / Lenses", role: "El funeral de la paz mental y la vista borrosa." }
     ]
   },
   {
     id: "era3",
-    eraName: "Era 3.0 y Líneas Alternativas",
-    title: "Walking Through the Blue Street, Echoes in Blue & Blue Hell",
+    eraName: "Era 3.0, Blue Hell & Black Tuesday EP",
+    title: "Walking Through the Blue Street, Blue Hell & Black Tuesday EP",
     vocalist: "Violet / I.B.",
-    concept: "La huida definitiva hacia la metrópoli de neón, la disociación como muñeca de porcelana y el descenso en 'The End of My Blue Hell'.",
+    concept: "La metrópoli de neón, los ciclos autodestructivos de 'The End of My Blue Hell' y la asfixia económica adulta en 'Black Tuesday EP'.",
     tracks: [
-      { name: "Walking through the blue Street / Lost in the city", role: "Audífonos puestos para apagar el mundo bajo la lluvia." },
-      { name: "I'm down / Erase You / Run from home", role: "Muñeca de porcelana buscando borrar el pasado." },
-      { name: "Seed of my own hell / Hidden fire / Dante's inferno PT 1 & 2", role: "Ciclos autodestructivos en 'The End of My Blue Hell'." }
+      { name: "Walking through the blue Street / Lost in the city / I'm down", role: "Muñeca de porcelana caminando bajo la lluvia." },
+      { name: "Seed of my own hell / Hidden fire / Dante's inferno PT 1 & 2", role: "El infierno azul y el deseo de saltar." },
+      { name: "Black Tuesday EP: Chains of numbers / Drowning in Dues", role: "Ceros en la pantalla y cadenas financieras." },
+      { name: "Black Tuesday EP: Caught in the haze / The sound of debt", role: "Pantalla del teléfono rota y lluvia en la parada del autobús." },
+      { name: "Black Tuesday EP: High interest lonely / Black Tuesday", role: "'Estudia para ser alguien', pero el dinero se esfuma bajo un sol negro." }
     ]
   },
   {
     id: "era4-5",
-    eraName: "Eras 4 y 5 (Liberación, Remixes & Therian)",
-    title: "I'm bad, so bad (1.0/2.0), Bad Baby, The Ice Throne & Therian Collection",
+    eraName: "Eras 4 y 5 + Shadow & Ban",
+    title: "I'm bad, so bad, Bad Baby, The Ice Throne, Therian & Shadow & Ban",
     vocalist: "Dolly 💛🖤 & DCX 🦊",
-    concept: "La rebelión contra la Cold Law. Hipersexualidad como control, dominio sobre 'Daddies', reinado en el trono de hielo y el catálogo salvaje de DCX.",
+    concept: "La rebelión hipersexual contra la Cold Law, el reinado desde el Trono de Hielo y la guerra frontal contra la censura algorítmica en 'Shadow & Ban'.",
     tracks: [
-      { name: "More/Dame más / ¡Oh my! / ¡Oh ah!/Tonight", role: "'Baby yo no soy tuya, no soy de tu propiedad'." },
-      { name: "Grays pants / Más/AG (Reggaeton Remix) / Double Trouble", role: "Dolly dominando dinámicas de poder." },
-      { name: "Married dared / Ring Ring (The EP) / Poli/Amor / Drive", role: "Desafío a las instituciones de matrimonio y moral." },
-      { name: "DELETE My Age / Forbidden bite / Under my thumb / Nopor Queen", role: "Reinado desde The Ice Throne en Full HD." },
-      { name: "Therian Collection (DCX)", role: "WOW • Daddy's b*tch • Waos Daddy • KITTY KITTY • Grrr grrr • Miau Miau" }
+      { name: "More/Dame más / ¡Oh my! / ¡Oh ah!/Tonight / Grays pants", role: "Autonomía radical y rechazo a las ataduras." },
+      { name: "Más/AG (Espejo 1.0 & Reggaeton Remix) / Double Trouble / Married dared", role: "Dominio sobre 'Daddies' y venganza contra la falsa familia." },
+      { name: "Ring Ring (The EP - 9 Versiones) / Poli/Amor / Drive", role: "Sátira del engaño y huida de la jaula dorada." },
+      { name: "DELETE My Age / Forbidden bite / Under my thumb / Nopor Queen", role: "El control total desde el Trono de Hielo." },
+      { name: "Therian Collection (DCX)", role: "WOW • Daddy's b*tch • Waos Daddy • KITTY KITTY • Grrr grrr • Miau Miau" },
+      { name: "Shadow & Ban: Algorithm / Ghost in the Interface / System error", role: "El juez de cristal que borra 100 almas por un error de hace 3 años." },
+      { name: "Shadow & Ban: Whit arrow, red box / You, Tu / A shot of fake love / An Instant, A gram", role: "Crítica a la flecha blanca en cuadro rojo y la adicción a los corazones digitales." }
     ]
   },
   {
@@ -205,219 +242,303 @@ const discographyData = [
     eraName: "Master Tape Conceptual",
     title: "The horror film that is my life",
     vocalist: "I.B. • Violet • Dolly • DCX",
-    concept: "La obra cumbre de 13 pistas dividida por 3 Tracking Markers en cinta VHS que sintetiza toda la vida del protagonista como una película de terror.",
+    concept: "La obra cumbre de 13 pistas dividida por 3 Tracking Markers en cinta VHS que traduce la autobiografía del trauma a través del cine de terror.",
     tracks: [
       { name: "TM 1 (1-6): Possession • Alien • The shape of water", role: "Zombie • Sabbath • Poltergeist Vol. 2" },
       { name: "TM 2 (7-12): Exorcism • Vampire heart • The black cat", role: "Psycho • Succubus • Frankenstein" },
-      { name: "TM 3 (13): Insidious", role: "El demonio que escribe con su sangre y médula." }
+      { name: "TM 3 (13): Insidious", role: "El apagado final en la alfombra y la tinta de sangre." }
     ]
   }
 ];
 
-// 5. BASE DE DATOS DE CANCIONES CON LETRAS Y ANÁLISIS (CATÁLOGO INTERACTIVO)
+// 6. BASE DE DATOS DE CANCIONES CON LETRAS Y ANÁLISIS (INCLUYE NUEVOS EPs)
 const songLoreDatabase = [
+  // THE HORROR FILM THAT IS MY LIFE
   {
-    title: "Possession (Tracking Marker 1)",
+    title: "Possession & Alien (TM 1 - Pistas 1 y 2)",
     category: "horror",
-    album: "The horror film that is my life (Pista 1)",
-    character: "I.B. 🫥 / Violet 🎧",
-    analysis: "Abre la Cinta Maestra estableciendo el tropo de la maldición de sangre y el trauma intergeneracional: nacer de un cuerpo sin amor y heredar las cicatrices como una posesión desde la semilla.",
-    lyrics: `[Intro]
-Now... ever since that fateful night.
-
-[Verse 1]
-From your bloody body, my own body was torn
-While your lips were screaming my name with such scorn
-You prayed to the heavens that this wasn't true
-But there was never any love inside of you
-You only gave me a darkness so deep.
-
-[Chorus]
+    album: "The horror film that is my life",
+    character: "I.B. 🫥",
+    analysis: "En 'Possession', el nacimiento es retratado como un desgarramiento ('From your bloody body, my own body was torn') que hereda la oscuridad materna desde la semilla. En 'Alien', el niño queer despierta al anochecer sintiéndose fuera de este planeta mientras su madre mira la televisión sin comprender su naturaleza.",
+    lyrics: `[Possession - Chorus]
 But me, oh what happened to me?
 The shadows took over, possessed since a seed
 Inheriting your blood, the scars and the pain
 Hiding the sorrow while going insane
 This is my cursed possession!
 
-[Outro]
-Black dust in my soul...
-Possessed.`
+[Alien - Chorus]
+You hear the moon calling through whispers of gray,
+Deep down you know that the cold is okay.
+You stare at the stars, wishing for another place,
+'Cause down here on Earth, you just feel out of space.`
   },
   {
-    title: "The shape of water",
+    title: "The shape of water & Zombie (Pistas 3 y 4)",
     category: "horror",
-    album: "The horror film that is my life (Pista 3)",
+    album: "The horror film that is my life",
     character: "I.B. 🫥",
-    analysis: "Relata la marginación escolar y el episodio traumático en que los profesores obligan al niño a cortarse el cabello largo para dejarlo entrar al salón, apagando su luz y empujándolo a 'permanecer sumergido'.",
-    lyrics: `[Chorus]
-Swimming through the halls of this cold place,
-Dodging all the eyes, hiding my face.
-I'm just a shadow in the water,
-Do I really look that bad?
-My heart is holding on, but it's getting sad.
-
-[Verse 3]
+    analysis: "La escuela como segundo escenario de tortura: en 'The shape of water' le prohíben entrar al aula hasta que se corte el cabello largo, castigando su intento de verse 'pretty'. En 'Zombie', su delgadez e insomnio hacen que lo llamen muerto en vida, pero el puente revela que prefiere las piedras de los niños antes que enfrentar la sombra de 'Ella' en casa.",
+    lyrics: `[The shape of water - Verse 3]
 I asked the teachers to let me look pretty,
 My short hair just makes me feel so gritty.
 But a boy with long hair is their biggest fear,
 They forced me to cut it to keep me here.
-Couldn't enter the room without looking right,
-They cut off my hair and put out my light.`
+
+[Zombie - Bridge]
+Their words are sharp, but they are only kids 
+It’s nothing compared to the things that She says 
+I'd rather take their stones and their silent bids 
+Than face Her dark shadow when the daylight ends.`
   },
   {
-    title: "Sabbath",
+    title: "Sabbath & Poltergeist Vol. 2 (Pistas 5 y 6)",
     category: "horror",
-    album: "The horror film that is my life (Pista 5)",
+    album: "The horror film that is my life",
     character: "I.B. 🫥",
-    analysis: "Retrata la hipocresía familiar de cada sábado ('Every Saturday you call the session'): la familia operando como una secta que sacrifica la juventud de los hijos para mantener una fachada ante el público.",
-    lyrics: `[Chorus]
+    analysis: "Cierre del Tracking Marker 1. 'Sabbath' expone las reuniones familiares de los sábados como un aquelarre donde sacrifican la juventud de los hijos para fingir perfección. 'Poltergeist Vol. 2' muestra al niño escondido tras la puerta de madera abrazando a su león de peluche mientras los gritos retumban en su cráneo.",
+    lyrics: `[Sabbath - Chorus]
 Every Saturday you call the session
 Where we sacrifice a piece of who we are
 Bound together in a dark confession
-Something that we'll never understand so far
 Every Saturday we wear the disguise
 At least we get to fake that we are whole
-Feeding everybody all your lies
-So nobody questions what you stole`
-  },
-  {
-    title: "Exorcism (Tracking Marker 2)",
-    category: "horror",
-    album: "The horror film that is my life (Pista 7)",
-    character: "I.B. 🫥 / Violet 🎧",
-    analysis: "Marca la degradación intermedia de la cinta. Denuncia la negligencia médica e institucional: cuando el joven pide ayuda a un doctor por su dolor interno, le responden que 'solo está haciendo un show y exagerando'.",
-    lyrics: `[Chorus]
-I need an exorcism right now, oh my God,
-Somebody call the priest, I’m bleeding in the dark...
-Bleeding, my insides bleed apart.
-'Cause there ain't no exorcist alive today
-Who can wash the stains of this past away.
 
-[Verse 3]
-I remember once I tried on my own
-To call a doctor, someone on the phone.
-He told me: "You're fine, it's just a show you make."
-When I asked for an exorcism to be healed,
-The doctor said: "Go, there's nothing to be revealed."`
+[Poltergeist Vol. 2 - Bridge]
+I hide behind the wooden door, trying to block her name
+My only friend, my stuffed lion toy
+Heard my wild crying, a broken little boy`
   },
   {
-    title: "Vampire heart",
+    title: "Exorcism, Vampire heart & The Black Cat (Pistas 7, 8 y 9)",
     category: "horror",
-    album: "The horror film that is my life (Pista 8)",
-    character: "I.B. 🫥",
-    analysis: "Retrata a 'Ella' como la 'Dama de la Noche' con corazón de vampiro: un ser que no bebe sangre para sobrevivir, sino que devora el espíritu y la inocencia de sus propios hijos.",
-    lyrics: `[Chorus]
-Lady of the night, love’s gentle light burns deep,
-Like the morning sun melting away your skin.
-You disguise your curse so no one else can see,
-A truth the world refused to let sink in.
+    album: "The horror film that is my life (TM 2)",
+    character: "I.B. 🫥 / Violet 🎧",
+    analysis: "El acto de nombrar a los monstruos. 'Exorcism' denuncia al médico que llama 'exageración' al trauma; 'Vampire heart' señala en segunda persona a la madre que devora el espíritu de sus hijos; y 'The Black Cat' invoca a Edgar Allan Poe para describir a la familia como una soga alrededor del cuello.",
+    lyrics: `[Vampire heart - Chorus]
 Lady of the night with a vampire heart,
 Feeding on the innocence of youth and grace,
 Draining those who loved you right from the start,
-Leaving them cold, hollowed out, erased.`
+Leaving them cold, hollowed out, erased.
+
+[The Black Cat - Chorus]
+As dark as the night, but warm as the dawn
+It’s the hell that will swallow us before too long
+Losing the spark in my eye, watching it fall
+With a rope around my neck that you call family after all`
   },
   {
-    title: "Frankenstein & Insidious (TM 3)",
+    title: "Psycho & Succubus (Pistas 10 y 11)",
     category: "horror",
-    album: "The horror film that is my life (Pistas 12 y 13)",
-    character: "I.B. • Violet • DCX • Dolly",
-    analysis: "El cierre de la Cinta Maestra. En 'Frankenstein', el protagonista se reconoce ensamblado a pedazos con el frío de su madre y el caos de su abusador; en 'Insidious', confiesa que el demonio nunca salió y ahora usa su sangre y médula como tinta para escribir canciones.",
+    album: "The horror film that is my life (TM 2)",
+    character: "Tríada I.B. • Violet • Dolly",
+    analysis: "'Psycho' documenta la partición de la mente en tres ('Me, you, and him') hablando a solas en el pasillo. 'Succubus' es el corazón real del álbum: conectando directamente el campo de cempasúchil (Era 1.5) y el amante de otoño en sábanas de seda (Era 1.9), el joven al que llamaron 'demonio' decide habitar el insulto y volverse súcubo para devorar a los hombres antes de ser destruido.",
+    lyrics: `[Psycho]
+1, 2, 3 Tell me what do you see?
+When you talk to yourself in the hall...
+Me, you, and him, we all know what it means
+
+[Succubus - Intro & Verse 2]
+In a field of marigolds, where the colors used to bloom...
+Where my quiet innocence was buried in the gloom.
+Then came the autumn lover, the one who claimed he cared,
+on sheets of heavy silk, he showed me how to be impaired...
+And I’ll be... the demon in the night eating souls to make them pay.`
+  },
+  {
+    title: "Frankenstein & Insidious (TM 3 - Pistas 12 y 13)",
+    category: "horror",
+    album: "The horror film that is my life",
+    character: "I.B. 🫥 (Cierre de la Cinta)",
+    analysis: "En 'Frankenstein', el primogénito se reconoce como un experimento de sótano cosido con la frialdad de ella y el caos de él. En 'Insidious' (Bad Ending), tras olvidar sus pastillas para el corazón y la ansiedad en medio de una crisis de llanto en la alfombra de su sala, siente frío y calma mientras el reloj se detiene y el demonio usa su sangre y médula como tinta.",
     lyrics: `[Frankenstein - Chorus]
 I am not complete, there’s a piece I’m always missing,
 She left me shattered, but overflowing...
-With a heavy darkness down into my soul,
 Built with different traumas taking their toll.
 
-[Insidious - Outro]
+[Insidious - Chorus & Outro]
+I wanna be okay, I swear to God
+But my hands and my feet are freezing cold...
 But they never pulled the demon out of me
 The one who uses my blood as its ink
 Uses my marrow to write what it sees
-Torturing my soul...
-I'm addicted on the brink...`
+Torturing my soul... I'm addicted on the brink...`
+  },
+
+  // MOMMY'S PLAYGROUND
+  {
+    title: "Red Yoyo & Blue Yoyo",
+    category: "mommy",
+    album: "Mommy's playground",
+    character: "'Ella' (La Madre) hacia I.B.",
+    analysis: "Canciones cantadas desde la escalofriante perspectiva de 'Ella'. El niño es reducido a un yo-yo que la madre sube cuando quiere jugar y estrella contra el suelo cuando llega cansada o aburrida, culpándolo por estar cerca ('you are the toy where my demons collide').",
+    lyrics: `[Red Yoyo - Chorus]
+Up and down, high and low, my little yoyo,
+Today I give you love, tomorrow I lose control.
+I say "I love you" only when I want to play,
+And when I get tired, on the floor you will stay.
+Down, go down, and drop to the floor,
+I'll pull you right up when I'm wanting some more.
+
+[Blue Yoyo - Verse 2]
+What is a little blood between just us two?
+If I make you bleed, it's to show my love for you.`
   },
   {
-    title: "Cold at home & Purple Crayon",
+    title: "Blue Top & Red Top",
+    category: "mommy",
+    album: "Mommy's playground",
+    character: "'Ella' (La Madre)",
+    analysis: "La metáfora del trompo ('Spin, spin around again'): el gaslighting materno exigiendo que el hijo deje de hacer preguntas, no mire las sonrisas de otras familias y adapte su mente a los deseos de ella, asegurándole que 'sin mí no eres nadie y no sobrevivirás afuera'.",
+    lyrics: `[Blue Top - Chorus]
+Spin, spin, and spin around again,
+I promise one day I'll change how I think then.
+Spin, spin, do it just one more time,
+Settle for this reality, fall into line...
+You're foolish if you think that I'll rearrange,
+It's your way of thinking my desires will change.`
+  },
+  {
+    title: "Red Ball, Blue Ball, Mommy's Love & Heavy Love",
+    category: "mommy",
+    album: "Mommy's playground",
+    character: "'Ella' (La Madre)",
+    analysis: "La culminación de la Cold Law (Mandamientos 6 y 7). En 'Red/Blue Ball' destruye la autoestima del hijo ('Eres un tonto, un inútil... solo lo dije porque estaba enojada, ¿quién podría amarte sino yo?'). En 'Mommy's Love' y 'Heavy Love' declara que los abrazos son para débiles y que su amor es frío y pesado, pero nunca cambiará.",
+    lyrics: `[Red Ball - Chorus]
+Will anyone ever love someone like you?
+I do it, you should be grateful that I do...
+You are a fool (I only said it 'cause I was mad).
+You're useless (I said it 'cause I was tired and sad).
+Just look at you, who'd love you? (I said it without a thought).
+
+[Heavy Love - Chorus]
+I am this way, and I am never gonna change...
+My love, although it's cold, is tough but it is real,
+Deep inside my heart, it's a heavy love to feel.`
+  },
+
+  // BLACK TUESDAY EP
+  {
+    title: "Chains of numbers, Drowning in Dues & Caught in the haze",
+    category: "tuesday",
+    album: "Black Tuesday EP",
+    character: "I.B. Adulto / Violet",
+    analysis: "El trauma de la precariedad económica en la adultez. Los números en rojo se vuelven cadenas, el sueldo desaparece como un fantasma apenas llega y la pantalla rota del celular refleja un estado interno fracturado mientras espera el autobús bajo la lluvia.",
+    lyrics: `[Chains of numbers - Chorus]
+The numbers are chains now, a fear I can't dismiss
+They treated me like a criminal, misunderstanding my bliss...
+Money, money, for God's sake, why do I lack?
+It's not that I wanted, I just want to survive this track.
+
+[Drowning in Dues - Chorus]
+And I'm drowning in dues, a Phantom I choose.
+A ghost inside my very room, watching all my money bloom
+Just to vanish into empty gloom.`
+  },
+  {
+    title: "The sound of debt, High interest lonely & Black Tuesday",
+    category: "tuesday",
+    album: "Black Tuesday EP",
+    character: "I.B. Adulto",
+    analysis: "Desmonta la promesa rota de la infancia ('Mamá dijo: obtén un título para ser alguien'). A pesar de haberse desvelado estudiando y trabajando sin descanso, las tasas de interés, el desempleo y una economía salvaje lo dejan hundido en el sofá bajo un 'sol negro' en un Martes Negro.",
+    lyrics: `[High interest lonely - Chorus]
+Stop swallowing my life, stop eating my gold,
+I curse this plastic card and the lies I was told...
+Mom said "get a degree to be someone, my dear,"
+But the classroom was silenced by hunger and fear.
+
+[Black Tuesday - Chorus]
+In the endless pouring rain of the bills I have to pay
+In a wild economy, where the bottom is where I stay
+Underneath the cruelest light, of a black sun shining down
+My sweet honey money's gone, before I even hit the town.`
+  },
+
+  // SHADOW & BAN
+  {
+    title: "Algorithm, Ghost in the Interface & System error",
+    category: "shadowban",
+    album: "Shadow & Ban",
+    character: "DarkCry 1.0 / DCX",
+    analysis: "La confrontación directa contra la tiranía digital. En 'Ghost in the Interface' (evolución de Book of faces) y 'System error', denuncia cómo un juez algorítmico invisible cierra y borra su cuenta y más de cien almas conectadas por un pequeño error de una cuenta antigua de hace tres años, justo cuando había decidido hacer las cosas bien.",
+    lyrics: `[Ghost in the Interface - Chorus]
+Who gave you the power to act like a king?
+To wipe out my world and to tear off my wings?
+I did nothing wrong, so why do you hate?
+Your book of faces has written my end,
+and now I’m a ghost to every single friend.
+
+[System error - Verse 2]
+It’s a delayed sentence you threw in my face,
+an algorithm judge that erased my whole space.
+An invisible world, and more than a hundred besides,
+erased in a second where logic divides.`
+  },
+  {
+    title: "Whit arrow, red box / You, Tu & A shot of fake love / An Instant, A gram",
+    category: "shadowban",
+    album: "Shadow & Ban",
+    character: "DarkCry 1.0 / Dolly & DCX",
+    analysis: "Doble par de canciones Espejo bilingües sobre las grandes plataformas. 'Whit arrow, red box' y 'You, Tu' atacan a la 'flecha blanca en el cuadro rojo' (YouTube) por volverse un juez de cristal insensible que apaga la luz del cuarto del artista. 'A shot of fake love' y 'An Instant, A gram' exponen la adicción a los corazones en pantalla (Instagram) que primero alimentan el ego y luego te silencian de un clic.",
+    lyrics: `[You, Tu - Coro & Verso 2]
+You, Tu, You, Tu... Tell me why you're so cruel.
+¿Por qué ahora apagas mi luz?
+Y me encierras de golpe en el fondo de tu baúl.
+Una flecha blanca en un cuadro rojo,
+¿Por qué tengo que existir ahora a tu antojo?
+
+[An Instant, A gram - Coro]
+Instant (Shot, shot, shot) - Un instante para este amor.
+(You have an instant, you have a gram)
+Have an instant, have a gram. (Insta... Gram)`
+  },
+
+  // MY LIVE HOME & A PLEA FOR SHELTER
+  {
+    title: "Cold at home, Purple Crayon & Stuffed Lion (Side A)",
     category: "home",
-    album: "My LIVE 'HOME' (Side A - Pistas 1 y 4)",
+    album: "My LIVE 'HOME' (Side A)",
     character: "I.B. 🫥 (Niñez)",
-    analysis: "El núcleo del Side A. Usa elementos infantiles (crayones morados, cuadernos de dibujo) para narrar cómo el niño oculta los moretones en los brazos y la sangre en la boca diciendo que 'se cayó', porque 'Ella' dice que el amor verdadero debe dejar una mancha.",
+    analysis: "El núcleo del Side A. Usa elementos infantiles (crayones morados, cuadernos de dibujo y el león de peluche con ojos de botón) para narrar cómo el niño oculta los moretones en los brazos diciendo que 'se cayó' y se refugia en el rincón del clóset antes de decidir escapar en 'Scape'.",
     lyrics: `[Purple Crayon - Chorus]
 You painted my arms with a purple crayon
 And stained my mouth red when I spoke for too long
 If they see the blue, I will say that I fell
 It hurts me a little, but it's love, so you tell.
 
-[Bridge]
-My arms are the canvas where you put the dye
-A hug I won't get, no matter how hard I try
-I draw in my notebook a wish for the dawn
-Knowing that nobody will hear my quiet song.`
-  },
-  {
-    title: "Stuffed Lion & Purple Arms (Deluxe)",
-    category: "home",
-    album: "My LIVE 'HOME' (Side A - Pista 5 + Deluxe)",
-    character: "I.B. 🫥",
-    analysis: "Presenta el símbolo más sagrado de la inocencia de I.B.: su pequeño león de peluche con ojos de botón, el único testigo que lo acompaña en el rincón oscuro del clóset mientras es arrojado como un juguete.",
-    lyrics: `[Stuffed Lion - Chorus]
+[Stuffed Lion - Chorus]
 Crying right here underneath all my covers,
 hugging my little stuffed lion so tight.
-I didn't want to be bruised, am I bother?
-I only wanted some love and some light.
 Hiding away in the dark closet corner,
-where only my lion can watch as I cry.
-
-[Outro]
-My little stuffed lion, my friend...
-If you could just open your mouth and speak.
-Tell God to listen to me at the end...`
+where only my lion can watch as I cry.`
   },
   {
-    title: "Cold All Around & Eat Cigarettes",
+    title: "Cold All Around, Eat Cigarettes, Locked Door & Need The Green (Side B)",
     category: "home",
-    album: "A Plea for Shelter (Side B - Pistas 1 y 2)",
+    album: "A Plea for Shelter (Side B)",
     character: "I.B. 🫥",
-    analysis: "La Noche 0 tras huir de casa. El frío del asfalto es brutal, pero el corazón de su madre era más frío. En 'Eat Cigarettes', sin dinero para comer, fuma un solo cigarrillo para anestesiar el estómago, agradeciendo haber rescatado sus poemas.",
-    lyrics: `[Cold All Around - Chorus]
-I want and I need to find a safe space,
-Just a quiet corner to make it through the night.
-Escaped from the prison that was never my place,
-With nothing in my hands and terrified of the light.
-
-[Eat Cigarettes - Chorus]
+    analysis: "La novela sonora de la huida: Noche 0 en el asfalto helado ('Cold All Around'); fumar un cigarro para calmar el hambre conservando sus poemas ('Eat Cigarettes'); el engaño del hombre que cierra con llave para cobrar el techo con su cuerpo ('Locked Door'); y la decisión de cobrar dólares para no dormir en la estación ('Need The Green').",
+    lyrics: `[Eat Cigarettes - Chorus]
 I've got nothing left but a single cigarette,
 So I'll smoke and I'll smoke to forget the regret...
-At least I brought my poems, no matter what the cost.`
-  },
-  {
-    title: "Locked Door & Need The Green",
-    category: "home",
-    album: "A Plea for Shelter (Side B - Pistas 3 y 4)",
-    character: "I.B. 🫥",
-    analysis: "La bisagra del Side B. Un hombre mayor le ofrece refugio pero cierra la puerta con llave para cobrar 'la deuda' con su cuerpo. Tras escapar nuevamente a la calle, el joven comprende en 'Need The Green' que su cuerpo es su única moneda para no dormir en la estación.",
-    lyrics: `[Locked Door - Chorus]
-He called you inside, and the door was closed tight.
-(My little boy, you don't know how sorry I am.)
-He told you "you can stay," promising the light,
-(But you know that the shelter was part of the scam.)
+At least I brought my poems, no matter what the cost.
 
-[Need The Green - Chorus]
-I really need the green of those dollar bills,
-I need it so bad just to cure these chills...
-From what I see, my body is the only thing I've got,
-And it's the only thing these men are looking at a lot.`
+[Locked Door - Chorus]
+He called you inside, and the door was closed tight.
+He told you "you can stay," promising the light,
+(But you know that the shelter was part of the scam.)`
   },
   {
     title: "Crying In The Bubblebath (9a) vs. Captivity (9b)",
     category: "home",
     album: "A Plea for Shelter (Side B - Los Dos Caminos Finales)",
     character: "I.B. 🫥 / Semilla de Dolly 💛🖤",
-    analysis: "El doble clímax conceptual del Side B: 'Soul Road' (9a) donde el alma se rinde en una bañera llena de burbujas, frente a 'Body Road' (9b - Captivity), donde el joven león queda enjaulado pero jura que algún día 'volteará todo este juego' (el easter egg pre-nacimiento de Dolly).",
+    analysis: "El doble clímax del Side B: 'Soul Road' (9a) donde el daño se interioriza y el alma se rinde en la bañera, frente a 'Body Road' (9b - Captivity), donde el joven león queda enjaulado pero jura que algún día 'volteará todo este juego' (el easter egg pre-nacimiento de Dolly).",
     lyrics: `[9a: Soul Road - Crying In The Bubblebath]
-Mom, if you hear me, I hold no hate inside
-God knows I tried to stem this painful tide...
 I’ll fill the bathtub with water to the brim
-With delicate bubbles while the lights go dim.
+With delicate bubbles while the lights go dim
+I know I had a whole lifetime ahead
+But I don't want to suffer in this porcelain bed
 
 [9b: Body Road - Captivity]
 Now I'm just a young lion locked in a cage,
@@ -425,120 +546,111 @@ Caught in his bed by the hunter's dark rage...
 I'm just a foolish young boy, making a show,
 But someday I'll flip this whole game, that's for sure.`
   },
+
+  // WHEN THE SKY TURNED CRIMSON
   {
-    title: "Honey lonely & Otoño",
+    title: "Honey lonely, Otoño & Silk sheets (Lado A)",
     category: "crimson",
-    album: "When the sky turned crimson (and warm) - Lado A",
+    album: "When the sky turned crimson (and warm)",
     character: "I.B. (16 años)",
-    analysis: "Documenta la 'trampa de miel' digital de la Era 1.9: el adolescente de 16 años conoce por internet a Toño (20 años). La desnutrición afectiva en casa lo lleva a ignorar la diferencia de edad y entregarse con devoción absoluta cuando se encuentran en otoño.",
+    analysis: "La construcción de la ilusión en la Era 1.9: el adolescente de 16 años conoce por internet a Toño (20 años), ignora la diferencia de edad por su hambre de afecto, viaja a conocerlo en otoño y acepta el dolor físico en las sábanas de seda del hotel con tal de no quedarse solo.",
     lyrics: `[Honey lonely - Bridge]
-Numbers don't matter if love is real
-Age is just nothing compared to what we feel...
 You're twenty years old, turned to a new page
 If I am sixteen, what does it mean?
 Just tell me you love me behind the screen...
 
-[Otoño - Chorus]
-In the autumn, oh, Toño
-I finally see you, you're finally here
-Today you are my everything, my blossom
-Thank you for giving this hug to me.`
+[Silk sheets - Final Chorus]
+Stripping me down, wrapped in silk on the bed
+You tell me you love it, taking the lead
+It hurts just a little... but I love that you're here instead.`
   },
   {
-    title: "The cross of love & Burn the heaven",
+    title: "The cross of love, Ocean abyss & Burn the heaven (Lado B)",
     category: "crimson",
-    album: "When the sky turned crimson (and warm) - Lado A (6) y Lado B (12)",
+    album: "When the sky turned crimson (and warm)",
     character: "I.B. 🫥",
-    analysis: "El choque contra el fanatismo religioso. En 'The cross of love', la madre de Toño lo golpea con una vara frente a la cruz de plata mientras Toño le suelta la mano. En 'Burn the heaven', la mujer quema sus cuadernos de poemas y su amado león de peluche ('su cielo') mientras Toño permanece arrodillado sin defenderlo.",
-    lyrics: `[Burn the heaven - Climax & Final Chorus]
+    analysis: "El descenso a las cenizas. En 'The cross of love', la madre fanática de Toño lo hace arrodillarse y lo golpea con una vara frente a la cruz de plata. En 'Ocean abyss' intenta lavar en la ducha el cempasúchil previo de la Era 1.5. En 'Burn the heaven', la madre quema sus cuadernos de poemas y su león de peluche mientras Toño permanece arrodillado sin defenderlo.",
+    lyrics: `[Ocean abyss - Verse 1]
+The water tried one day to wash the marigold scent away
+From something I let happen, being young and so naive...
+
+[Burn the heaven - Climax]
 Please tell me, tell them to stop, I'm just a foolish boy!
-I don't believe that this is what's supposed to be
 My stuffed lion was my everything, my only joy!
 The only thing that kept the lonely child in me!
+Why is my stuffed lion burning in this mess?!`
+  },
 
-The heaven... the heaven that they deeply profess
-Is it true? Could it be real if it's so cruel?
-Why is my stuffed lion burning in this mess?!
-Why can't my crying make you break their rule?!`
+  // ÁLBUM 0 (X-Y-Z) & DOLLY / DCX
+  {
+    title: "Corpse party, Poltergeist & The way you made me (Era X)",
+    category: "darkside",
+    album: "The Dark Side of the Moon (Álbum 0 - Índices X1, X2, X3)",
+    character: "I.B. (Sombra Paralela)",
+    analysis: "Las Versiones Oscuras paralelas al Álbum 1: mientras el I.B. original lloraba en silencio, la Era X convertía la cena solitaria en una fiesta de cadáveres ('Corpse party'), el amor fantasma en golpes contra el suelo ('Poltergeist') y la culpa de 'The Worst Son' en acusación directa a la madre ('The way you made me').",
+    lyrics: `[Corpse party - Chorus]
+You built a party out of hollow bones,
+Look at their eyes, just empty stones.
+If I leave, you’re nothing on your own,
+One day you’ll reap the grief you've shown.
+
+[The way you made me - Verse 3]
+But you won't always be able to show that face,
+Mother, I'll tell you, the time has come.`
   },
   {
-    title: "Marigold Scent & Marigold tears",
+    title: "Razor heart, The rusty shell & Attention (Era Y)",
     category: "darkside",
-    album: "The Day I Told You (Era 1.5)",
-    character: "I.B. 🫥 / Violet 🎧",
-    analysis: "El momento exacto en que muere la inocencia en la Era 1.5. Tras ser seguido y agredido al bajar del transporte, el olor a alcohol y flor de cempasúchil (Marigold, la flor de los muertos) queda impregnado en su piel sin que el agua fría pueda borrarlo.",
-    lyrics: `[Marigold Scent - Final Stanzas]
-He finished. I ran back home so fast.
-Took off my clothes without a single thought
-Turn on the cold water to try
-To wash away the memory I was caught.
-I still remember that peculiar scent
-The one that stained my skin with Marigold.`
-  },
-  {
-    title: "Attention & Razor heart (Era Y)",
-    category: "darkside",
-    album: "The Dark Side of the Moon (Álbum 0 - Índices Y4 & Y1)",
-    character: "I.B. 🫥 / Violet 🎧",
-    analysis: "El puente de metamorfosis del Álbum 0. En 'Attention' busca en la mirada de los hombres el amor paterno ausente para confirmar que sigue respirando; en 'Razor heart', el corazón de papel se afila en una navaja de acero que rechaza la moralidad de quienes lo rompieron.",
-    lyrics: `[Attention - Chorus]
-I want attention, I want it from men,
-I need them to know I’m breathing again.
-It isn't love, no, that’s not the chase,
-Just want to be seen, to have a place.
-
-[Razor heart - Chorus]
+    album: "The Dark Side of the Moon (Álbum 0 - Índices Y1, Y2, Y4)",
+    character: "I.B. / Violet",
+    analysis: "El puente de endurecimiento: el corazón de papel se afila en cuchilla ('Razor heart'), el brillo académico ignorado se oxida en un caparazón que usa el dolor como combustible ('The rusty shell') y la invisibilidad se transforma en exigencia voraz de ser mirado por hombres ('Attention').",
+    lyrics: `[Razor heart - Chorus]
 I own a paper heart that turned into a blade,
 cutting everyone through the mess I've made.
-Should I offer an apology?
-For being "bad", for this personality?
-'Cause my mind doesn't work with your morality.`
+
+[The rusty shell - Chorus]
+I struggle so much just to understand you,
+The pain I carry is the strength I cling to.
+It’s the heavy fuel for this rusty old shell,
+the one that protects me from this living hell.`
   },
   {
-    title: "Immaculate prison & Broken doll (Era Z)",
+    title: "Immaculate prison, Plastic flowers & Broken doll (Era Z)",
     category: "darkside",
-    album: "The Dark Side of the Moon (Álbum 0 - Índices Z1 & Z3)",
-    character: "I.B. Adulto / DCX",
-    analysis: "El cierre cronológico (Parte 9). En 'Immaculate prison', el protagonista finalmente tiene un esposo y un amor real, pero haber crecido entre 'flores de plástico' hace que la paz se sienta como una cárcel inmaculada y termine saboteándola. En 'Broken doll', quien fue juguete en la infancia ahora rompe a otros.",
+    album: "The Dark Side of the Moon (Álbum 0 - Índices Z1, Z2, Z3)",
+    character: "I.B. Adulto",
+    analysis: "La Sentencia Final (Parte 9 de la cronología, posterior a Bad Baby). Al obtener finalmente un hogar real y un esposo, el protagonista descubre que crecer entre 'flores de plástico' le impide habitar la paz, sintiéndola como una cárcel inmaculada que sabotea mediante la infidelidad y tratando a quien lo ama como una muñeca rota.",
     lyrics: `[Immaculate prison - Chorus]
-And I have it all, I have everything from you,
-A beautiful life and a love that is real.
-But I don't know if this is what I should do,
-Or if there's even a heart left to feel.
 Now my comfort and my perfect little life
-Are nothing but an immaculate jail.`
+Are nothing but an immaculate jail.
+I grew up surrounded by flowers of plastic,
+In a home where the love was never quite real.
+
+[Broken doll - Chorus]
+Just like a toy, I treated you so,
+Tossing you high, then letting you go.
+Loving you cruelly... I’m the one to blame.`
   },
   {
-    title: "More/Dame más, Double Trouble & Ring Ring",
+    title: "More/Dame más, Double Trouble, DELETE My Age & Under my thumb",
     category: "dolly-dcx",
-    album: "I'm bad, so bad / Bad Baby / Ring Ring EP",
+    album: "I'm bad, so bad / Bad Baby / The Ice Throne",
     character: "Dolly 💛🖤 & DCX 🦊",
-    analysis: "El estallido Hyperpop y bilingüe de las Eras 4 y 5. Dolly toma el control absoluto ('Baby yo no soy tuya, no soy de tu propiedad'), desafía la estabilidad hipócrita en 'Ring Ring' y 'Married dared', y convierte el deseo masculino en su propio tablero de juego.",
+    analysis: "La Era de la Liberación. Dolly y DCX rompen sistemáticamente los 7 mandamientos de la Cold Law: de la invisibilidad pasan al exhibicionismo en Full HD ('Under my thumb'), y del vacío paterno pasan al dominio sobre figuras de autoridad ('Double Trouble', 'DELETE My Age').",
     lyrics: `[More/Dame más - Chorus]
 Baby yo no soy tuya,
 Yo no soy de tu propieda-a-a-a-ad
-Aunque te diga mío,
-Se que en la noche no estara-a-a-a-as
 Así que me busco a otro papi
-Que en la cama me haga grita-ah-ah-ah-ar`
-  },
-  {
-    title: "DELETE My Age, Under my thumb & Drive",
-    category: "dolly-dcx",
-    album: "The Ice Throne / I'm bad, so bad",
-    character: "Dolly 💛🖤",
-    analysis: "La consolidación de Dolly en el Trono de Hielo. En 'DELETE My Age' confronta el fantasma de la diferencia de edad desde una posición de mando; en 'Under my thumb' domina a través de la pantalla en Full HD sin permitir que nadie la toque si ella no lo ordena.",
-    lyrics: `[Under my thumb - Chorus]
-Stay right under my thumb
-Look through the glass, but you're feeling numb
-In Full HD, baby, put the record on
-The number is fake, and the moment is gone.
-If you think that you own me just touching my skin
-Let me tell you right now: I dictate the win.`
+Que en la cama me haga grita-ah-ah-ah-ar
+
+[Delete My Age - Chorus]
+Delete my age, pretend I'm danger
+Say my name like I'm a stranger
+You're not my father, but you could be my man.`
   }
 ];
 
-// 6. ÍNDICE OFICIAL DE LAS 169 OBRAS REGISTRADAS (CERTIFICADO Nº 2026-A-8311)
+// 7. ÍNDICE OFICIAL DE LAS 169 OBRAS REGISTRADAS (CERTIFICADO Nº 2026-A-8311)
 const registered169Works = [
   "1. Book of faces", "2. System error", "3. Don't make me go", "4. He Was Older", "5. He was much older",
   "6. Find me", "7. Little Puppy Need Rest", "8. Easy Way Out", "9. Caught in the haze", "10. Chains of numbers",
@@ -576,10 +688,11 @@ const registered169Works = [
   "166. Under my thumb", "167. Nopor Queen", "168. Algorithm", "169. Marigold tears"
 ];
 
-// 7. INICIALIZACIÓN DEL DOM
+// 8. INICIALIZACIÓN DEL DOM
 document.addEventListener("DOMContentLoaded", () => {
   renderCharacters();
   renderMasterTape();
+  renderTransmutation();
   renderColdLaw();
   renderEraFilters();
   renderDiscography(discographyData);
@@ -659,10 +772,24 @@ function renderMasterTape() {
   `).join('');
 }
 
+function renderTransmutation() {
+  const container = document.getElementById("transmutation-container");
+  if (!container) return;
+
+  container.innerHTML = transmutationData.map(box => `
+    <div class="motif-card">
+      <h4>${box.title}</h4>
+      <p style="color: var(--text-main); font-weight: 600; margin-bottom: 0.8rem;">${box.subtitle}</p>
+      ${box.items.map(item => `<p>• ${item}</p>`).join('')}
+    </div>
+  `).join('');
+}
+
 function jumpToHorrorSong(titleQuery) {
   const archiveSection = document.getElementById("archivo");
   if (archiveSection) archiveSection.scrollIntoView({ behavior: "smooth" });
-  const match = songLoreDatabase.find(s => s.title.toLowerCase().includes(titleQuery.split(" ")[0].toLowerCase()));
+  const keyword = titleQuery.split(" ")[0].toLowerCase();
+  const match = songLoreDatabase.find(s => s.title.toLowerCase().includes(keyword));
   if (match) {
     displayTrackDetail(match);
   }
@@ -687,13 +814,13 @@ function renderEraFilters() {
 
   const filters = [
     { id: "all", label: "Todas las Eras" },
-    { id: "pre-era1", label: "My LIVE HOME (A & B)" },
+    { id: "pre-era1", label: "My LIVE HOME & Mommy's Playground" },
     { id: "era0", label: "Álbum 0 (X-Y-Z)" },
     { id: "era1", label: "Era 1.0 & 1.5" },
     { id: "era1-9", label: "Era 1.9 (Crimson)" },
     { id: "era2", label: "Era 2.0 & 2.9" },
-    { id: "era3", label: "Era 3.0 (Blue)" },
-    { id: "era4-5", label: "Eras 4 & 5 (Dolly/DCX)" },
+    { id: "era3", label: "Era 3.0 & Black Tuesday" },
+    { id: "era4-5", label: "Eras 4-5 & Shadow & Ban" },
     { id: "horror-era", label: "The Horror Film" }
   ];
 
