@@ -911,7 +911,7 @@ function displayTrackDetail(song) {
       <p class="detail-text">Este título aparece en el índice de la compilación registrada. El portal todavía no dispone de una ficha individual desarrollada para esta obra; aquí no se sustituye la letra original por un texto genérico.</p>
       <div class="detail-document-link">
         <span>CONSULTA DOCUMENTAL</span>
-        <a href="mailto:mriospard@gmail.com?subject=Solicitud%20de%20acceso%20a%20la%20compilaci%C3%B3n%20DarkCry%201.0">Solicitar acceso autorizado ↗</a>
+        <a href="mailto:mriospard@gmail.com?subject=Solicitud%20de%20acceso%20a%20${encodeURIComponent(song.title)}">Solicitar acceso autorizado ↗</a>
       </div>
     `;
     return;
