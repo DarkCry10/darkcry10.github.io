@@ -740,7 +740,7 @@ function renderMasterTape() {
       <ol class="marker-tracklist">
         ${block.tracks.map(track => `
           <li>
-            <button type="button" class="marker-track" onclick="jumpToHorrorSong('${escapeHTML(track.title).replace(/'/g, "\\\\'")}')">
+            <button type="button" class="marker-track" data-track-title="${escapeHTML(track.title)}">
               <span class="marker-track__number">${String(track.num).padStart(2, "0")}</span>
               <span class="marker-track__body">
                 <strong>${escapeHTML(track.title)}</strong>
@@ -754,6 +754,10 @@ function renderMasterTape() {
       </ol>
     </article>
   `).join("");
+
+  container.querySelectorAll(".marker-track").forEach(button => {
+    button.addEventListener("click", () => jumpToHorrorSong(button.dataset.trackTitle));
+  });
 }
 
 function renderTransmutation() {
