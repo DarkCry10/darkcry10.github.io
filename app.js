@@ -929,7 +929,7 @@ function displayTrackDetail(song) {
       <p class="detail-text">Este título aparece en el índice de la compilación registrada. El portal todavía no dispone de una ficha individual desarrollada para esta obra; aquí no se sustituye la letra original por un texto genérico.</p>
       <div class="detail-document-link">
         <span>CONSULTA DOCUMENTAL</span>
-        <a href="assets/documents/El-Chico-Invisible-Poemario-y-Letras-Completo-publico.pdf" target="_blank" rel="noopener noreferrer">Abrir la compilación completa ↗</a>
+        <a href="assets/documents/Compilacion-El-Chico-Invisible-Edicion-Textual-Publica.html" target="_blank" rel="noopener noreferrer">Abrir la edición textual completa ↗</a>
       </div>
     `;
     return;
@@ -944,7 +944,7 @@ function displayTrackDetail(song) {
     <p class="detail-source-note">Ficha agrupada del portal. Para consultar el contenido completo, utiliza la compilación documental.</p>
     <div class="detail-document-link">
       <span>FUENTE COMPLETA</span>
-      <a href="assets/documents/El-Chico-Invisible-Poemario-y-Letras-Completo-publico.pdf" target="_blank" rel="noopener noreferrer">Abrir la compilación ↗</a>
+      <a href="assets/documents/Compilacion-El-Chico-Invisible-Edicion-Textual-Publica.html" target="_blank" rel="noopener noreferrer">Abrir la edición textual ↗</a>
     </div>
   `;
 }
