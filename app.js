@@ -837,14 +837,27 @@ function jumpToHorrorSong(titleQuery) {
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
 
-  const query = normalizeTitle(String(titleQuery || ""));
+  // Los Tracking Markers organizan la cinta, pero no forman parte del título.
+  const query = normalizeTitle(String(titleQuery || ""))
+    .replace(/\\btm\\s+\\d+\\b/g, "")
+    .trim();
   if (!query) return;
+
+  const queryTerms = query.split(/\\s+/);
+  const hasOrderedTitleTerms = (title) => {
+    const titleTerms = normalizeTitle(title).split(/\\s+/);
+    let cursor = 0;
+    for (const term of queryTerms) {
+      const position = titleTerms.indexOf(term, cursor);
+      if (position < 0) return false;
+      cursor = position + 1;
+    }
+    return true;
+  };
 
   const match = songLoreDatabase.find(song => normalizeTitle(song.title) === query)
     || songLoreDatabase.find(song => normalizeTitle(song.title).includes(query))
-    || songLoreDatabase.find(song =>
-      normalizeTitle(song.title).split(" and ").some(part => part.trim() === query)
-    );
+    || songLoreDatabase.find(song => hasOrderedTitleTerms(song.title));
 
   if (match) displayTrackDetail(match);
 }
