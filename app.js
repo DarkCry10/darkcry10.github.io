@@ -187,20 +187,6 @@ const discographyData = [
   },
 
   {
-    id: "your-eromenos",
-    eraName: "Archivo Relacional • Manifiesto de Invisible Boy",
-    title: "Your Eromenos",
-    vocalist: "Invisible Boy • Eros",
-    concept: "Un archivo íntimo construido a partir de una confesión y doce entradas de diario. Entre apuntes escolares, llaves, espejos, habitaciones y ecos de la Grecia antigua, Invisible Boy intenta ponerle nombre a un vínculo que parece ofrecer refugio. Las láminas conservan indicios que el narrador no siempre se atreve a escribir.",
-    siteLinks: [
-      { label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }
-    ],
-    tracks: [
-      { name: "Confesión de Invisible Boy", role: "El umbral íntimo desde el que se releen las doce entradas." },
-      { name: "My fogged-up mirror → My Eros", role: "Doce fragmentos de diario, objetos y referencias clásicas que esconden una segunda historia." }
-    ]
-  },
-  {
     id: "era1-9",
     eraName: "Era 1.9 (Clímax de la Era 1.x)",
     title: "When the sky turned crimson (and warm)",
@@ -876,8 +862,22 @@ function renderEraFilters() {
     { id: "era2", label: "Era 2.0 & 2.9" },
     { id: "era3", label: "Era 3.0 & Black Tuesday" },
     { id: "era4-5", label: "Eras 4-5 & Shadow & Ban" },
-    { id: "horror-era", label: "The Horror Film" }
-  ];
+    { id: "horror-era", label: "The Horror Film" },
+  {
+    id: "your-eromenos",
+    eraName: "Archivo Relacional • Manifiesto de Invisible Boy",
+    title: "Your Eromenos",
+    vocalist: "Invisible Boy • Eros",
+    concept: "Un archivo íntimo construido a partir de una confesión y doce entradas de diario. Entre apuntes escolares, llaves, espejos, habitaciones y ecos de la Grecia antigua, Invisible Boy intenta ponerle nombre a un vínculo que parece ofrecer refugio. Las láminas conservan indicios que el narrador no siempre se atreve a escribir.",
+    siteLinks: [
+      { label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }
+    ],
+    tracks: [
+      { name: "Confesión de Invisible Boy", role: "El umbral íntimo desde el que se releen las doce entradas." },
+      { name: "My fogged-up mirror → My Eros", role: "Doce fragmentos de diario, objetos y referencias clásicas que esconden una segunda historia." }
+    ]
+  }
+];
 
   container.innerHTML = filters.map((f, i) => `
     <button class="filter-btn ${i === 0 ? 'active' : ''}" onclick="filterEras('${f.id}', this)">
