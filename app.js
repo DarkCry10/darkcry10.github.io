@@ -275,8 +275,21 @@ const discographyData = [
       { name: "Tronco común: Gingerbread House → Coffee", role: "Cinco recetas para intentar fabricar un hogar y reconocer que algo no termina de alimentar." },
       { name: "Dolly's Path / Violet's Decision", role: "Dos ramas narrativas con consecuencias diferentes; no son un desenlace único ni intercambiable." }
     ]
+  },
+{
+    id: "your-eromenos",
+    eraName: "Archivo Relacional • Manifiesto de Invisible Boy",
+    title: "Your Eromenos",
+    vocalist: "Invisible Boy • Eros",
+    concept: "Un archivo íntimo construido a partir de una confesión y doce entradas de diario. Entre apuntes escolares, llaves, espejos, habitaciones y ecos de la Grecia antigua, Invisible Boy intenta ponerle nombre a un vínculo que parece ofrecer refugio. Las láminas conservan indicios que el narrador no siempre se atreve a escribir.",
+    siteLinks: [
+      { label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }
+    ],
+    tracks: [
+      { name: "Confesión de Invisible Boy", role: "El umbral íntimo desde el que se releen las doce entradas." },
+      { name: "My fogged-up mirror → My Eros", role: "Doce fragmentos de diario, objetos y referencias clásicas que esconden una segunda historia." }
+    ]
   }
-
 ];
 
 // 6. BASE DE DATOS DE CANCIONES CON LETRAS Y ANÁLISIS (INCLUYE NUEVOS EPs)
@@ -863,20 +876,7 @@ function renderEraFilters() {
     { id: "era3", label: "Era 3.0 & Black Tuesday" },
     { id: "era4-5", label: "Eras 4-5 & Shadow & Ban" },
     { id: "horror-era", label: "The Horror Film" },
-  {
-    id: "your-eromenos",
-    eraName: "Archivo Relacional • Manifiesto de Invisible Boy",
-    title: "Your Eromenos",
-    vocalist: "Invisible Boy • Eros",
-    concept: "Un archivo íntimo construido a partir de una confesión y doce entradas de diario. Entre apuntes escolares, llaves, espejos, habitaciones y ecos de la Grecia antigua, Invisible Boy intenta ponerle nombre a un vínculo que parece ofrecer refugio. Las láminas conservan indicios que el narrador no siempre se atreve a escribir.",
-    siteLinks: [
-      { label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }
-    ],
-    tracks: [
-      { name: "Confesión de Invisible Boy", role: "El umbral íntimo desde el que se releen las doce entradas." },
-      { name: "My fogged-up mirror → My Eros", role: "Doce fragmentos de diario, objetos y referencias clásicas que esconden una segunda historia." }
-    ]
-  }
+
 ];
 
   container.innerHTML = filters.map((f, i) => `
