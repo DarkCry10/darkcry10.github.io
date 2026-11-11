@@ -938,3 +938,104 @@ body {
     font-size: 2.6rem;
   }
 }
+
+/* ==========================================================================
+   ÍNDICE MAESTRO Y ENLACES A LOS ARCHIVOS DE CADA ÁLBUM
+   ========================================================================== */
+.album-site-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+.album-site-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-active);
+  border-radius: 6px;
+  color: var(--text-main);
+  background: var(--bg-surface);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 650;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.album-site-link:hover {
+  color: var(--accent-pink);
+  border-color: var(--accent-pink);
+  transform: translateY(-2px);
+}
+.continuity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+.continuity-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: linear-gradient(145deg, var(--bg-card), var(--bg-surface));
+}
+.continuity-kicker {
+  color: var(--accent-gold);
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+.continuity-card h3 {
+  font-size: 1.1rem;
+  line-height: 1.35;
+  color: var(--text-main);
+}
+.continuity-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+.continuity-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+.continuity-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border-active);
+  border-radius: 6px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+.continuity-link:hover {
+  color: var(--accent-pink);
+  border-color: var(--accent-pink);
+  transform: translateY(-1px);
+}
+.continuity-note {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-style: italic;
+}
+@media (max-width: 1050px) {
+  .continuity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .continuity-grid { grid-template-columns: 1fr; }
+  .album-site-links { flex-direction: column; }
+  .album-site-link { justify-content: center; }
+}
