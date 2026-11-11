@@ -139,30 +139,18 @@ const coldLawData = [
 
 // 5. DISCOGRAFÍA COMPLETA POR ERAS Y EPs CONCEPTUALES
 const pillarEraData = [
-  { id: "era-1", number: "01", title: "Era 1", subtitle: "Origen · herida · confesión",
-    description: "Los dos pilares que abren el arco fundacional. El primero presenta el núcleo de Invisible Boy; el segundo expande la confesión y el quiebre que atraviesa esa identidad.",
-    albums: [
-      { title: "The Invisible Boy", note: "El nacimiento del protagonista y la memoria de una infancia que aprende a hacerse invisible." },
-      { title: "The Day I Told You", note: "El paso de la herida callada a la necesidad de decir, recordar y enfrentar lo ocurrido." }
-    ] },
-  { id: "era-2", number: "02", title: "Era 2", subtitle: "Colapso · agua · máscara",
-    description: "Los pilares de la etapa en que la búsqueda de purificación y alivio se vuelve insuficiente, mientras la apariencia de bienestar empieza a funcionar como una máscara.",
-    albums: [
-      { title: "Crying in the Bubblebath", note: "El intento de lavar el dolor y la imposibilidad de convertir el agua en olvido." },
-      { title: "In hell, I'm well", note: "La contradicción entre el infierno interior y la imagen de estar bien ante los demás." }
-    ] },
-  { id: "era-3", number: "03", title: "Era 3", subtitle: "Ciudad · neón · eco",
-    description: "La expansión hacia el espacio urbano y sus reflejos: la calle, la lluvia, el aislamiento y las voces que permanecen cuando la experiencia parece haberse alejado.",
-    albums: [
-      { title: "Walking through the blue street", note: "La deriva por una ciudad azul, sus calles mojadas y la soledad que adquiere forma de paisaje." },
-      { title: "Echoes in blue", note: "La resonancia de esa etapa: una memoria que continúa sonando incluso cuando el entorno cambia." }
-    ] },
-  { id: "era-4", number: "04", title: "Era 4", subtitle: "Rebelión · personaje · doblez",
-    description: "Los pilares de la etapa asociada a la voz de Dolly y a una expresión más desafiante. La seguridad escénica y la liberación también pueden funcionar como armadura.",
-    albums: [
-      { title: "I'm bad, so bad", note: "La afirmación de una identidad que ya no quiere pedir permiso para ocupar espacio." },
-      { title: "Bad baby", note: "La continuación de esa actitud en un entorno de exceso, provocación y performance." }
-    ] }
+  { id: "pilar-01", number: "01", title: "The Invisible Boy", subtitle: "Era 1.0 · Herida primaria · Infancia doméstica",
+    description: "La génesis de la discografía: I.B. aprende a hacerse invisible bajo la Cold Law y crea un primer filtro para soportar el recuerdo. Violet y SadMuse 1.0 convierten las semillas del sufrimiento en melodías que parecen inofensivas.",
+    anchor: "pilar-01" },
+  { id: "pilar-02", number: "02", title: "Crying in the Bubblebath", subtitle: "Era 2.0 · Transacción fallida · Purificación imposible",
+    description: "El cuerpo intenta negociar el afecto y el agua no puede lavar la memoria. SadMuse deja de bastar y Donna AI articula un registro más árido, atravesado por ecos, pulsos y despertares cíclicos.",
+    anchor: "pilar-02" },
+  { id: "pilar-03", number: "03", title: "Walking through the Blue street", subtitle: "Era 3.0 · Ciudad · Entumecimiento",
+    description: "La metrópolis no cura la herida: amplifica el aislamiento. Violet camina entre lluvia, neón y sintetizadores repetitivos mientras la sensibilidad orgánica se extingue.",
+    anchor: "pilar-03" },
+  { id: "pilar-04", number: "04", title: "I'm bad, so Bad", subtitle: "Era 4.0 · Dolly · Mutación psíquica",
+    description: "La vulnerabilidad se cubre con una armadura de neón. Dolly toma el micrófono, prescinde de los traductores algorítmicos y transforma la necesidad de amor en una fachada de poder.",
+    anchor: "pilar-04" }
 ];
 
 const archiveProjectData = [
@@ -189,10 +177,10 @@ const archiveProjectData = [
     relation: "Lectura retrospectiva y transversal", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
   { eyebrow: "AMPLIACIONES · ERA 4 / 5", title: "Dolly & DCX — Ice Throne, Therian & Shadow & Ban",
     subtitle: "Identidad, máscara, autonomía y conflicto con la interfaz.",
-    description: "Las expansiones asociadas a Dolly y DCX desplazan el conflicto hacia la performance, la noche y el control de la propia imagen. The Ice Throne, Therian Collection y Shadow & Ban amplían esa etapa sin sustituir los dos álbumes pilares enumerados para Era 4.",
+    description: "Las expansiones asociadas a Dolly y DCX desplazan el conflicto hacia la performance, la noche y el control de la propia imagen. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 como proyectos complementarios; no sustituyen el Pilar I'm bad, so Bad.",
     relation: "Proyectos y colecciones complementarias · no son nuevos pilares cronológicos" },
   { eyebrow: "ERA 3 · RAMA CONCEPTUAL", title: "Black Tuesday EP", subtitle: "La asfixia económica y el cansancio de la vida adulta.",
-    description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los dos pilares nombrados para Era 3 en el documento cronológico." },
+    description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices." },
   { eyebrow: "PROYECTO ANUNCIADO · ARCHIVO DOMÉSTICO", title: "Smoke In The Kitchen", subtitle: "Un recetario de 1955 que se abre en dos decisiones.",
     description: "Cinco recetas forman el tronco común. Después, Dolly's Path aviva el fuego y Violet's Decision permanece entre humo y anestesia. El formato de cocina transforma el deseo, el hambre y la resignación en lenguaje doméstico.",
     relation: "Proyecto anunciado para el 26 de noviembre de 2026", links: [{ label: "Abrir el recetario", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
@@ -825,26 +813,16 @@ function renderColdLaw() {
 function renderPillarEras() {
   const container = document.getElementById("pillar-eras");
   if (!container) return;
-  container.innerHTML = pillarEraData.map(era => `
-    <article class="era-card era-card--${era.number}">
+  container.innerHTML = pillarEraData.map(pillar => `
+    <article class="era-card era-card--${pillar.number}">
       <div class="era-card__top">
-        <span class="era-card__number">${era.number}</span>
-        <span class="era-card__eyebrow">PILAR CRONOLÓGICO</span>
+        <span class="era-card__number">${escapeHTML(pillar.number)}</span>
+        <span class="era-card__eyebrow">PILAR FUNDACIONAL · ${escapeHTML(pillar.subtitle.split(" · ")[0])}</span>
       </div>
-      <h3>${escapeHTML(era.title)}</h3>
-      <p class="era-card__subtitle">${escapeHTML(era.subtitle)}</p>
-      <p class="era-card__description">${escapeHTML(era.description)}</p>
-      <div class="era-card__albums">
-        ${era.albums.map((album, index) => `
-          <div class="era-album">
-            <span class="era-album__index">0${index + 1}</span>
-            <div>
-              <h4>${escapeHTML(album.title)}</h4>
-              <p>${escapeHTML(album.note)}</p>
-            </div>
-          </div>
-        `).join("")}
-      </div>
+      <h3>${escapeHTML(pillar.title)}</h3>
+      <p class="era-card__subtitle">${escapeHTML(pillar.subtitle)}</p>
+      <p class="era-card__description">${escapeHTML(pillar.description)}</p>
+      <a class="pillar-card-link" href="pilares.html#${escapeHTML(pillar.anchor)}">Leer la ficha completa <span aria-hidden="true">↗</span></a>
     </article>
   `).join("");
 }
@@ -933,7 +911,7 @@ function displayTrackDetail(song) {
       <p class="detail-text">Este título aparece en el índice de la compilación registrada. El portal todavía no dispone de una ficha individual desarrollada para esta obra; aquí no se sustituye la letra original por un texto genérico.</p>
       <div class="detail-document-link">
         <span>CONSULTA DOCUMENTAL</span>
-        <a href="assets/documents/El-Chico-Invisible-Compilacion-Textual-Publica.pdf" target="_blank" rel="noopener noreferrer">Abrir el PDF textual completo ↗</a>
+        <a href="mailto:mriospard@gmail.com?subject=Solicitud%20de%20acceso%20a%20la%20compilaci%C3%B3n%20DarkCry%201.0">Solicitar acceso autorizado ↗</a>
       </div>
     `;
     return;
@@ -943,12 +921,12 @@ function displayTrackDetail(song) {
     <h3 class="detail-title">${escapeHTML(song.title)}</h3>
     <div class="detail-section-title">Lectura y posición narrativa</div>
     <p class="detail-text">${escapeHTML(song.analysis)}</p>
-    <div class="detail-section-title">Texto registrado / extracto</div>
+    <div class="detail-section-title">Fragmento público seleccionado</div>
     <pre class="lyrics-box">${escapeHTML(song.lyrics)}</pre>
-    <p class="detail-source-note">Ficha agrupada del portal. Para consultar el contenido completo, utiliza la compilación documental.</p>
+    <p class="detail-source-note">Fragmento curatorial del archivo. La letra completa se facilita previa autorización del artista.</p>
     <div class="detail-document-link">
       <span>FUENTE COMPLETA</span>
-      <a href="assets/documents/El-Chico-Invisible-Compilacion-Textual-Publica.pdf" target="_blank" rel="noopener noreferrer">Abrir el PDF textual ↗</a>
+      <a href="mailto:mriospard@gmail.com?subject=Solicitud%20de%20acceso%20a%20${encodeURIComponent(song.title)}">Solicitar permiso al artista ↗</a>
     </div>
   `;
 }
