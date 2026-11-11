@@ -17,6 +17,10 @@
   --gold: #d8bd82;
   --gold-soft: rgba(216, 189, 130, .13);
   --violet: #b39ae8;
+  --accent-sepia: var(--gold);
+  --accent-blue: var(--blue);
+  --accent-pink: var(--rose);
+  --accent-gold: #e4c88f;
   --violet-soft: rgba(179, 154, 232, .13);
   --radius: 18px;
   --radius-sm: 11px;
