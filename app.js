@@ -138,161 +138,62 @@ const coldLawData = [
 ];
 
 // 5. DISCOGRAFÍA COMPLETA POR ERAS Y EPs CONCEPTUALES
-const discographyData = [
-  {
-    id: "pre-era1",
-    eraName: "Raíz Pre-Era 1 (Side A, Side B & Mommy's Playground)",
-    title: "My LIVE 'HOME', A Plea for Shelter & Mommy's Playground",
-    vocalist: "I.B. • Violet • 'Ella' (Perspectiva Materna)",
-    concept: "La deconstrucción del 'Hogar' (Side A), la voz manipuladora de la madre reduciendo al hijo a juguetes en 'Mommy's Playground', y la huida a la calle con dos finales en 'A Plea for Shelter' (Side B).",
-    siteLinks: [
-      { label: "Abrir My LIVE “HOME”", url: "https://darkcry10.github.io/MyLIVEHOME/" },
-      { label: "Abrir A Plea for Shelter", url: "https://darkcry10.github.io/APleaforShelter/" }
-    ],
-    tracks: [
-      { name: "Side A: Cold at home / The empty plate / Like the others", role: "Nevera emocional y hambre afectiva." },
-      { name: "Side A: Purple Crayon / Stuffed lion / Scape (+ Purple Arms)", role: "Moretones ocultos y el león en el clóset." },
-      { name: "Mommy's Playground: Red & Blue Yoyo / Red & Blue Top", role: "El niño manipulado arriba y abajo al antojo materno." },
-      { name: "Mommy's Playground: Red & Blue Ball / Mommy's Love / Heavy Love", role: "'¿Quién te amaría como yo? Mi amor es frío pero real'." },
-      { name: "Side B: Cold All Around / Eat Cigarettes / Locked Door / Need The Green", role: "Huida nocturna, hambre y supervivencia." },
-      { name: "Side B: Hotel Bed 2.0 / Midnight Steps / Drenched 2.0 / The Water Won't Wash", role: "Disociación en hoteles y los dos caminos (9a Bubblebath / 9b Captivity)." }
-    ]
-  },
-  {
-    id: "era0",
-    eraName: "Álbum 0 (Espiral No Lineal X-Y-Z)",
-    title: "The Invisible Boy 2.0: The Dark Side of the Moon",
-    vocalist: "I.B. / Sad & Lofi Boy",
-    concept: "Dimensión transversal donde las canciones originales de la Era 1 se corrompen en sus Versiones Oscuras a través de las coordenadas X, Y y Z.",
-    tracks: [
-      { name: "Era X (Paralela al Álbum 1)", role: "X1: Corpse party • X2: Poltergeist • X3: The way you made me" },
-      { name: "Era Y (Puente de la Evasión)", role: "Y1: Razor heart • Y2: The rusty shell • Y3: I don't wanna know" },
-      { name: "Era Y (Hambre de Validación)", role: "Y4: Attention • Y5: ADDICTED" },
-      { name: "Era Z (Post-Álbum 8 / Parte 9 Final)", role: "Z1: Immaculate prison • Z2: Plastic flowers • Z3: Broken doll" }
-    ]
-  },
-  {
-    id: "era1",
-    eraName: "Era 1.0 y Era 1.5 (Génesis y Quiebre)",
-    title: "The Invisible Boy & The Day I Told You",
-    vocalist: "Violet • I.B. • Sad & Lofi Boy",
-    concept: "El aislamiento en el portón bajo la Cold Law y el despertar de la sed afectiva que desemboca en el ataque de 'Marigold Scent'.",
-    tracks: [
-      { name: "The Invisible Boy / Paper Heart / Bittersweet Loneliness", role: "El corazón de papel quebrado por la ley fría." },
-      { name: "Hide & Seek / Children's Game / Juegos de un niño", role: "Esconderse en casa para sobrevivir." },
-      { name: "Unseen Brilliance / The Worst Son / Disappear", role: "Excelencia académica ignorada y deseo de evaporarse." },
-      { name: "My own skin / Self love / Curious for love", role: "Autoexploración y sed patológica de afecto." },
-      { name: "Marigold Scent / Sickness / After the shame / Marigold tears", role: "La mancha de cempasúchil y alcohol." }
-    ]
-  },
-
-  {
-    id: "era1-9",
-    eraName: "Era 1.9 (Clímax de la Era 1.x)",
-    title: "When the sky turned crimson (and warm)",
-    vocalist: "I.B. / Violet",
-    concept: "Doble acto sobre el romance a los 16 años con Toño (20 años), la opresión fanática de la madre de la cruz de plata y la quema del león de peluche.",
-    siteLinks: [
-      { label: "Abrir When the sky turned crimson (and warm)", url: "https://darkcry10.github.io/CrimsonSky/" }
-    ],
-    tracks: [
-      { name: "Lado A: 1. Honey lonely / 2. Moon tune / 3. Intervals", role: "Trampa de miel digital y la luna como madre." },
-      { name: "Lado A: 4. Otoño / 5. Silk sheets / 6. The cross of love", role: "Sábanas de seda y castigo con vara frente a la cruz." },
-      { name: "Lado B: 7. Ocean abyss / 8. Call waiting / 9. Sunday in the city", role: "Ducha que no lava el cempasúchil y viaje con el león." },
-      { name: "Lado B: 10. The outstanding student / 11. The prayer / 12. Burn the heaven", role: "Incineración del león de peluche y cuadernos." }
-    ]
-  },
-  {
-    id: "era2",
-    eraName: "Era 2.0 y Era 2.9 (Colapso y Negación)",
-    title: "Crying in the Bubblebath & In hell, I'm well",
-    vocalist: "Violet",
-    concept: "El fracaso definitivo de la purificación por el agua y la construcción de la máscara social perfecta cuando las pastillas pierden efecto.",
-    tracks: [
-      { name: "Fleeting Warmth / Fire / Soul's fire / Drenched", role: "Calor fugaz en cuerpos extraños para silenciar la mente." },
-      { name: "The water won't cleanse / The water / Wake up at 3:00 AM", role: "El ciclo de la transacción fallida en la regadera." },
-      { name: "S.O.S / Cry for help (Espejo) / Indifference", role: "Del grito de auxilio a la cinta adhesiva negra sobre la grieta." },
-      { name: "I'm Ok (1.0 & 2.0) / Blurred view / Fallen illusion / Lenses", role: "El funeral de la paz mental y la vista borrosa." }
-    ]
-  },
-  {
-    id: "era3",
-    eraName: "Era 3.0, Blue Hell & Black Tuesday EP",
-    title: "Walking Through the Blue Street, Blue Hell & Black Tuesday EP",
-    vocalist: "Violet / I.B.",
-    concept: "La metrópoli de neón, los ciclos autodestructivos de 'The End of My Blue Hell' y la asfixia económica adulta en 'Black Tuesday EP'.",
-    tracks: [
-      { name: "Walking through the blue Street / Lost in the city / I'm down", role: "Muñeca de porcelana caminando bajo la lluvia." },
-      { name: "Seed of my own hell / Hidden fire / Dante's inferno PT 1 & 2", role: "El infierno azul y el deseo de saltar." },
-      { name: "Black Tuesday EP: Chains of numbers / Drowning in Dues", role: "Ceros en la pantalla y cadenas financieras." },
-      { name: "Black Tuesday EP: Caught in the haze / The sound of debt", role: "Pantalla del teléfono rota y lluvia en la parada del autobús." },
-      { name: "Black Tuesday EP: High interest lonely / Black Tuesday", role: "'Estudia para ser alguien', pero el dinero se esfuma bajo un sol negro." }
-    ]
-  },
-  {
-    id: "era4-5",
-    eraName: "Eras 4 y 5 + Shadow & Ban",
-    title: "I'm bad, so bad, Bad Baby, The Ice Throne, Therian & Shadow & Ban",
-    vocalist: "Dolly 💛🖤 & DCX 🦊",
-    concept: "La rebelión hipersexual contra la Cold Law, el reinado desde el Trono de Hielo y la guerra frontal contra la censura algorítmica en 'Shadow & Ban'.",
-    tracks: [
-      { name: "More/Dame más / ¡Oh my! / ¡Oh ah!/Tonight / Grays pants", role: "Autonomía radical y rechazo a las ataduras." },
-      { name: "Más/AG (Espejo 1.0 & Reggaeton Remix) / Double Trouble / Married dared", role: "Dominio sobre 'Daddies' y venganza contra la falsa familia." },
-      { name: "Ring Ring (The EP - 9 Versiones) / Poli/Amor / Drive", role: "Sátira del engaño y huida de la jaula dorada." },
-      { name: "DELETE My Age / Forbidden bite / Under my thumb / Nopor Queen", role: "El control total desde el Trono de Hielo." },
-      { name: "Therian Collection (DCX)", role: "WOW • Daddy's b*tch • Waos Daddy • KITTY KITTY • Grrr grrr • Miau Miau" },
-      { name: "Shadow & Ban: Algorithm / Ghost in the Interface / System error", role: "El juez de cristal que borra 100 almas por un error de hace 3 años." },
-      { name: "Shadow & Ban: Whit arrow, red box / You, Tu / A shot of fake love / An Instant, A gram", role: "Crítica a la flecha blanca en cuadro rojo y la adicción a los corazones digitales." }
-    ]
-  },
-  {
-    id: "horror-era",
-    eraName: "Master Tape Conceptual",
-    title: "The horror film that is my life",
-    vocalist: "I.B. • Violet • Dolly • DCX",
-    concept: "La obra cumbre de 13 pistas dividida por 3 Tracking Markers en cinta VHS que traduce la autobiografía del trauma a través del cine de terror.",
-    siteLinks: [
-      { label: "Insertar / abrir archivo VHS", url: "https://darkcry10.github.io/HorrorFilm/" }
-    ],
-    tracks: [
-      { name: "TM 1 (1-6): Possession • Alien • The shape of water", role: "Zombie • Sabbath • Poltergeist Vol. 2" },
-      { name: "TM 2 (7-12): Exorcism • Vampire heart • The black cat", role: "Psycho • Succubus • Frankenstein" },
-      { name: "TM 3 (13): Insidious", role: "El apagado final en la alfombra y la tinta de sangre." }
-    ]
-  }
-
-  ,
-  {
-    id: "smoke-kitchen",
-    eraName: "Archivo Doméstico • Bifurcación Fuego / Humo",
-    title: "Smoke In The Kitchen",
-    vocalist: "Invisible Boy • Dolly • Violet",
-    concept: "Un recetario doméstico de 1955 convierte la rutina de una pareja en un menú de cinco platos comunes y dos posibles cierres. Al llegar a la estufa, el lector debe elegir entre el fuego de Dolly y la niebla anestésica de Violet: dos respuestas distintas a una misma mesa.",
-    siteLinks: [
-      { label: "Abrir Smoke In The Kitchen", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }
-    ],
-    tracks: [
-      { name: "Tronco común: Gingerbread House → Coffee", role: "Cinco recetas para intentar fabricar un hogar y reconocer que algo no termina de alimentar." },
-      { name: "Dolly's Path / Violet's Decision", role: "Dos ramas narrativas con consecuencias diferentes; no son un desenlace único ni intercambiable." }
-    ]
-  },
-{
-    id: "your-eromenos",
-    eraName: "Archivo Relacional • Manifiesto de Invisible Boy",
-    title: "Your Eromenos",
-    vocalist: "Invisible Boy • Eros",
-    concept: "Un archivo íntimo construido a partir de una confesión y doce entradas de diario. Entre apuntes escolares, llaves, espejos, habitaciones y ecos de la Grecia antigua, Invisible Boy intenta ponerle nombre a un vínculo que parece ofrecer refugio. Las láminas conservan indicios que el narrador no siempre se atreve a escribir.",
-    siteLinks: [
-      { label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }
-    ],
-    tracks: [
-      { name: "Confesión de Invisible Boy", role: "El umbral íntimo desde el que se releen las doce entradas." },
-      { name: "My fogged-up mirror → My Eros", role: "Doce fragmentos de diario, objetos y referencias clásicas que esconden una segunda historia." }
-    ]
-  }
+const pillarEraData = [
+  { id: "era-1", number: "01", title: "Era 1", subtitle: "Origen · herida · confesión",
+    description: "Los dos pilares que abren el arco fundacional. El primero presenta el núcleo de Invisible Boy; el segundo expande la confesión y el quiebre que atraviesa esa identidad.",
+    albums: [
+      { title: "The Invisible Boy", note: "El nacimiento del protagonista y la memoria de una infancia que aprende a hacerse invisible." },
+      { title: "The Day I Told You", note: "El paso de la herida callada a la necesidad de decir, recordar y enfrentar lo ocurrido." }
+    ] },
+  { id: "era-2", number: "02", title: "Era 2", subtitle: "Colapso · agua · máscara",
+    description: "Los pilares de la etapa en que la búsqueda de purificación y alivio se vuelve insuficiente, mientras la apariencia de bienestar empieza a funcionar como una máscara.",
+    albums: [
+      { title: "Crying in the Bubblebath", note: "El intento de lavar el dolor y la imposibilidad de convertir el agua en olvido." },
+      { title: "In hell, I'm well", note: "La contradicción entre el infierno interior y la imagen de estar bien ante los demás." }
+    ] },
+  { id: "era-3", number: "03", title: "Era 3", subtitle: "Ciudad · neón · eco",
+    description: "La expansión hacia el espacio urbano y sus reflejos: la calle, la lluvia, el aislamiento y las voces que permanecen cuando la experiencia parece haberse alejado.",
+    albums: [
+      { title: "Walking through the blue street", note: "La deriva por una ciudad azul, sus calles mojadas y la soledad que adquiere forma de paisaje." },
+      { title: "Echoes in blue", note: "La resonancia de esa etapa: una memoria que continúa sonando incluso cuando el entorno cambia." }
+    ] },
+  { id: "era-4", number: "04", title: "Era 4", subtitle: "Rebelión · personaje · doblez",
+    description: "Los pilares de la etapa asociada a la voz de Dolly y a una expresión más desafiante. La seguridad escénica y la liberación también pueden funcionar como armadura.",
+    albums: [
+      { title: "I'm bad, so bad", note: "La afirmación de una identidad que ya no quiere pedir permiso para ocupar espacio." },
+      { title: "Bad baby", note: "La continuación de esa actitud en un entorno de exceso, provocación y performance." }
+    ] }
 ];
 
-// 6. BASE DE DATOS DE CANCIONES CON LETRAS Y ANÁLISIS (INCLUYE NUEVOS EPs)
+const archiveProjectData = [
+  { eyebrow: "ORIGEN · SIDE A", title: "My LIVE “HOME”", subtitle: "El cuaderno que conserva la infancia de Invisible Boy.",
+    description: "Una memoria doméstica presentada como cuaderno infantil: dibujos, crayones, pequeños objetos y anotaciones que dejan ver lo que el niño todavía no sabe explicar.",
+    relation: "Archivo de origen", links: [{ label: "Abrir el cuaderno", url: "https://darkcry10.github.io/MyLIVEHOME/" }] },
+  { eyebrow: "SUPERVIVENCIA · SIDE B", title: "A Plea for Shelter", subtitle: "Un teléfono encontrado y dos particiones de memoria.",
+    description: "El registro abandona el hogar y adopta la forma de un expediente recuperado. La ruta final se divide entre Soul Road y Body Road: dos respuestas distintas a una misma desprotección.",
+    relation: "Continuación conectada con My LIVE “HOME”", links: [{ label: "Abrir el expediente", url: "https://darkcry10.github.io/APleaforShelter/" }] },
+  { eyebrow: "PERSPECTIVA · ARCHIVO MATERNO", title: "Mommy's Playground", subtitle: "La infancia narrada desde la lógica de los juguetes.",
+    description: "Yoyos, trompos y pelotas dejan de ser objetos inocentes: la metáfora del juego permite observar el control y la manipulación desde una voz distinta a la de I.B.",
+    relation: "Obra conceptual conectada con el origen" },
+  { eyebrow: "TRANSVERSAL · ÁLBUM 0", title: "The Invisible Boy 2.0: The Dark Side of the Moon", subtitle: "Una dimensión no lineal organizada en X, Y y Z.",
+    description: "Las versiones oscuras no se colocan como una continuación cronológica sencilla. Reescriben motivos de la obra original en coordenadas paralelas, puentes de evasión y sentencias finales.",
+    relation: "Archivo transversal" },
+  { eyebrow: "DIARIO · ARCHIVO RELACIONAL", title: "Your Eromenos", subtitle: "Confesión, doce entradas y una segunda historia en las láminas.",
+    description: "Un manifiesto íntimo construido con apuntes escolares, llaves, espejos, puertas y referencias clásicas. El diario cuenta una versión; los objetos y las imágenes conservan indicios que no siempre se verbalizan.",
+    relation: "Vínculo de Eros · no debe confundirse con la historia de Toño", links: [{ label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }] },
+  { eyebrow: "DIARIO · ERA 1.9", title: "When the sky turned crimson (and warm)", subtitle: "Una libreta perdida organizada por días, semanas y meses.",
+    description: "El relato de I.B. y Toño se despliega como un doble acto: ilusión de refugio, encuentro, conflicto religioso, memoria corporal y pérdida. Es un vínculo distinto al de Your Eromenos.",
+    relation: "Toño y Eros son personajes distintos", links: [{ label: "Abrir CrimsonSky", url: "https://darkcry10.github.io/CrimsonSky/" }] },
+  { eyebrow: "MASTER TAPE · 13 PISTAS", title: "The Horror Film That Is My Life", subtitle: "La biografía convertida en una cinta VHS de terror.",
+    description: "Trece películas y tres Tracking Markers organizan la mirada retrospectiva: infancia, juventud y apagado final. El terror funciona como lenguaje para nombrar aquello que antes no podía explicarse.",
+    relation: "Lectura retrospectiva y transversal", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
+  { eyebrow: "ERA 3 · RAMA CONCEPTUAL", title: "Black Tuesday EP", subtitle: "La asfixia económica y el cansancio de la vida adulta.",
+    description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los dos pilares nombrados para Era 3 en el documento cronológico." },
+  { eyebrow: "PROYECTO ANUNCIADO · ARCHIVO DOMÉSTICO", title: "Smoke In The Kitchen", subtitle: "Un recetario de 1955 que se abre en dos decisiones.",
+    description: "Cinco recetas forman el tronco común. Después, Dolly's Path aviva el fuego y Violet's Decision permanece entre humo y anestesia. El formato de cocina transforma el deseo, el hambre y la resignación en lenguaje doméstico.",
+    relation: "Proyecto anunciado para el 26 de noviembre de 2026", links: [{ label: "Abrir el recetario", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
+];
+
 const songLoreDatabase = [
   // THE HORROR FILM THAT IS MY LIFE
   {
@@ -735,38 +636,75 @@ document.addEventListener("DOMContentLoaded", () => {
   renderMasterTape();
   renderTransmutation();
   renderColdLaw();
-  renderEraFilters();
-  renderDiscography(discographyData);
-  renderSongSelector(songLoreDatabase);
+  renderPillarEras();
+  renderArchiveProjects();
+  filterSongList("all", document.querySelector('[data-filter="all"]'));
 
   const searchInput = document.getElementById("song-search");
   if (searchInput) {
-    searchInput.addEventListener("input", (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      if (!q) {
-        renderSongSelector(songLoreDatabase);
+    searchInput.addEventListener("input", () => {
+      const query = normalizeSearch(searchInput.value);
+      if (!query) {
+        filterSongList("all", document.querySelector('[data-filter="all"]'));
         return;
       }
-      const matchedDetailed = songLoreDatabase.filter(s =>
-        s.title.toLowerCase().includes(q) ||
-        s.album.toLowerCase().includes(q) ||
-        s.analysis.toLowerCase().includes(q) ||
-        s.lyrics.toLowerCase().includes(q)
+      const detailed = songLoreDatabase.filter(song =>
+        normalizeSearch([song.title, song.album, song.character, song.analysis, song.lyrics].join(" ")).includes(query)
       );
-      const matchedIndex = registered169Works
-        .filter(item => item.toLowerCase().includes(q))
-        .map(item => ({
-          title: item,
-          category: "index169",
-          album: "El Chico Invisible: Poemario y Letras Completo (Registro Nº 2026-A-8311)",
-          character: "Catálogo Oficial DarkCry 1.0",
-          analysis: "Obra lírica y musical registrada oficialmente ante el Departamento de Derechos Intelectuales (Certificado Nº 2026-A-8311) por Jesús Ríos Vásquez.",
-          lyrics: "Obra incluida en el compendio oficial 'EL CHICO INVISIBLE POEMARIO Y LETRAS COMPLETO'."
+      const indexMatches = registered169Works
+        .filter(title => normalizeSearch(title).includes(query))
+        .map(title => ({
+          title, category: "index169",
+          album: "Compilación oficial · El Chico Invisible",
+          character: "Índice de 169 obras", analysis: "", lyrics: ""
         }));
-      renderSongSelector([...matchedDetailed, ...matchedIndex]);
+      renderSongSelector([...detailed, ...indexMatches]);
+      setSearchCount(detailed.length, indexMatches.length, query);
     });
   }
+
+  const menuToggle = document.getElementById("menu-toggle");
+  const siteNav = document.getElementById("site-nav");
+  if (menuToggle && siteNav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      siteNav.classList.toggle("is-open", !isOpen);
+    });
+    siteNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        siteNav.classList.remove("is-open");
+      });
+    });
+  }
+
+  const workCount = document.getElementById("work-count");
+  if (workCount) workCount.textContent = String(registered169Works.length);
+  const detailCount = document.getElementById("detail-count");
+  if (detailCount) detailCount.textContent = String(songLoreDatabase.length);
 });
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[char]);
+}
+
+function setSearchCount(detailed, index, query) {
+  const element = document.getElementById("search-count");
+  if (!element) return;
+  element.textContent = \`${{detailed + index} coincidencias para “${{query}” · ${{detailed} fichas agrupadas y ${{index} títulos del índice\`;
+}
 
 function renderCharacters() {
   const container = document.getElementById("characters-container");
@@ -793,24 +731,29 @@ function renderCharacters() {
 function renderMasterTape() {
   const container = document.getElementById("master-tape-container");
   if (!container) return;
-
-  container.innerHTML = masterTapeData.map(block => `
-    <div class="tm-card">
-      <div class="tm-badge">${block.marker}</div>
-      <h3 class="tm-title">${block.stage}</h3>
-      <ul class="tm-tracklist">
-        ${block.tracks.map(t => `
-          <li onclick="jumpToHorrorSong('${t.title}')">
-            <div class="tm-track-top">
-              <span>${t.num}.${t.title}</span>
-              <span class="tm-trope">${t.trope}</span>
-            </div>
-            <p class="tm-track-desc">${t.desc}</p>
+  container.innerHTML = masterTapeData.map((block, blockIndex) => \`
+    <article class="marker-card marker-card--${{blockIndex + 1}">
+      <div class="marker-card__header">
+        <span class="marker-card__eyebrow">${{escapeHTML(block.marker)}</span>
+        <h3>${{escapeHTML(block.stage)}</h3>
+      </div>
+      <ol class="marker-tracklist">
+        ${{block.tracks.map(track => \`
+          <li>
+            <button type="button" class="marker-track" onclick="jumpToHorrorSong('${{escapeHTML(track.title).replace(/'/g, "\\\\'")}')">
+              <span class="marker-track__number">${{String(track.num).padStart(2, "0")}</span>
+              <span class="marker-track__body">
+                <strong>${{escapeHTML(track.title)}</strong>
+                <span class="marker-track__trope">${{escapeHTML(track.trope)}</span>
+                <span class="marker-track__description">${{escapeHTML(track.desc)}</span>
+              </span>
+              <span class="marker-track__arrow" aria-hidden="true">↗</span>
+            </button>
           </li>
-        `).join('')}
-      </ul>
-    </div>
-  `).join('');
+        \`).join("")}
+      </ol>
+    </article>
+  \`).join("");
 }
 
 function renderTransmutation() {
@@ -827,39 +770,35 @@ function renderTransmutation() {
 }
 
 function jumpToHorrorSong(titleQuery) {
-  const archiveSection = document.getElementById("archivo");
-  if (archiveSection) archiveSection.scrollIntoView({ behavior: "smooth" });
-
-  const normalizeTitle = (value) => value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-
-  // Los Tracking Markers organizan la cinta, pero no forman parte del título.
-  const query = normalizeTitle(String(titleQuery || ""))
-    .replace(/\btm\s+\d+\b/g, "")
-    .trim();
+  const query = normalizeSearch(String(titleQuery || "").replace(/\bTM\s+\d+\b/ig, ""));
   if (!query) return;
-
-  const queryTerms = query.split(/\s+/);
-  const hasOrderedTitleTerms = (title) => {
-    const titleTerms = normalizeTitle(title).split(/\s+/);
+  const terms = query.split(/\s+/);
+  const matchesOrdered = title => {
+    const words = normalizeSearch(title).split(/\s+/);
     let cursor = 0;
-    for (const term of queryTerms) {
-      const position = titleTerms.indexOf(term, cursor);
+    for (const term of terms) {
+      const position = words.indexOf(term, cursor);
       if (position < 0) return false;
       cursor = position + 1;
     }
     return true;
   };
-
-  const match = songLoreDatabase.find(song => normalizeTitle(song.title) === query)
-    || songLoreDatabase.find(song => normalizeTitle(song.title).includes(query))
-    || songLoreDatabase.find(song => hasOrderedTitleTerms(song.title));
-
-  if (match) displayTrackDetail(match);
+  const detailed = songLoreDatabase.find(song => normalizeSearch(song.title) === query)
+    || songLoreDatabase.find(song => normalizeSearch(song.title).includes(query))
+    || songLoreDatabase.find(song => matchesOrdered(song.title));
+  if (detailed) {
+    filterSongList(detailed.category, document.querySelector('[data-filter="' + detailed.category + '"]'));
+    selectSongByIndex(window._currentSongList.indexOf(detailed));
+  } else {
+    const indexedTitle = registered169Works.find(title => matchesOrdered(title));
+    if (indexedTitle) renderSongSelector([{
+      title: indexedTitle, category: "index169",
+      album: "Compilación oficial · El Chico Invisible",
+      character: "Índice de 169 obras", analysis: "", lyrics: ""
+    }]);
+  }
+  const archive = document.getElementById("archivo");
+  if (archive) archive.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderColdLaw() {
@@ -875,131 +814,134 @@ function renderColdLaw() {
   `).join('');
 }
 
-function renderEraFilters() {
-  const container = document.getElementById("era-filters");
+function renderPillarEras() {
+  const container = document.getElementById("pillar-eras");
   if (!container) return;
-
-  const filters = [
-    { id: "all", label: "Todas las Eras" },
-    { id: "pre-era1", label: "My LIVE HOME & Mommy's Playground" },
-    { id: "era0", label: "Álbum 0 (X-Y-Z)" },
-    { id: "era1", label: "Era 1.0 & 1.5" },
-    { id: "era1-9", label: "Era 1.9 (Crimson)" },
-    { id: "era2", label: "Era 2.0 & 2.9" },
-    { id: "era3", label: "Era 3.0 & Black Tuesday" },
-    { id: "era4-5", label: "Eras 4-5 & Shadow & Ban" },
-    { id: "horror-era", label: "The Horror Film" },
-
-];
-
-  container.innerHTML = filters.map((f, i) => `
-    <button class="filter-btn ${i === 0 ? 'active' : ''}" onclick="filterEras('${f.id}', this)">
-      ${f.label}
-    </button>
-  `).join('');
-}
-
-function filterEras(eraId, btn) {
-  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-  if (btn) btn.classList.add("active");
-
-  if (eraId === "all") {
-    renderDiscography(discographyData);
-  } else {
-    renderDiscography(discographyData.filter(d => d.id === eraId));
-  }
-}
-
-function renderDiscography(data) {
-  const container = document.getElementById("discography-container");
-  if (!container) return;
-
-  container.innerHTML = data.map(album => `
-    <div class="album-card">
-      <div class="album-meta">
-        <span>${album.eraName}</span>
-        <span>${album.vocalist}</span>
+  container.innerHTML = pillarEraData.map(era => \`
+    <article class="era-card era-card--${{era.number}">
+      <div class="era-card__top">
+        <span class="era-card__number">${{era.number}</span>
+        <span class="era-card__eyebrow">PILAR CRONOLÓGICO</span>
       </div>
-      <h3 class="album-title">${album.title}</h3>
-      <p class="album-concept">${album.concept}</p>
-      <ul class="album-tracklist">
-        ${album.tracks.map(t => `
-          <li>
-            <strong>${t.name}</strong>
-            <span>${t.role}</span>
-          </li>
-        `).join('')}
-      </ul>
-      ${album.siteLinks && album.siteLinks.length ? `
-        <div class="album-site-links" aria-label="Archivos y páginas del álbum">
-          ${album.siteLinks.map(link => `
-            <a class="album-site-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label} <span aria-hidden="true">↗</span></a>
-          `).join('')}
+      <h3>${{escapeHTML(era.title)}</h3>
+      <p class="era-card__subtitle">${{escapeHTML(era.subtitle)}</p>
+      <p class="era-card__description">${{escapeHTML(era.description)}</p>
+      <div class="era-card__albums">
+        ${{era.albums.map((album, index) => \`
+          <div class="era-album">
+            <span class="era-album__index">0${{index + 1}</span>
+            <div>
+              <h4>${{escapeHTML(album.title)}</h4>
+              <p>${{escapeHTML(album.note)}</p>
+            </div>
+          </div>
+        \`).join("")}
+      </div>
+    </article>
+  \`).join("");
+}
+
+function renderArchiveProjects() {
+  const container = document.getElementById("archive-projects");
+  if (!container) return;
+  container.innerHTML = archiveProjectData.map((project, index) => \`
+    <article class="archive-card">
+      <div class="archive-card__top">
+        <span class="archive-card__number">${{String(index + 1).padStart(2, "0")}</span>
+        <span class="archive-card__eyebrow">${{escapeHTML(project.eyebrow)}</span>
+      </div>
+      <h3>${{escapeHTML(project.title)}</h3>
+      <p class="archive-card__subtitle">${{escapeHTML(project.subtitle)}</p>
+      <p class="archive-card__description">${{escapeHTML(project.description)}</p>
+      ${{project.relation ? \`<p class="archive-card__relation">${{escapeHTML(project.relation)}</p>\` : ""}
+      ${{project.links?.length ? \`
+        <div class="archive-card__links">
+          ${{project.links.map(link => \`
+            <a href="${{escapeHTML(link.url)}" target="_blank" rel="noopener noreferrer">${{escapeHTML(link.label)} <span aria-hidden="true">↗</span></a>
+          \`).join("")}
         </div>
-      ` : ''}
-    </div>
-  `).join('');
+      \` : ""}
+    </article>
+  \`).join("");
 }
 
 function filterSongList(category, btn) {
-  document.querySelectorAll(".tag-btn").forEach(b => b.classList.remove("active"));
-  if (btn) btn.classList.add("active");
-
+  document.querySelectorAll(".filter-chip").forEach(button => button.classList.remove("is-active"));
+  if (btn) btn.classList.add("is-active");
   if (category === "all") {
     renderSongSelector(songLoreDatabase);
   } else if (category === "index169") {
-    const fullList = registered169Works.map(item => ({
-      title: item,
-      category: "index169",
-      album: "Compendio Oficial: El Chico Invisible Poemario y Letras Completo",
-      character: "Jesús Ríos Vásquez • DarkCry 1.0",
-      analysis: "Obra inscrita bajo el Certificado Oficial de Propiedad Intelectual Nº 2026-A-8311 (169 poemas y letras).",
-      lyrics: "Esta pieza forma parte de las 169 obras registradas en 'EL CHICO INVISIBLE POEMARIO Y LETRAS COMPLETO'."
-    }));
-    renderSongSelector(fullList);
+    renderSongSelector(registered169Works.map(title => ({
+      title, category: "index169",
+      album: "Compilación oficial · El Chico Invisible",
+      character: "Índice de 169 obras", analysis: "", lyrics: ""
+    })));
   } else {
-    renderSongSelector(songLoreDatabase.filter(s => s.category === category));
+    renderSongSelector(songLoreDatabase.filter(song => song.category === category));
   }
+  const searchCount = document.getElementById("search-count");
+  if (searchCount) searchCount.textContent = category === "index169"
+    ? \`${{registered169Works.length} títulos del índice oficial\`
+    : category === "all"
+      ? \`${{songLoreDatabase.length} fichas agrupadas con análisis y extractos\`
+      : \`${{songLoreDatabase.filter(song => song.category === category).length} fichas agrupadas\`;
 }
 
 function renderSongSelector(list) {
   const selector = document.getElementById("track-selector");
   if (!selector) return;
-
-  if (list.length === 0) {
-    selector.innerHTML = `<p style="color: var(--text-muted); padding: 1rem;">No se encontraron resultados para tu búsqueda.</p>`;
+  if (!list.length) {
+    selector.innerHTML = \`<p class="empty-state">No hay coincidencias en esta categoría.</p>\`;
+    const detail = document.getElementById("track-detail");
+    if (detail) detail.innerHTML = \`<div class="detail-placeholder"><span>∅</span><h3>Sin resultados</h3><p>Prueba con otro título o categoría.</p></div>\`;
+    window._currentSongList = [];
     return;
   }
-
-  selector.innerHTML = list.map((item, idx) => `
-    <button class="track-btn ${idx === 0 ? 'active' : ''}" onclick="selectSongByIndex(${idx})">
-      <span>${item.title}</span>
-      <span class="track-era-pill">${item.category.toUpperCase()}</span>
-    </button>
-  `).join('');
-
   window._currentSongList = list;
+  selector.innerHTML = list.map((item, index) => \`
+    <button type="button" class="track-btn ${{index === 0 ? "is-active" : ""}" onclick="selectSongByIndex(${{index})">
+      <span class="track-btn__title">${{escapeHTML(item.title)}</span>
+      <span class="track-btn__category">${{escapeHTML(item.category === "index169" ? "ÍNDICE" : item.category.toUpperCase())}</span>
+    </button>
+  \`).join("");
   displayTrackDetail(list[0]);
 }
 
-function selectSongByIndex(idx) {
-  const list = window._currentSongList || songLoreDatabase;
+function selectSongByIndex(index) {
+  const list = window._currentSongList || [];
   const buttons = document.querySelectorAll(".track-btn");
-  buttons.forEach(b => b.classList.remove("active"));
-  if (buttons[idx]) buttons[idx].classList.add("active");
-  if (list[idx]) displayTrackDetail(list[idx]);
+  buttons.forEach(button => button.classList.remove("is-active"));
+  if (buttons[index]) buttons[index].classList.add("is-active");
+  if (list[index]) displayTrackDetail(list[index]);
 }
 
 function displayTrackDetail(song) {
   const container = document.getElementById("track-detail");
   if (!container || !song) return;
-
-  container.innerHTML = `
-    <h3 class="detail-title">${song.title}</h3>
-    <div class="detail-badge">${song.album} • Intérprete / Avatar: ${song.character}</div>
-    <div class="detail-section-title">Análisis Psicológico y Posición en el Lore</div>
-    <p class="detail-text">${song.analysis}</p>
-    <div class="detail-section-title">Extracto Lírico / Registro Oficial</div>
-    <pre class="lyrics-box">${song.lyrics}</pre>
-  `;
+  if (song.category === "index169") {
+    container.innerHTML = \`
+      <div class="detail-badge">TÍTULO EN EL REGISTRO · 2026-A-8311</div>
+      <h3 class="detail-title">${{escapeHTML(song.title)}</h3>
+      <p class="detail-text">Este título aparece en el índice de la compilación registrada. El portal todavía no dispone de una ficha individual desarrollada para esta obra; aquí no se sustituye la letra original por un texto genérico.</p>
+      <div class="detail-document-link">
+        <span>CONSULTA DOCUMENTAL</span>
+        <a href="assets/documents/El-Chico-Invisible-Poemario-y-Letras-Completo-publico.pdf" target="_blank" rel="noopener noreferrer">Abrir la compilación completa ↗</a>
+      </div>
+    \`;
+    return;
+  }
+  container.innerHTML = \`
+    <div class="detail-badge">${{escapeHTML(song.album)} · ${{escapeHTML(song.character)}</div>
+    <h3 class="detail-title">${{escapeHTML(song.title)}</h3>
+    <div class="detail-section-title">Lectura y posición narrativa</div>
+    <p class="detail-text">${{escapeHTML(song.analysis)}</p>
+    <div class="detail-section-title">Texto registrado / extracto</div>
+    <pre class="lyrics-box">${{escapeHTML(song.lyrics)}</pre>
+    <p class="detail-source-note">Ficha agrupada del portal. Para consultar el contenido completo, utiliza la compilación documental.</p>
+    <div class="detail-document-link">
+      <span>FUENTE COMPLETA</span>
+      <a href="assets/documents/El-Chico-Invisible-Poemario-y-Letras-Completo-publico.pdf" target="_blank" rel="noopener noreferrer">Abrir la compilación ↗</a>
+    </div>
+  \`;
 }
+
