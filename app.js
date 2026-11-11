@@ -839,13 +839,13 @@ function jumpToHorrorSong(titleQuery) {
 
   // Los Tracking Markers organizan la cinta, pero no forman parte del título.
   const query = normalizeTitle(String(titleQuery || ""))
-    .replace(/\\btm\\s+\\d+\\b/g, "")
+    .replace(/\btm\s+\d+\b/g, "")
     .trim();
   if (!query) return;
 
-  const queryTerms = query.split(/\\s+/);
+  const queryTerms = query.split(/\s+/);
   const hasOrderedTitleTerms = (title) => {
-    const titleTerms = normalizeTitle(title).split(/\\s+/);
+    const titleTerms = normalizeTitle(title).split(/\s+/);
     let cursor = 0;
     for (const term of queryTerms) {
       const position = titleTerms.indexOf(term, cursor);
