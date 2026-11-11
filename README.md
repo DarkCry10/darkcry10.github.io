@@ -73,3 +73,12 @@ Estas ediciones omiten RUT, domicilio y código de validación del certificado. 
 Consultas sobre el proyecto, solicitudes de acceso y contacto directo con el artista detrás de DarkCry 1.0:
 
 **mriospard@gmail.com**
+
+
+## Renovación editorial 1.5
+
+La versión editorial 1.5 amplía el portal sin alterar la jerarquía del canon ni eliminar documentos preexistentes. Incorpora el modelo Kernel/avatares; la doctrina de Transmutación con ejemplos concretos; la semiótica cromática y textil; y la lectura de la colección Therian. La numeración editorial 1.5 identifica una revisión del portal, no una nueva Era narrativa. La terminología psiquiátrica se presenta como lenguaje simbólico del lore, no como diagnóstico clínico.
+
+## Sitios hermanos
+- Los cuatro Pilares: https://github.com/DarkCry10/los4pilares
+- The Atlas: https://github.com/DarkCry10/theatlas
