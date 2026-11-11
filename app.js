@@ -830,11 +830,24 @@ function renderTransmutation() {
 function jumpToHorrorSong(titleQuery) {
   const archiveSection = document.getElementById("archivo");
   if (archiveSection) archiveSection.scrollIntoView({ behavior: "smooth" });
-  const keyword = titleQuery.split(" ")[0].toLowerCase();
-  const match = songLoreDatabase.find(s => s.title.toLowerCase().includes(keyword));
-  if (match) {
-    displayTrackDetail(match);
-  }
+
+  const normalizeTitle = (value) => value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+  const query = normalizeTitle(String(titleQuery || ""));
+  if (!query) return;
+
+  const match = songLoreDatabase.find(song => normalizeTitle(song.title) === query)
+    || songLoreDatabase.find(song => normalizeTitle(song.title).includes(query))
+    || songLoreDatabase.find(song =>
+      normalizeTitle(song.title).split(" and ").some(part => part.trim() === query)
+    );
+
+  if (match) displayTrackDetail(match);
 }
 
 function renderColdLaw() {
