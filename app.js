@@ -145,6 +145,10 @@ const discographyData = [
     title: "My LIVE 'HOME', A Plea for Shelter & Mommy's Playground",
     vocalist: "I.B. • Violet • 'Ella' (Perspectiva Materna)",
     concept: "La deconstrucción del 'Hogar' (Side A), la voz manipuladora de la madre reduciendo al hijo a juguetes en 'Mommy's Playground', y la huida a la calle con dos finales en 'A Plea for Shelter' (Side B).",
+    siteLinks: [
+      { label: "Abrir My LIVE “HOME”", url: "https://darkcry10.github.io/MyLIVEHOME/" },
+      { label: "Abrir A Plea for Shelter", url: "https://darkcry10.github.io/APleaforShelter/" }
+    ],
     tracks: [
       { name: "Side A: Cold at home / The empty plate / Like the others", role: "Nevera emocional y hambre afectiva." },
       { name: "Side A: Purple Crayon / Stuffed lion / Scape (+ Purple Arms)", role: "Moretones ocultos y el león en el clóset." },
@@ -181,12 +185,30 @@ const discographyData = [
       { name: "Marigold Scent / Sickness / After the shame / Marigold tears", role: "La mancha de cempasúchil y alcohol." }
     ]
   },
+
+  {
+    id: "your-eromenos",
+    eraName: "Archivo Relacional • Manifiesto de Invisible Boy",
+    title: "Your Eromenos",
+    vocalist: "Invisible Boy • Eros",
+    concept: "Un archivo íntimo construido a partir de una confesión y doce entradas de diario. Entre apuntes escolares, llaves, espejos, habitaciones y ecos de la Grecia antigua, Invisible Boy intenta ponerle nombre a un vínculo que parece ofrecer refugio. Las láminas conservan indicios que el narrador no siempre se atreve a escribir.",
+    siteLinks: [
+      { label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }
+    ],
+    tracks: [
+      { name: "Confesión de Invisible Boy", role: "El umbral íntimo desde el que se releen las doce entradas." },
+      { name: "My fogged-up mirror → My Eros", role: "Doce fragmentos de diario, objetos y referencias clásicas que esconden una segunda historia." }
+    ]
+  },
   {
     id: "era1-9",
     eraName: "Era 1.9 (Clímax de la Era 1.x)",
     title: "When the sky turned crimson (and warm)",
     vocalist: "I.B. / Violet",
     concept: "Doble acto sobre el romance a los 16 años con Toño (20 años), la opresión fanática de la madre de la cruz de plata y la quema del león de peluche.",
+    siteLinks: [
+      { label: "Abrir When the sky turned crimson (and warm)", url: "https://darkcry10.github.io/CrimsonSky/" }
+    ],
     tracks: [
       { name: "Lado A: 1. Honey lonely / 2. Moon tune / 3. Intervals", role: "Trampa de miel digital y la luna como madre." },
       { name: "Lado A: 4. Otoño / 5. Silk sheets / 6. The cross of love", role: "Sábanas de seda y castigo con vara frente a la cruz." },
@@ -243,12 +265,32 @@ const discographyData = [
     title: "The horror film that is my life",
     vocalist: "I.B. • Violet • Dolly • DCX",
     concept: "La obra cumbre de 13 pistas dividida por 3 Tracking Markers en cinta VHS que traduce la autobiografía del trauma a través del cine de terror.",
+    siteLinks: [
+      { label: "Insertar / abrir archivo VHS", url: "https://darkcry10.github.io/HorrorFilm/" }
+    ],
     tracks: [
       { name: "TM 1 (1-6): Possession • Alien • The shape of water", role: "Zombie • Sabbath • Poltergeist Vol. 2" },
       { name: "TM 2 (7-12): Exorcism • Vampire heart • The black cat", role: "Psycho • Succubus • Frankenstein" },
       { name: "TM 3 (13): Insidious", role: "El apagado final en la alfombra y la tinta de sangre." }
     ]
   }
+
+  ,
+  {
+    id: "smoke-kitchen",
+    eraName: "Archivo Doméstico • Bifurcación Fuego / Humo",
+    title: "Smoke In The Kitchen",
+    vocalist: "Invisible Boy • Dolly • Violet",
+    concept: "Un recetario doméstico de 1955 convierte la rutina de una pareja en un menú de cinco platos comunes y dos posibles cierres. Al llegar a la estufa, el lector debe elegir entre el fuego de Dolly y la niebla anestésica de Violet: dos respuestas distintas a una misma mesa.",
+    siteLinks: [
+      { label: "Abrir Smoke In The Kitchen", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }
+    ],
+    tracks: [
+      { name: "Tronco común: Gingerbread House → Coffee", role: "Cinco recetas para intentar fabricar un hogar y reconocer que algo no termina de alimentar." },
+      { name: "Dolly's Path / Violet's Decision", role: "Dos ramas narrativas con consecuencias diferentes; no son un desenlace único ni intercambiable." }
+    ]
+  }
+
 ];
 
 // 6. BASE DE DATOS DE CANCIONES CON LETRAS Y ANÁLISIS (INCLUYE NUEVOS EPs)
@@ -862,6 +904,13 @@ function renderDiscography(data) {
           </li>
         `).join('')}
       </ul>
+      ${album.siteLinks && album.siteLinks.length ? `
+        <div class="album-site-links" aria-label="Archivos y páginas del álbum">
+          ${album.siteLinks.map(link => `
+            <a class="album-site-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${link.label} <span aria-hidden="true">↗</span></a>
+          `).join('')}
+        </div>
+      ` : ''}
     </div>
   `).join('');
 }
