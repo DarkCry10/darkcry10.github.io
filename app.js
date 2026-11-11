@@ -703,7 +703,7 @@ function escapeHTML(value) {
 function setSearchCount(detailed, index, query) {
   const element = document.getElementById("search-count");
   if (!element) return;
-  element.textContent = \`${{detailed + index} coincidencias para “${{query}” · ${{detailed} fichas agrupadas y ${{index} títulos del índice\`;
+  element.textContent = `${detailed + index} coincidencias para “${query}” · ${detailed} fichas agrupadas y ${index} títulos del índice`;
 }
 
 function renderCharacters() {
@@ -731,29 +731,29 @@ function renderCharacters() {
 function renderMasterTape() {
   const container = document.getElementById("master-tape-container");
   if (!container) return;
-  container.innerHTML = masterTapeData.map((block, blockIndex) => \`
-    <article class="marker-card marker-card--${{blockIndex + 1}">
+  container.innerHTML = masterTapeData.map((block, blockIndex) => `
+    <article class="marker-card marker-card--${blockIndex + 1}">
       <div class="marker-card__header">
-        <span class="marker-card__eyebrow">${{escapeHTML(block.marker)}</span>
-        <h3>${{escapeHTML(block.stage)}</h3>
+        <span class="marker-card__eyebrow">${escapeHTML(block.marker)}</span>
+        <h3>${escapeHTML(block.stage)}</h3>
       </div>
       <ol class="marker-tracklist">
-        ${{block.tracks.map(track => \`
+        ${block.tracks.map(track => `
           <li>
-            <button type="button" class="marker-track" onclick="jumpToHorrorSong('${{escapeHTML(track.title).replace(/'/g, "\\\\'")}')">
-              <span class="marker-track__number">${{String(track.num).padStart(2, "0")}</span>
+            <button type="button" class="marker-track" onclick="jumpToHorrorSong('${escapeHTML(track.title).replace(/'/g, "\\\\'")}')">
+              <span class="marker-track__number">${String(track.num).padStart(2, "0")}</span>
               <span class="marker-track__body">
-                <strong>${{escapeHTML(track.title)}</strong>
-                <span class="marker-track__trope">${{escapeHTML(track.trope)}</span>
-                <span class="marker-track__description">${{escapeHTML(track.desc)}</span>
+                <strong>${escapeHTML(track.title)}</strong>
+                <span class="marker-track__trope">${escapeHTML(track.trope)}</span>
+                <span class="marker-track__description">${escapeHTML(track.desc)}</span>
               </span>
               <span class="marker-track__arrow" aria-hidden="true">↗</span>
             </button>
           </li>
-        \`).join("")}
+        `).join("")}
       </ol>
     </article>
-  \`).join("");
+  `).join("");
 }
 
 function renderTransmutation() {
@@ -817,52 +817,52 @@ function renderColdLaw() {
 function renderPillarEras() {
   const container = document.getElementById("pillar-eras");
   if (!container) return;
-  container.innerHTML = pillarEraData.map(era => \`
-    <article class="era-card era-card--${{era.number}">
+  container.innerHTML = pillarEraData.map(era => `
+    <article class="era-card era-card--${era.number}">
       <div class="era-card__top">
-        <span class="era-card__number">${{era.number}</span>
+        <span class="era-card__number">${era.number}</span>
         <span class="era-card__eyebrow">PILAR CRONOLÓGICO</span>
       </div>
-      <h3>${{escapeHTML(era.title)}</h3>
-      <p class="era-card__subtitle">${{escapeHTML(era.subtitle)}</p>
-      <p class="era-card__description">${{escapeHTML(era.description)}</p>
+      <h3>${escapeHTML(era.title)}</h3>
+      <p class="era-card__subtitle">${escapeHTML(era.subtitle)}</p>
+      <p class="era-card__description">${escapeHTML(era.description)}</p>
       <div class="era-card__albums">
-        ${{era.albums.map((album, index) => \`
+        ${era.albums.map((album, index) => `
           <div class="era-album">
-            <span class="era-album__index">0${{index + 1}</span>
+            <span class="era-album__index">0${index + 1}</span>
             <div>
-              <h4>${{escapeHTML(album.title)}</h4>
-              <p>${{escapeHTML(album.note)}</p>
+              <h4>${escapeHTML(album.title)}</h4>
+              <p>${escapeHTML(album.note)}</p>
             </div>
           </div>
-        \`).join("")}
+        `).join("")}
       </div>
     </article>
-  \`).join("");
+  `).join("");
 }
 
 function renderArchiveProjects() {
   const container = document.getElementById("archive-projects");
   if (!container) return;
-  container.innerHTML = archiveProjectData.map((project, index) => \`
+  container.innerHTML = archiveProjectData.map((project, index) => `
     <article class="archive-card">
       <div class="archive-card__top">
-        <span class="archive-card__number">${{String(index + 1).padStart(2, "0")}</span>
-        <span class="archive-card__eyebrow">${{escapeHTML(project.eyebrow)}</span>
+        <span class="archive-card__number">${String(index + 1).padStart(2, "0")}</span>
+        <span class="archive-card__eyebrow">${escapeHTML(project.eyebrow)}</span>
       </div>
-      <h3>${{escapeHTML(project.title)}</h3>
-      <p class="archive-card__subtitle">${{escapeHTML(project.subtitle)}</p>
-      <p class="archive-card__description">${{escapeHTML(project.description)}</p>
-      ${{project.relation ? \`<p class="archive-card__relation">${{escapeHTML(project.relation)}</p>\` : ""}
-      ${{project.links?.length ? \`
+      <h3>${escapeHTML(project.title)}</h3>
+      <p class="archive-card__subtitle">${escapeHTML(project.subtitle)}</p>
+      <p class="archive-card__description">${escapeHTML(project.description)}</p>
+      ${project.relation ? `<p class="archive-card__relation">${escapeHTML(project.relation)}</p>` : ""}
+      ${project.links?.length ? `
         <div class="archive-card__links">
-          ${{project.links.map(link => \`
-            <a href="${{escapeHTML(link.url)}" target="_blank" rel="noopener noreferrer">${{escapeHTML(link.label)} <span aria-hidden="true">↗</span></a>
-          \`).join("")}
+          ${project.links.map(link => `
+            <a href="${escapeHTML(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(link.label)} <span aria-hidden="true">↗</span></a>
+          `).join("")}
         </div>
-      \` : ""}
+      ` : ""}
     </article>
-  \`).join("");
+  `).join("");
 }
 
 function filterSongList(category, btn) {
@@ -881,29 +881,29 @@ function filterSongList(category, btn) {
   }
   const searchCount = document.getElementById("search-count");
   if (searchCount) searchCount.textContent = category === "index169"
-    ? \`${{registered169Works.length} títulos del índice oficial\`
+    ? `${registered169Works.length} títulos del índice oficial`
     : category === "all"
-      ? \`${{songLoreDatabase.length} fichas agrupadas con análisis y extractos\`
-      : \`${{songLoreDatabase.filter(song => song.category === category).length} fichas agrupadas\`;
+      ? `${songLoreDatabase.length} fichas agrupadas con análisis y extractos`
+      : `${songLoreDatabase.filter(song => song.category === category).length} fichas agrupadas`;
 }
 
 function renderSongSelector(list) {
   const selector = document.getElementById("track-selector");
   if (!selector) return;
   if (!list.length) {
-    selector.innerHTML = \`<p class="empty-state">No hay coincidencias en esta categoría.</p>\`;
+    selector.innerHTML = `<p class="empty-state">No hay coincidencias en esta categoría.</p>`;
     const detail = document.getElementById("track-detail");
-    if (detail) detail.innerHTML = \`<div class="detail-placeholder"><span>∅</span><h3>Sin resultados</h3><p>Prueba con otro título o categoría.</p></div>\`;
+    if (detail) detail.innerHTML = `<div class="detail-placeholder"><span>∅</span><h3>Sin resultados</h3><p>Prueba con otro título o categoría.</p></div>`;
     window._currentSongList = [];
     return;
   }
   window._currentSongList = list;
-  selector.innerHTML = list.map((item, index) => \`
-    <button type="button" class="track-btn ${{index === 0 ? "is-active" : ""}" onclick="selectSongByIndex(${{index})">
-      <span class="track-btn__title">${{escapeHTML(item.title)}</span>
-      <span class="track-btn__category">${{escapeHTML(item.category === "index169" ? "ÍNDICE" : item.category.toUpperCase())}</span>
+  selector.innerHTML = list.map((item, index) => `
+    <button type="button" class="track-btn ${index === 0 ? "is-active" : ""}" onclick="selectSongByIndex(${index})">
+      <span class="track-btn__title">${escapeHTML(item.title)}</span>
+      <span class="track-btn__category">${escapeHTML(item.category === "index169" ? "ÍNDICE" : item.category.toUpperCase())}</span>
     </button>
-  \`).join("");
+  `).join("");
   displayTrackDetail(list[0]);
 }
 
@@ -919,29 +919,29 @@ function displayTrackDetail(song) {
   const container = document.getElementById("track-detail");
   if (!container || !song) return;
   if (song.category === "index169") {
-    container.innerHTML = \`
+    container.innerHTML = `
       <div class="detail-badge">TÍTULO EN EL REGISTRO · 2026-A-8311</div>
-      <h3 class="detail-title">${{escapeHTML(song.title)}</h3>
+      <h3 class="detail-title">${escapeHTML(song.title)}</h3>
       <p class="detail-text">Este título aparece en el índice de la compilación registrada. El portal todavía no dispone de una ficha individual desarrollada para esta obra; aquí no se sustituye la letra original por un texto genérico.</p>
       <div class="detail-document-link">
         <span>CONSULTA DOCUMENTAL</span>
         <a href="assets/documents/El-Chico-Invisible-Poemario-y-Letras-Completo-publico.pdf" target="_blank" rel="noopener noreferrer">Abrir la compilación completa ↗</a>
       </div>
-    \`;
+    `;
     return;
   }
-  container.innerHTML = \`
-    <div class="detail-badge">${{escapeHTML(song.album)} · ${{escapeHTML(song.character)}</div>
-    <h3 class="detail-title">${{escapeHTML(song.title)}</h3>
+  container.innerHTML = `
+    <div class="detail-badge">${escapeHTML(song.album)} · ${escapeHTML(song.character)}</div>
+    <h3 class="detail-title">${escapeHTML(song.title)}</h3>
     <div class="detail-section-title">Lectura y posición narrativa</div>
-    <p class="detail-text">${{escapeHTML(song.analysis)}</p>
+    <p class="detail-text">${escapeHTML(song.analysis)}</p>
     <div class="detail-section-title">Texto registrado / extracto</div>
-    <pre class="lyrics-box">${{escapeHTML(song.lyrics)}</pre>
+    <pre class="lyrics-box">${escapeHTML(song.lyrics)}</pre>
     <p class="detail-source-note">Ficha agrupada del portal. Para consultar el contenido completo, utiliza la compilación documental.</p>
     <div class="detail-document-link">
       <span>FUENTE COMPLETA</span>
       <a href="assets/documents/El-Chico-Invisible-Poemario-y-Letras-Completo-publico.pdf" target="_blank" rel="noopener noreferrer">Abrir la compilación ↗</a>
     </div>
-  \`;
+  `;
 }
 
