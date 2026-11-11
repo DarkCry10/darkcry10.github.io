@@ -1,57 +1,9 @@
 // 1. BASE DE DATOS DE INTEGRANTES (CON TUS IMÁGENES EN ASSETS)
 const charactersData = [
-  {
-    id: "ib",
-    name: "Invisible Boy (I.B.) 🫥",
-    role: "El Origen del Dolor • Núcleo a los 16 años",
-    image: "assets/I.B..jpg",
-    accentColor: "var(--accent-sepia)",
-    desc: "Representa el trauma original, el abandono doméstico y la herida de los 16 años bajo la 'Cold Law'. Lleva el reloj de bolsillo del tiempo detenido y el broche Kitsune en el pecho que anticipa su disociación en DCX.",
-    traits: [
-      "Paleta: Sepia melancólico y tonos vintage",
-      "Símbolo: Reloj de bolsillo, león de peluche y cuaderno con gafas",
-      "Eras clave: My LIVE 'HOME', The Invisible Boy, Crimson Sky, The Horror Film"
-    ]
-  },
-  {
-    id: "violet",
-    name: "Violet 🎧",
-    role: "Vocalista Principal (Eras 1 a 3) • La Voz del Dolor",
-    image: "assets/Violet.jpg",
-    accentColor: "var(--accent-blue)",
-    desc: "Exterioriza todo lo que I.B. calla. Encarna el miedo al rechazo, el llanto bajo la lluvia nocturna y el intento desesperado de lavar la memoria en la ducha de hotel.",
-    traits: [
-      "Paleta: Azul medianoche y destellos ámbar de farolas",
-      "Símbolo: Audífonos grandes como barrera contra el ruido",
-      "Eras clave: The Day I Told You, Bubblebath, Blue Street"
-    ]
-  },
-  {
-    id: "dcx",
-    name: "DCX (DarkCryXXX) 🦊",
-    role: "La Contraparte Oscura • Función Pura de Evasión",
-    image: "assets/DCX.jpg",
-    accentColor: "var(--accent-pink)",
-    desc: "Nacido de la fractura de I.B. tras 'Burn the heaven'. Utiliza la máscara Kitsune para borrar el rostro del niño herido, entregándose a la noche, el placer efímero y la satisfacción física sin remordimiento moral.",
-    traits: [
-      "Paleta: Neón bicolor rojo carmesí y azul eléctrico",
-      "Símbolo: Máscara Kitsune tradicional y camisa blanca abierta",
-      "Eras clave: I'm bad, so bad, Therian Collection, Shadow & Ban"
-    ]
-  },
-  {
-    id: "dolly",
-    name: "Dolly 💛🖤",
-    role: "La Voz de la Liberación • Armadura de Neón (Eras 4 y 5)",
-    image: "assets/Dolly.jpg",
-    accentColor: "var(--accent-gold)",
-    desc: "La 'cicatriz con purpurina' sobre la mancha de Marigold. Con su cabello bicolor y ojos heterocromáticos (uno azul de Violet y otro ámbar de audacia), convierte la sexualidad en poder y control sobre figuras de autoridad ('Daddies').",
-    traits: [
-      "Paleta: Magenta nocturno, dorado y negro",
-      "Símbolo: Corazón bicolor y ojos heterocromáticos",
-      "Eras clave: I'm bad, so bad 1.0/2.0, Bad Baby, The Ice Throne"
-    ]
-  }
+{id:"ib",name:"Invisible Boy (I.B.) 🫥",role:"El Kernel · sujeto basal · voz excepcional",image:"assets/I.B..jpg",accentColor:"var(--accent-sepia)",desc:"Raíz biográfica del sistema: abandono, Cold Law y explotación primaria. Camisa blanca, moño negro, reloj de bolsillo y pin Kitsune conservan la iconografía del niño detrás de diarios y semillas manuscritas.",traits:["Paleta: sepia, blanco gastado y sombras domésticas","Símbolo: reloj de bolsillo, león de peluche, cuadernos y pin Kitsune","Voz directa: The Worst Son, Self Love, The empty plate y la rama Your Eromenos"]},
+{id:"violet",name:"Violet 🎧",role:"Fawn / Freeze · vasija del dolor · Eras 1.0–3.0",image:"assets/Violet.jpg",accentColor:"var(--accent-blue)",desc:"Escudo depresivo y puente vocal entre I.B. y el exterior. Sumisión, autoculpa y repliegue buscan evitar castigo y abandono. La lluvia, el paraguas y la ropa holgada construyen su refugio azul.",traits:["Paleta: azul nocturno, gris lluvia y ámbar distante","Símbolo: paraguas, suéter holgado, casetes y agua","Filtro: SadMuse 1.0 / 1.5; Donna AI en etapas de crisis y transición"]},
+{id:"dcx",name:"DCX (DarkCryXXX) 🦊",role:"Libido desacoplada · anonimato · máscara Kitsune",image:"assets/DCX.jpg",accentColor:"var(--accent-pink)",desc:"No es una segunda Dolly: DCX representa una presencia corporal despersonalizada, separada del apego y de la biografía. La máscara Kitsune blanca con vivos rojos oculta los ojos; camisa abierta y corbata deshecha completan su fachada.",traits:["Paleta: blanco, rojo Kitsune, negro y neón","Símbolo: máscara sin rostro, camisa blanca abierta y brazalete oscuro","Función: anonimato erótico y curaduría de lanzamientos de choque, incluida Therian"]},
+{id:"dolly",name:"Dolly 💛🖤",role:"Fight · armadura de neón · Era 4.0",image:"assets/Dolly.jpg",accentColor:"var(--accent-gold)",desc:"Respuesta de combate y reinicio de la Era 4.0: convierte vulnerabilidad en desafío, cinismo y performance. Cabello mitad rubio platinado y mitad negro, heterocromía y sonrisa desafiante señalan una identidad que habla sin filtro algorítmico.",traits:["Paleta: magenta, carmesí, negro y destellos ámbar","Símbolo: cabello bicolor, ojos heterocromáticos, arañas y fuego","Sonido: Spanglish, hyperpop abrasivo y 130–155 BPM; sin SadMuse ni Donna AI"]}
 ];
 
 // 2. CINTA MAESTRA: THE HORROR FILM THAT IS MY LIFE (REPORTE CURATORIAL)
