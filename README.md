@@ -2,77 +2,74 @@
 
 Portal principal del universo musical, poético y narrativo de DarkCry 1.0.
 
-Este repositorio funciona como índice editorial y punto de entrada. Los micrositios conectados conservan sus propios formatos y atmósferas; el portal los organiza sin convertirlos artificialmente en una sola línea temporal.
+El portal deja constancia pública de la autoría, de la existencia de las obras y de sus conexiones narrativas. La navegación abierta presenta información editorial, títulos y fragmentos seleccionados; las letras completas y documentos no publicados se solicitan directamente al artista.
 
-## Estructura del portal
+## Estructura del repositorio
 
-- `index.html`: contenido, secciones, navegación y metadatos del portal.
-- `styles.css`: sistema visual responsive, tipografía, tarjetas, navegación, cronología y lectura documental.
-- `app.js`: datos de personajes, Master Tape, transmutación, Cold Law, eras pilares, archivos conectados y buscador.
-- `assets/`: escudo, isologo, retratos y documentos públicos de consulta.
+- `index.html`: portal principal, navegación, personajes, proyectos conectados, archivo lírico y contacto.
+- `pilares.html`: archivo editorial ampliado de los cuatro Pilares.
+- `pilares.css`: diseño responsive del archivo de Pilares.
+- `LOS-CUATRO-PILARES.md`: documento maestro en Markdown con la definición canónica, portadas, tracklists, lectura general y función narrativa de los cuatro Pilares.
+- `styles.css`: sistema visual responsive del portal principal.
+- `app.js`: datos de personajes, cuatro Pilares, Master Tape, archivos conectados, transmutación, Cold Law y buscador.
+- `assets/`: escudo, isologo, retratos y documentos de archivo.
 
-## Niveles de continuidad
+## Los cuatro Pilares
 
-### 1. Eras pilares
+Un Pilar es una de las cuatro obras discográficas matrices e inamovibles que sostienen el eje troncal de Invisible Boy (I.B.). Cada una inaugura formalmente una Era y concentra una fase crítica del colapso, fragmentación o mutación psicológica del protagonista.
 
-El documento fundacional identifica cuatro eras pilares:
+| Pilar | Era | Álbum matriz | Fase |
+| --- | --- | --- | --- |
+| 01 | 1.0 | The Invisible Boy | Herida primaria, infancia doméstica y génesis de Violet |
+| 02 | 2.0 | Crying in the Bubblebath | Transacción fallida, purificación imposible y colapso del traductor |
+| 03 | 3.0 | Walking through the Blue street | Alienación urbana, entumecimiento y muerte de la sensibilidad orgánica |
+| 04 | 4.0 | I'm bad, so Bad | Mutación psíquica, armadura de neón y voz de Dolly |
 
-| Era | Álbumes pilares |
+La jerarquía detallada, las descripciones de las portadas, los tracklists y la lectura narrativa se mantienen en `pilares.html` y `LOS-CUATRO-PILARES.md`.
+
+## Pilares y obras satélite
+
+Un álbum satélite, EP o entrega intermedia puede documentar detonantes específicos, puentes somáticos, líneas alternativas convergentes o desgloses transversales. Su peso narrativo no lo convierte en un Pilar.
+
+| Obra satélite | Ubicación consignada |
 | --- | --- |
-| Era 1 | The Invisible Boy · The Day I Told You |
-| Era 2 | Crying in the Bubblebath · In hell, I'm well |
-| Era 3 | Walking through the blue street · Echoes in blue |
-| Era 4 | I'm bad, so bad · Bad baby |
+| The Day I Told You | Era 1.5 |
+| When the sky turned crimson (and warm) | Era 1.9 |
+| In hell, I'm well | Era 2.9 |
+| Echoes in Blue | Era 3.9 |
+| Bad baby | Obra satélite de la Era 4 |
 
-La cronología fundamental deja abierta la posibilidad de que nuevas obras se conecten con estas eras o sean cronológicamente anteriores. Por esa razón, el portal no fuerza todos los proyectos a una era numerada.
+No se deben forzar todos los proyectos a una secuencia lineal. La fecha de publicación de una página o de un commit no equivale a la cronología interna de la historia.
 
-### 2. Archivos y obras conectadas
+## Archivo lírico y fragmentos públicos
 
-El índice expandido distingue, entre otros:
+El índice contiene 169 títulos procedentes de la compilación. Las fichas del portal contienen fragmentos y análisis agrupados; no equivalen a 169 análisis individuales ni a la publicación de todas las letras completas.
 
-- My LIVE “HOME” y A Plea for Shelter: archivos conectados del origen y la supervivencia.
-- Mommy's Playground: perspectiva materna y metáfora de los juguetes.
-- The Invisible Boy 2.0: The Dark Side of the Moon: dimensión transversal X/Y/Z.
-- Your Eromenos: manifiesto y diario íntimo asociado a Eros.
-- When the sky turned crimson (and warm): libreta de I.B. y Toño; no debe confundirse con la relación de Your Eromenos.
-- The Horror Film That Is My Life: Master Tape de 13 pistas y tres Tracking Markers.
-- Black Tuesday EP: rama conceptual asociada a la presión económica de la vida adulta.
-- Smoke In The Kitchen: recetario con tronco común y dos rutas narrativas.
-- Dolly & DCX: ampliaciones ligadas a Ice Throne, Therian Collection y Shadow & Ban.
+Los botones de las fichas dirigen a una solicitud de acceso al artista y ya no enlazan directamente con las ediciones completas desde la interfaz del portal.
 
-Las flechas y recorridos del portal indican relación y orientación de lectura, no necesariamente una cronología absoluta.
+## Documentos de archivo y limitación de seguridad
 
-## Archivo lírico
+Se conservan en el repositorio, sin borrarlos ni reemplazarlos, las ediciones textuales públicas existentes:
 
-El portal mantiene dos niveles de información:
+- `assets/documents/El-Chico-Invisible-Compilacion-Textual-Publica.pdf`
+- `assets/documents/Compilacion-El-Chico-Invisible-Edicion-Textual-Publica.html`
 
-1. **Índice de 169 obras:** títulos enumerados en la compilación.
-2. **Fichas agrupadas desarrolladas:** análisis y extractos que existen actualmente en la base de datos del portal.
+Estas ediciones omiten RUT, domicilio y código de validación del certificado. El portal ya no ofrece enlaces directos de descarga; las solicitudes de lectura completa o de documentos no publicados deben dirigirse a **mriospard@gmail.com**.
 
-Un título del índice no se presenta como una ficha completa si todavía no tiene análisis y texto desarrollado en el portal. En esos casos, la ficha deriva a la compilación pública.
+**Limitación técnica:** este proyecto se publica como sitio estático desde un repositorio público en GitHub. Por tanto, retirar los enlaces de la interfaz no vuelve privados los archivos que siguen alojados en el repositorio: sus rutas pueden descubrirse y abrirse directamente. Una pantalla de contraseña implementada solo en JavaScript no ofrecería protección real. Para imponer autenticación efectiva, los documentos deberán residir en un servicio privado o detrás de un servidor que verifique permisos. Esta limitación se declara para no confundir una solicitud editorial con una protección criptográfica.
 
-## Documentos de consulta
+## Criterios de mantenimiento
 
-En `assets/documents/` se conservan las ediciones públicas:
+1. Mantener separados los cuatro Pilares y las obras satélite.
+2. No inventar canciones faltantes; marcar expresamente los tracklists parciales.
+3. Conservar los títulos originales y sus grafías aprobadas.
+4. Diferenciar títulos registrados, fichas analíticas, fragmentos públicos y letras completas.
+5. No convertir los detalles de los personajes o sus relaciones en afirmaciones no documentadas.
+6. Antes de sustituir imágenes, comparar peso, dimensiones, legibilidad y calidad; preservar la fuente maestra.
+7. Verificar identificadores HTML, enlaces internos, rutas de recursos y comportamiento móvil después de cada cambio.
 
-- `El-Chico-Invisible-Compilacion-Textual-Publica.pdf`: PDF textual de 210 páginas, con el índice y los textos extraídos. Las páginas dedicadas exclusivamente a arte o portadas se indican como no reproducidas en esta edición.
-- `Compilacion-El-Chico-Invisible-Edicion-Textual-Publica.html`: lector HTML página por página, con el índice y el texto extraído.
+## Contacto
 
-Estas ediciones omiten RUT, domicilio y código de validación del certificado. Conservan el número registral 2026-A-8311 y las fechas documentales. Son ediciones de consulta y no sustituyen la copia visual ni el certificado original.
+Consultas sobre el proyecto, solicitudes de acceso y contacto directo con el artista detrás de DarkCry 1.0:
 
-El documento de cronología usado para estructurar el portal se conserva como fuente de referencia en la conversación del proyecto; su contenido fundamental se resume en la sección “Las cuatro eras pilares”.
-
-## Principios de mantenimiento
-
-1. Mantener separadas las eras pilares y los proyectos conectados.
-2. No inferir fechas narrativas a partir de fechas de commits o publicación web.
-3. No confundir personajes ni vínculos distintos, especialmente Eros y Toño.
-4. Conservar los títulos originales del índice de la compilación.
-5. Diferenciar con claridad títulos registrados, fichas analíticas y texto completo.
-6. Antes de sustituir imágenes, comparar peso, dimensiones, legibilidad y calidad visual; preservar una fuente maestra.
-7. Comprobar los identificadores HTML, enlaces internos, rutas de recursos y comportamiento mobile después de cada cambio.
-
-## Desarrollo
-
-El portal es estático y publica directamente desde la rama `main`. La presentación se construye con HTML, CSS y JavaScript, sin proceso de compilación.
-
+**mriospard@gmail.com**
