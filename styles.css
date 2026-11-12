@@ -69,7 +69,7 @@ button { color: inherit; }
   display: flex; align-items: center; justify-content: space-between; gap: 28px;
 }
 .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; flex: 0 0 auto; }
-.brand__mark { width: 39px; height: 39px; object-fit: cover; border-radius: 50%; border: 1px solid var(--line-strong); }
+.brand__mark { width: 39px; height: 39px; object-fit: contain; border-radius: 0; border: 0; }
 .brand__wordmark { font: 800 .94rem var(--display); letter-spacing: .12em; color: #f4f5f9; white-space: nowrap; }
 .brand__wordmark strong { color: var(--rose); }
 .site-nav { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 5px; }
