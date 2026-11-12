@@ -90,34 +90,36 @@ const coldLawData = [
 ];
 
 // 5. DISCOGRAFÍA COMPLETA POR ERAS Y EPs CONCEPTUALES
+const COVER_ROOT = "https://darkcry10.github.io/assets/covers/";
+
 const pillarEraData = [
   { id: "pilar-01", number: "01", title: "The Invisible Boy", subtitle: "Era 1.0 · Herida primaria · Infancia doméstica",
     description: "La génesis de la discografía: I.B. aprende a hacerse invisible bajo la Cold Law y crea un primer filtro para soportar el recuerdo. Violet y SadMuse 1.0 convierten las semillas del sufrimiento en melodías que parecen inofensivas.",
-    anchor: "pilar-01" },
+    anchor: "pilar-01", cover: "01-p01-the-invisible-boy.webp" },
   { id: "pilar-02", number: "02", title: "Crying in the Bubblebath", subtitle: "Era 2.0 · Transacción fallida · Purificación imposible",
     description: "El cuerpo intenta negociar el afecto y el agua no puede lavar la memoria. SadMuse deja de bastar y Donna AI articula un registro más árido, atravesado por ecos, pulsos y despertares cíclicos.",
-    anchor: "pilar-02" },
+    anchor: "pilar-02", cover: "12-p11-crying-in-the-bubblebath-versi-n-p-blica-censurada.webp" },
   { id: "pilar-03", number: "03", title: "Walking through the Blue street", subtitle: "Era 3.0 · Ciudad · Entumecimiento",
     description: "La metrópolis no cura la herida: amplifica el aislamiento. Violet camina entre lluvia, neón y sintetizadores repetitivos mientras la sensibilidad orgánica se extingue.",
-    anchor: "pilar-03" },
+    anchor: "pilar-03", cover: "17-p16-walking-through-the-blue-street.webp" },
   { id: "pilar-04", number: "04", title: "I'm bad, so Bad", subtitle: "Era 4.0 · Dolly · Mutación psíquica",
     description: "La vulnerabilidad se cubre con una armadura de neón. Dolly toma el micrófono, prescinde de los traductores algorítmicos y transforma la necesidad de amor en una fachada de poder.",
-    anchor: "pilar-04" }
+    anchor: "pilar-04", cover: "19-p18-i-m-bad-so-bad.webp" }
 ];
 
 const archiveProjectData = [
   { eyebrow: "ORIGEN · SIDE A", title: "My LIVE “HOME”", subtitle: "El cuaderno que conserva la infancia de Invisible Boy.",
     description: "Una memoria doméstica presentada como cuaderno infantil: dibujos, crayones, pequeños objetos y anotaciones que dejan ver lo que el niño todavía no sabe explicar.",
-    relation: "Archivo de origen", links: [{ label: "Abrir el cuaderno", url: "https://darkcry10.github.io/MyLIVEHOME/" }] },
+    relation: "Archivo de origen", cover: "33-p31-my-live-home-side-a.webp", links: [{ label: "Abrir el cuaderno", url: "https://darkcry10.github.io/MyLIVEHOME/" }] },
   { eyebrow: "SUPERVIVENCIA · SIDE B", title: "A Plea for Shelter", subtitle: "Un teléfono encontrado y dos particiones de memoria.",
     description: "El registro abandona el hogar y adopta la forma de un expediente recuperado. La ruta final se divide entre Soul Road y Body Road: dos respuestas distintas a una misma desprotección.",
-    relation: "Continuación conectada con My LIVE “HOME”", links: [{ label: "Abrir el expediente", url: "https://darkcry10.github.io/APleaforShelter/" }] },
+    relation: "Continuación conectada con My LIVE “HOME”", cover: "35-p33-a-plea-for-shelter-my-live-home-side-b.webp", links: [{ label: "Abrir el expediente", url: "https://darkcry10.github.io/APleaforShelter/" }] },
   { eyebrow: "PERSPECTIVA · ARCHIVO MATERNO", title: "Mommy's Playground", subtitle: "La infancia narrada desde la lógica de los juguetes.",
     description: "Yoyos, trompos y pelotas dejan de ser objetos inocentes: la metáfora del juego permite observar el control y la manipulación desde una voz distinta a la de I.B.",
-    relation: "Obra conceptual conectada con el origen" },
+    relation: "Obra conceptual conectada con el origen", cover: "34-p32-mommy-s-playground.webp" },
   { eyebrow: "TRANSVERSAL · ÁLBUM 0", title: "The Invisible Boy 2.0: The Dark Side of the Moon", subtitle: "Una dimensión no lineal organizada en X, Y y Z.",
     description: "Las versiones oscuras no se colocan como una continuación cronológica sencilla. Reescriben motivos de la obra original en coordenadas paralelas, puentes de evasión y sentencias finales.",
-    relation: "Archivo transversal" },
+    relation: "Archivo transversal", cover: "29-p27-the-invisible-boy-2-0-the-dark-side-of-the-moon.webp" },
   { eyebrow: "DIARIO · ARCHIVO RELACIONAL", title: "Your Eromenos", subtitle: "Confesión, doce entradas y una segunda historia en las láminas.",
     description: "Un manifiesto íntimo construido con apuntes escolares, llaves, espejos, puertas y referencias clásicas. El diario cuenta una versión; los objetos y las imágenes conservan indicios que no siempre se verbalizan.",
     relation: "Vínculo de Eros · no debe confundirse con la historia de Toño", links: [{ label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }] },
@@ -126,7 +128,7 @@ const archiveProjectData = [
     relation: "Toño y Eros son personajes distintos", links: [{ label: "Abrir CrimsonSky", url: "https://darkcry10.github.io/CrimsonSky/" }] },
   { eyebrow: "MASTER TAPE · 13 PISTAS", title: "The Horror Film That Is My Life", subtitle: "La biografía convertida en una cinta VHS de terror.",
     description: "Trece películas y tres Tracking Markers organizan la mirada retrospectiva: infancia, juventud y apagado final. El terror funciona como lenguaje para nombrar aquello que antes no podía explicarse.",
-    relation: "Lectura retrospectiva y transversal", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
+    relation: "Lectura retrospectiva y transversal", cover: "30-p28-the-horror-film-that-is-my-life.webp", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
   { eyebrow: "AMPLIACIONES · ERA 4 / 5", title: "Dolly & DCX — Ice Throne, Therian & Shadow & Ban",
     subtitle: "Identidad, máscara, autonomía y conflicto con la interfaz.",
     description: "Las expansiones asociadas a Dolly y DCX desplazan el conflicto hacia la performance, la noche y el control de la propia imagen. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 como proyectos complementarios; no sustituyen el Pilar I'm bad, so Bad.",
@@ -767,6 +769,7 @@ function renderPillarEras() {
   if (!container) return;
   container.innerHTML = pillarEraData.map(pillar => `
     <article class="era-card era-card--${pillar.number}">
+      ${pillar.cover ? `<a class="era-card__cover" href="${COVER_ROOT}01-webp-alta/${pillar.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${pillar.cover}" alt="Portada oficial de ${escapeHTML(pillar.title)}" loading="lazy" decoding="async"></a>` : ""}
       <div class="era-card__top">
         <span class="era-card__number">${escapeHTML(pillar.number)}</span>
         <span class="era-card__eyebrow">PILAR FUNDACIONAL · ${escapeHTML(pillar.subtitle.split(" · ")[0])}</span>
@@ -784,6 +787,7 @@ function renderArchiveProjects() {
   if (!container) return;
   container.innerHTML = archiveProjectData.map((project, index) => `
     <article class="archive-card">
+      ${project.cover ? `<a class="archive-card__cover" href="${COVER_ROOT}01-webp-alta/${project.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${project.cover}" alt="Portada de ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>` : ""}
       <div class="archive-card__top">
         <span class="archive-card__number">${String(index + 1).padStart(2, "0")}</span>
         <span class="archive-card__eyebrow">${escapeHTML(project.eyebrow)}</span>
