@@ -38,7 +38,7 @@ Estas cuatro portadas deben funcionar como imagen principal de sus respectivas t
 - assets/covers/collections/ — Therian y colecciones relacionadas.
 - assets/covers/identity/ — escudo e isologo.
 
-Importante: este commit añade el mapa editorial, no los archivos binarios. Las referencias HTML deben añadirse solo después de que los archivos de imagen estén realmente publicados en assets/covers/, para evitar imágenes rotas.
+Estado: la biblioteca de imágenes está publicada en `assets/covers/`; las páginas de los tres proyectos utilizan sus rutas públicas. El archivo conserva las variantes históricas separadas y la biblioteca activa incluye 60 piezas.
 
 
 ## Integración efectiva de portadas
