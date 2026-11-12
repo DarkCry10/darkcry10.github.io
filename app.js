@@ -98,7 +98,7 @@ const pillarEraData = [
     anchor: "pilar-01", cover: "01-p01-the-invisible-boy.webp" },
   { id: "pilar-02", number: "02", title: "Crying in the Bubblebath", subtitle: "Era 2.0 · Transacción fallida · Purificación imposible",
     description: "El cuerpo intenta negociar el afecto y el agua no puede lavar la memoria. SadMuse deja de bastar y Donna AI articula un registro más árido, atravesado por ecos, pulsos y despertares cíclicos.",
-    anchor: "pilar-02", cover: "12-p11-crying-in-the-bubblebath-versi-n-p-blica-censurada.webp" },
+    anchor: "pilar-02", cover: "12-p11-crying-in-the-bubblebath.webp" },
   { id: "pilar-03", number: "03", title: "Walking through the Blue street", subtitle: "Era 3.0 · Ciudad · Entumecimiento",
     description: "La metrópolis no cura la herida: amplifica el aislamiento. Violet camina entre lluvia, neón y sintetizadores repetitivos mientras la sensibilidad orgánica se extingue.",
     anchor: "pilar-03", cover: "17-p16-walking-through-the-blue-street.webp" },
