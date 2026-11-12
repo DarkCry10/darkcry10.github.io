@@ -134,10 +134,11 @@ const archiveProjectData = [
     description: "Las expansiones asociadas a Dolly y DCX desplazan el conflicto hacia la performance, la noche y el control de la propia imagen. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 como proyectos complementarios; no sustituyen el Pilar I'm bad, so Bad.",
     relation: "Proyectos y colecciones complementarias · no son nuevos pilares cronológicos", covers: ["38-p36-the-ice-throne.webp", "51-p46-therian-collection-kitty-kitty.webp", "59-p49-shadow-ban.webp"] },
   { eyebrow: "ERA 3 · RAMA CONCEPTUAL", title: "Black Tuesday EP", subtitle: "La asfixia económica y el cansancio de la vida adulta.",
-    description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices." },
+    description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices.",
+    cover: "60-black-tuesday-ep.webp" },
   { eyebrow: "PROYECTO ANUNCIADO · ARCHIVO DOMÉSTICO", title: "Smoke In The Kitchen", subtitle: "Un recetario de 1955 que se abre en dos decisiones.",
     description: "Cinco recetas forman el tronco común. Después, Dolly's Path aviva el fuego y Violet's Decision permanece entre humo y anestesia. El formato de cocina transforma el deseo, el hambre y la resignación en lenguaje doméstico.",
-    relation: "Proyecto anunciado para el 26 de noviembre de 2026", links: [{ label: "Abrir el recetario", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
+    relation: "Proyecto anunciado para el 26 de noviembre de 2026", cover: "61-smoke-in-the-kitchen.webp", links: [{ label: "Abrir el recetario", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
 ];
 
 const songLoreDatabase = [
