@@ -40,3 +40,7 @@ Estas cuatro portadas deben funcionar como imagen principal de sus respectivas t
 - assets/covers/identity/ — escudo e isologo.
 
 Importante: este commit añade el mapa editorial, no los archivos binarios. Las referencias HTML deben añadirse solo después de que los archivos de imagen estén realmente publicados en assets/covers/, para evitar imágenes rotas.
+
+
+## Integración efectiva de portadas
+La biblioteca pública central se encuentra en [assets/covers](https://github.com/DarkCry10/darkcry10.github.io/tree/main/assets/covers). Los sitios complementarios consumen sus WebP mediante rutas públicas del dominio darkcry10.github.io. Las portadas de alta calidad están en `01-webp-alta/`, las miniaturas en `02-miniaturas/` y el catálogo en `03-catalogo/`.
