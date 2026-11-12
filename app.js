@@ -1,9 +1,9 @@
 // 1. BASE DE DATOS DE INTEGRANTES (CON TUS IMÁGENES EN ASSETS)
 const charactersData = [
 {id:"ib",name:"Invisible Boy (I.B.) 🫥",role:"El Kernel · sujeto basal · voz excepcional",image:"assets/I.B..jpg",accentColor:"var(--accent-sepia)",desc:"Raíz biográfica del sistema: abandono, Cold Law y explotación primaria. Camisa blanca, moño negro, reloj de bolsillo y pin Kitsune conservan la iconografía del niño detrás de diarios y semillas manuscritas.",traits:["Paleta: sepia, blanco gastado y sombras domésticas","Símbolo: reloj de bolsillo, león de peluche, cuadernos y pin Kitsune","Voz directa: The Worst Son, Self Love, The empty plate y la rama Your Eromenos"]},
-{id:"violet",name:"Violet 🎧",role:"Fawn / Freeze · vasija del dolor · Eras 1.0–3.0",image:"assets/Violet.jpg",accentColor:"var(--accent-blue)",desc:"Escudo depresivo y puente vocal entre I.B. y el exterior. Sumisión, autoculpa y repliegue buscan evitar castigo y abandono. La lluvia, el paraguas y la ropa holgada construyen su refugio azul.",traits:["Paleta: azul nocturno, gris lluvia y ámbar distante","Símbolo: paraguas, suéter holgado, casetes y agua","Filtro: SadMuse 1.0 / 1.5; Donna AI en etapas de crisis y transición"]},
+{id:"violet",name:"Violet 🎧",role:"Repliegue · vasija del dolor · Eras 1.0–3.0",image:"assets/Violet.jpg",accentColor:"var(--accent-blue)",desc:"Escudo depresivo y puente vocal entre I.B. y el exterior. Sumisión, autoculpa y repliegue buscan evitar castigo y abandono. La lluvia, el paraguas y la ropa holgada construyen su refugio azul.",traits:["Paleta: azul nocturno, gris lluvia y ámbar distante","Símbolo: paraguas, suéter holgado, casetes y agua","Filtro: SadMuse 1.0 / 1.5; Donna AI en etapas de crisis y transición"]},
 {id:"dcx",name:"DCX (DarkCryXXX) 🦊",role:"Libido desacoplada · anonimato · máscara Kitsune",image:"assets/DCX.jpg",accentColor:"var(--accent-pink)",desc:"No es una segunda Dolly: DCX representa una presencia corporal despersonalizada, separada del apego y de la biografía. La máscara Kitsune blanca con vivos rojos oculta los ojos; camisa abierta y corbata deshecha completan su fachada.",traits:["Paleta: blanco, rojo Kitsune, negro y neón","Símbolo: máscara sin rostro, camisa blanca abierta y brazalete oscuro","Función: anonimato erótico y curaduría de lanzamientos de choque, incluida Therian"]},
-{id:"dolly",name:"Dolly 💛🖤",role:"Fight · armadura de neón · Era 4.0",image:"assets/Dolly.jpg",accentColor:"var(--accent-gold)",desc:"Respuesta de combate y reinicio de la Era 4.0: convierte vulnerabilidad en desafío, cinismo y performance. Cabello mitad rubio platinado y mitad negro, heterocromía y sonrisa desafiante señalan una identidad que habla sin filtro algorítmico.",traits:["Paleta: magenta, carmesí, negro y destellos ámbar","Símbolo: cabello bicolor, ojos heterocromáticos, arañas y fuego","Sonido: Spanglish, hyperpop abrasivo y 130–155 BPM; sin SadMuse ni Donna AI"]}
+{id:"dolly",name:"Dolly 💛🖤",role:"Contraataque · armadura de neón · Era 4.0",image:"assets/Dolly.jpg",accentColor:"var(--accent-gold)",desc:"Respuesta desafiante y reinicio de la Era 4.0: convierte vulnerabilidad en desafío, cinismo y performance. Cabello mitad rubio platinado y mitad negro, heterocromía y sonrisa desafiante señalan una identidad que habla sin filtro algorítmico.",traits:["Paleta: magenta, carmesí, negro y destellos ámbar","Símbolo: cabello bicolor, ojos heterocromáticos, arañas y fuego","Sonido: Spanglish, hyperpop abrasivo y 130–155 BPM; sin SadMuse ni Donna AI"]}
 ];
 
 // 2. CINTA MAESTRA: THE HORROR FILM THAT IS MY LIFE (REPORTE CURATORIAL)
@@ -27,7 +27,7 @@ const masterTapeData = [
       { num: 7, title: "Exorcism (TM 2)", trope: "Negligencia Institucional", desc: "Pides ayuda al doctor y al sacerdote y responden que 'es un show y exageras'." },
       { num: 8, title: "Vampire heart", trope: "La Madre Vampira", desc: "Primera confrontación directa en segunda persona ('You drank their souls'): devora el espíritu de sus hijos." },
       { num: 9, title: "The Black Cat", trope: "Poe / Culpa Emparedada", desc: "Los crímenes ocultos bajo el concreto helado y la soga al cuello llamada 'familia'." },
-      { num: 10, title: "Psycho", trope: "Tríada Disociativa", desc: "Partirse en tres ('Me, you, and him') hablando solo en el pasillo para sobrevivir a la madre." },
+      { num: 10, title: "Psycho", trope: "Tríada de voces", desc: "Partirse en tres ('Me, you, and him') hablando solo en el pasillo para sobrevivir a la madre." },
       { num: 11, title: "Succubus", trope: "El Corazón Real del Álbum", desc: "Tras el campo de cempasúchil y las sábanas de seda, el protagonista habita el insulto: se vuelve súcubo como armadura." },
       { num: 12, title: "Frankenstein", trope: "El Cuerpo que Queda", desc: "El primogénito como experimento en el sótano, cosido con los traumas de ella y de él, cortado con tape rewind." }
     ]
@@ -62,7 +62,7 @@ const transmutationData = [
     items: [
       "<strong>Más/Age vs. Más/Ag:</strong> 'Hermanas siamesas'. La V1 crea un shock silencioso con ritmo hipnótico/relajante; la V2 explota en Electro-Hyperpop y Reguetón.",
       "<strong>I'm Ok (1.0 vs. 2.0):</strong> La 1.0 es la mentira cotidiana para encajar; la 2.0 es el 'funeral de la paz mental' con cuerdas y coros de iglesia.",
-      "<strong>When I'm gone vs. Before I cry:</strong> Dos producciones opuestas para reflejar el bucle atrapado de la depresión clínica.",
+      "<strong>When I'm gone vs. Before I cry:</strong> Dos producciones opuestas para reflejar el bucle atrapado del abatimiento.",
       "<strong>Sickness vs. My fault:</strong> La misma esencia de 'suciedad' que cambia de estilo para representar el momento terminal de la sobredosis en el clóset.",
       "<strong>Ring Ring (The EP):</strong> 9 versiones (Toy Phone, Nokia, Stuart Hughes Gold) que reinterpretan la misma mentira telefónica."
     ]
