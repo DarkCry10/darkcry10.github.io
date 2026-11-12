@@ -43,3 +43,9 @@ Importante: este commit añade el mapa editorial, no los archivos binarios. Las 
 
 ## Integración efectiva de portadas
 La biblioteca pública central se encuentra en [assets/covers](https://github.com/DarkCry10/darkcry10.github.io/tree/main/assets/covers). Los sitios complementarios consumen sus WebP mediante rutas públicas del dominio darkcry10.github.io. Las portadas de alta calidad están en `01-webp-alta/`, las miniaturas en `02-miniaturas/` y el catálogo en `03-catalogo/`.
+
+
+## Carátulas incorporadas posteriormente
+- The Horror Film That Is My Life — portada final suministrada por el artista.
+- Black Tuesday EP — Era 3 / obra conceptual conectada.
+- Smoke In The Kitchen — proyecto anunciado para el 26 de noviembre de 2026.
