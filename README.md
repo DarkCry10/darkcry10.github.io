@@ -82,3 +82,7 @@ La versión editorial 1.5 amplía el portal sin alterar la jerarquía del canon 
 ## Sitios hermanos
 - Los cuatro Pilares: https://github.com/DarkCry10/los4pilares
 - The Atlas: https://github.com/DarkCry10/theatlas
+
+
+## Registro de portadas
+[Consultar inventario, correspondencia editorial y notas de canon](./COVER-REGISTER.md).
