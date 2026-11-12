@@ -125,14 +125,14 @@ const archiveProjectData = [
     relation: "Vínculo de Eros · no debe confundirse con la historia de Toño", links: [{ label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }] },
   { eyebrow: "DIARIO · ERA 1.9", title: "When the sky turned crimson (and warm)", subtitle: "Una libreta perdida organizada por días, semanas y meses.",
     description: "El relato de I.B. y Toño se despliega como un doble acto: ilusión de refugio, encuentro, conflicto religioso, memoria corporal y pérdida. Es un vínculo distinto al de Your Eromenos.",
-    relation: "Toño y Eros son personajes distintos", links: [{ label: "Abrir CrimsonSky", url: "https://darkcry10.github.io/CrimsonSky/" }] },
+    relation: "Toño y Eros son personajes distintos", cover: "10-p09-when-the-sky-turned-crimson-and-warm-side-a.webp", links: [{ label: "Abrir CrimsonSky", url: "https://darkcry10.github.io/CrimsonSky/" }] },
   { eyebrow: "MASTER TAPE · 13 PISTAS", title: "The Horror Film That Is My Life", subtitle: "La biografía convertida en una cinta VHS de terror.",
     description: "Trece películas y tres Tracking Markers organizan la mirada retrospectiva: infancia, juventud y apagado final. El terror funciona como lenguaje para nombrar aquello que antes no podía explicarse.",
     relation: "Lectura retrospectiva y transversal", cover: "30-p28-the-horror-film-that-is-my-life.webp", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
   { eyebrow: "AMPLIACIONES · ERA 4 / 5", title: "Dolly & DCX — Ice Throne, Therian & Shadow & Ban",
     subtitle: "Identidad, máscara, autonomía y conflicto con la interfaz.",
     description: "Las expansiones asociadas a Dolly y DCX desplazan el conflicto hacia la performance, la noche y el control de la propia imagen. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 como proyectos complementarios; no sustituyen el Pilar I'm bad, so Bad.",
-    relation: "Proyectos y colecciones complementarias · no son nuevos pilares cronológicos" },
+    relation: "Proyectos y colecciones complementarias · no son nuevos pilares cronológicos", covers: ["38-p36-the-ice-throne.webp", "51-p46-therian-collection-kitty-kitty.webp", "59-p49-shadow-ban.webp"] },
   { eyebrow: "ERA 3 · RAMA CONCEPTUAL", title: "Black Tuesday EP", subtitle: "La asfixia económica y el cansancio de la vida adulta.",
     description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices." },
   { eyebrow: "PROYECTO ANUNCIADO · ARCHIVO DOMÉSTICO", title: "Smoke In The Kitchen", subtitle: "Un recetario de 1955 que se abre en dos decisiones.",
@@ -787,7 +787,7 @@ function renderArchiveProjects() {
   if (!container) return;
   container.innerHTML = archiveProjectData.map((project, index) => `
     <article class="archive-card">
-      ${project.cover ? `<a class="archive-card__cover" href="${COVER_ROOT}01-webp-alta/${project.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${project.cover}" alt="Portada de ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>` : ""}
+      ${project.covers?.length ? `<div class="archive-card__cover-strip">${project.covers.map((file, coverIndex) => `<a href="${COVER_ROOT}01-webp-alta/${file}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${file}" alt="Imagen ${coverIndex + 1} de la colección ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>`).join("")}</div>` : project.cover ? `<a class="archive-card__cover" href="${COVER_ROOT}01-webp-alta/${project.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${project.cover}" alt="Portada de ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>` : ""}
       <div class="archive-card__top">
         <span class="archive-card__number">${String(index + 1).padStart(2, "0")}</span>
         <span class="archive-card__eyebrow">${escapeHTML(project.eyebrow)}</span>
