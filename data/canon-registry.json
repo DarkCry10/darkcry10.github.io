@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0",
+  "title": "DarkCry 1.0 — Canon Registry",
+  "status": "editorial reference; keep synchronized with Dropbox CTs and the Atlas",
+  "principles": [
+    "The four Pilares remain the four trunk works; satellite, transversal and route projects do not create a fifth Pilar.",
+    "Discographic order, classification position and diegetic event order are different fields.",
+    "A voice/avatar does not automatically identify a separate protagonist.",
+    "A transmutation or repeated track does not automatically represent a new diegetic event.",
+    "A/B is assigned only to a deliberately designed counterpart or branch; never infer it from vocalist alone."
+  ],
+  "pillars": [
+    {
+      "number": 1,
+      "era": "1.0",
+      "title": "The Invisible Boy",
+      "function": "childhood domestic wound and Cold Law"
+    },
+    {
+      "number": 2,
+      "era": "2.0",
+      "title": "Crying in the Bubblebath",
+      "function": "failed search, somatic transaction and impossible cleansing"
+    },
+    {
+      "number": 3,
+      "era": "3.0",
+      "title": "Walking through the Blue Street",
+      "function": "urban alienation, grief and emotional numbing"
+    },
+    {
+      "number": 4,
+      "era": "4.0",
+      "title": "I'm bad, so Bad",
+      "function": "Dolly's neon armor and reactive counterattack"
+    }
+  ],
+  "classification": {
+    "trunkEras": [
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0"
+    ],
+    "subEras": [
+      "1.5",
+      "1.9",
+      "2.9",
+      "3.9"
+    ],
+    "transversalCoordinates": {
+      "X": "childhood and early domestic reality; parallel to Era 1.0",
+      "Y": "adolescence, grooming/exploitation, urban flight and defensive hardening; crosses 1.5–3.0",
+      "Z": "adulthood; affective/domestic and material/economic dimensions; after Era 4.0"
+    },
+    "trackingMarkers": "TM1–TM3 belong to The Horror Film That Is My Life; do not conflate them with X/Y/Z.",
+    "eraZ": {
+      "ageRange": "22–26",
+      "relationshipContext": "approximately four years of marriage with Cristopher",
+      "dimensions": {
+        "affective": "domesticity, marriage, intimacy, desire, self-sabotage and Violet/Dolly defensive responses",
+        "material": "work, corporations, dismissal, debt and economic pressure"
+      },
+      "matrixAlbum": "Smoke in the Kitchen",
+      "sharedTracks": [
+        "Gingerbread House",
+        "Substitute Milk",
+        "Heavy Meal",
+        "Filet, Ribeye",
+        "Coffee"
+      ],
+      "routeA": {
+        "name": "Incineration",
+        "defense": "Dolly",
+        "tracks": [
+          "Spicy",
+          "Higher Fire",
+          "Change the Cook"
+        ],
+        "epilogue": [
+          "Keep the Wrapper"
+        ],
+        "expansion": "The Ice Throne",
+        "outcome": "provisional defensive victory through counterattack, control and escape"
+      },
+      "routeB": {
+        "name": "Negotiation leading toward asphyxia",
+        "defense": "Violet",
+        "tracks": [
+          "Red Velvet",
+          "Cherry-flavored Cough Syrup",
+          "A Bitter Swallow / the best part is the end",
+          "Black Licorice"
+        ],
+        "expansion": "An Oxbow Made, from Me",
+        "outcome": "provisional defensive victory through staying, self-silencing and somatic withdrawal"
+      },
+      "routeRule": "A/B labels describe narrative counterpart/route affiliation, not voice identity. A song may belong to Route B while containing Dolly's interventions."
+    }
+  },
+  "convergentLines": [
+    {
+      "projects": [
+        "My LIVE HOME — Side B / A Plea for Shelter",
+        "Walking through the Blue Street"
+      ],
+      "placement": "A Plea for Shelter Side B is placed after When the Sky Turned Crimson (and warm), Era 1.9.",
+      "diegeticRelation": "Its material journey (street, hunger, shelter, hotels and survival) runs through the same urban traversal represented emotionally by Walking through the Blue Street.",
+      "interpretation": "Convergent perspectives of one journey, not two wholly consecutive journeys."
+    },
+    {
+      "projects": [
+        "Echoes of Blue"
+      ],
+      "relation": "Era 3.9 echo/re-reading of experiences from the convergent urban traversal.",
+      "rule": "Repeated or transmuted tracks must not be counted as new nights or events unless a source explicitly establishes a new event."
+    }
+  ],
+  "toñoConnections": [
+    {
+      "song": "Erase You",
+      "referent": "Toño",
+      "function": "attempt to erase the relationship and move through the city Toño had spoken about"
+    },
+    {
+      "song": "Broken",
+      "referent": "Toño",
+      "function": "searching for the feeling associated with Toño in other bodies and encounters"
+    },
+    {
+      "song": "When You Left",
+      "referent": "Toño",
+      "function": "explicit abandonment and waiting; the loss continues during material survival"
+    }
+  ],
+  "transmutation": {
+    "moneda": "two faces of a shared conceptual seed; wording, perspective, rhythm or structure may vary",
+    "espejo": "a deliberately paired reflection/inversion; may preserve verbal material while changing arrangement or affective temperature",
+    "darkVersion": "corruption or hardening of an earlier seed into a defensive function",
+    "temporalRule": "classify the relationship first; do not infer a new event solely from a new title, arrangement or version"
+  },
+  "voices": {
+    "I_B": "biographical subject and kernel",
+    "Violet": "repliegue, self-blame, accommodation and withdrawal; remains possible after Era 4.0 and reappears in Z-B",
+    "Dolly": "counterattack, control, provocation and escape; dominant in Era 4.0 and reappears in Z-A",
+    "DCX": "distinct Kitsune-mask/anonymous persona; not an interchangeable synonym for Dolly"
+  },
+  "symbolicChains": [
+    {
+      "motif": "water",
+      "chain": [
+        "Marigold Scent",
+        "Ocean Abyss",
+        "The Water Won't Wash",
+        "Crying in the Bubblebath"
+      ],
+      "meaning": "attempted cleansing cannot remove memory"
+    },
+    {
+      "motif": "home/bed",
+      "chain": [
+        "My LIVE HOME",
+        "Silk Sheets",
+        "Hotel Bed",
+        "Immaculate Prison",
+        "Black Silk"
+      ],
+      "meaning": "refuge, intimacy, transaction and eventual confinement"
+    },
+    {
+      "motif": "food/kitchen",
+      "chain": [
+        "The Empty Plate",
+        "Gingerbread House",
+        "Substitute Milk",
+        "Heavy Meal",
+        "Filet, Ribeye",
+        "Coffee"
+      ],
+      "meaning": "material hunger becomes affective appetite and domestic disconnection"
+    },
+    {
+      "motif": "toys",
+      "chain": [
+        "Stuffed Lion",
+        "Mommy's Playground",
+        "Broken Doll",
+        "Captivity"
+      ],
+      "meaning": "comfort, coercion, repetition and the reversal of the trapped/guardian image"
+    },
+    {
+      "motif": "fabric",
+      "chain": [
+        "Silk Sheets",
+        "Red Velvet",
+        "Black Silk"
+      ],
+      "meaning": "romantic shelter, attempted reconnection and somatic mourning"
+    }
+  ],
+  "releaseStatus": {
+    "Smoke in the Kitchen": {
+      "status": "announced",
+      "announcedReleaseDate": "2026-11-26",
+      "note": "Do not describe as released before the confirmed publication date."
+    }
+  }
+}
