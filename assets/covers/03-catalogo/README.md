@@ -35,7 +35,7 @@ Los cuatro Pilares matrices, en el orden canónico vigente, son:
 3. `Walking Through the Blue Street` — Era 3.0.
 4. `I'm bad, so bad` — Era 4.0.
 
-El Side B de `When the Sky Turned Crimson (and warm)` permanece en Era 1.9 y no es el Pilar 3. Si una versión anterior del Documento maestro lo rotula como «Pilar 3», esa anotación no se adopta: **Pilar 03 es Walking Through the Blue Street**, hasta una revisión futura explícita del canon.
+`Echoes of Blue` es el nombre editorial utilizado para la obra de Era 3.9, aunque los nombres técnicos de sus archivos WebP conservan el identificador histórico `echoes-in-blue`. `Black Tuesday EP` pertenece a la dimensión material/económica de Era Z y no recibe ruta A/B automáticamente. El Side B de `When the Sky Turned Crimson (and warm)` permanece en Era 1.9 y no es el Pilar 3. Si una versión anterior del Documento maestro lo rotula como «Pilar 3», esa anotación no se adopta: **Pilar 03 es Walking Through the Blue Street**, hasta una revisión futura explícita del canon.
 
 Las imágenes sin identificación narrativa concluyente se conservan como referencias visuales sin forzarles un título/canon. `Captivity` se mantiene como easter egg / no canon formal, según la descripción del documento fuente.
 
