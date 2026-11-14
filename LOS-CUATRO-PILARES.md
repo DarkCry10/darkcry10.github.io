@@ -10,6 +10,8 @@ Un Pilar no equivale a cualquier álbum. Su jerarquía es fundacional: inaugura 
 
 Los álbumes satélite, EPs y entregas intermedias son puentes somáticos, líneas alternativas convergentes o desgloses transversales. Documentan detonantes concretos y explican cómo la mente transita entre fases; no sustituyen ni elevan la jerarquía de los cuatro Pilares.
 
+**Orden canónico vigente:** 01 *The Invisible Boy* → 02 *Crying in the Bubblebath* → 03 *Walking Through the Blue Street* → 04 *I'm bad, so Bad*. Se mantiene hasta una revisión futura explícita. El Side B de *When the Sky Turned Crimson (and warm)* permanece en Era 1.9; cualquier anotación anterior que lo denomine «Pilar 3» es una etiqueta heredada no adoptada.
+
 ---
 
 ## Pilar 01 — The Invisible Boy
@@ -78,12 +80,12 @@ La consecuencia narrativa es la consagración de la prostitución emocional de I
 
 ---
 
-## Pilar 03 — Walking through the Blue street
+## Pilar 03 — Walking Through the Blue Street
 
 **Era 3.0 · Metrópolis, alienación geográfica y muerte de la sensibilidad orgánica**
 
 ### Portada
-La imagen se satura de azul cobalto, lluvia y neblina de asfalto. En el centro, Violet camina sola por una avenida metropolitana flanqueada por farolas húmedas y reflejos titilantes. Lleva audífonos de diadema, la cabeza cabizbaja y las manos dentro de los bolsillos. El título *Walking through the Blue street* y la rúbrica *DarkCry 1.0* aparecen en blanco con resplandores azulados, integrados al frío y a la desconexión urbana.
+La imagen se satura de azul cobalto, lluvia y neblina de asfalto. En el centro, Violet camina sola por una avenida metropolitana flanqueada por farolas húmedas y reflejos titilantes. Lleva audífonos de diadema, la cabeza cabizbaja y las manos dentro de los bolsillos. El título *Walking Through the Blue Street* y la rúbrica *DarkCry 1.0* aparecen en blanco con resplandores azulados, integrados al frío y a la desconexión urbana.
 
 ### Tracklist
 1. *I'm down*
@@ -164,18 +166,18 @@ En la arquitectura de DarkCry 1.0, las herramientas de producción no son solo u
 
 1. **The Invisible Boy:** el niño aprende a ocultarse y crea un filtro para tolerar el recuerdo.
 2. **Crying in the Bubblebath:** el cuerpo intenta negociar el afecto y la purificación fracasa.
-3. **Walking through the Blue street:** la huida urbana anestesia la sensibilidad, pero no resuelve el trauma.
+3. **Walking Through the Blue Street:** la huida urbana anestesia la sensibilidad, pero no resuelve el trauma.
 4. **I'm bad, so Bad:** Dolly convierte la desconexión en una armadura de poder y silencia la voz vulnerable.
 
 **De la invisibilidad a la armadura:** los cuatro Pilares no son simplemente cuatro discos; son cuatro estados estructurales de una misma fractura.
 
 ## Continuidad convergente y consecuencias posteriores
 
-Los cuatro Pilares conservan su orden y jerarquía: `The Invisible Boy` (1.0), `Crying in the Bubblebath` (2.0), `Walking through the Blue Street` (3.0) e `I'm bad, so Bad` (4.0). Las obras complementarias amplían el mapa sin constituir un quinto Pilar.
+Los cuatro Pilares conservan su orden y jerarquía: `The Invisible Boy` (1.0), `Crying in the Bubblebath` (2.0), `Walking Through the Blue Street` (3.0) e `I'm bad, so Bad` (4.0). Las obras complementarias amplían el mapa sin constituir un quinto Pilar.
 
-### A Plea for Shelter y Walking through the Blue Street
+### A Plea for Shelter y Walking Through the Blue Street
 
-El Side B de `My LIVE "HOME"` / `A Plea for Shelter` se sitúa después de `When the Sky Turned Crimson (and warm)` (1.9). Su recorrido material —calle, hambre, refugios, hoteles y supervivencia— converge con la travesía urbana que `Walking through the Blue Street` narra desde la dimensión emocional. El «You» de `Erase You`, `Broken` y `When You Left` remite a Toño. `Echoes of Blue` (3.9) recupera esa experiencia como eco y relectura; las transmutaciones no deben contarse automáticamente como eventos nuevos.
+El Side B de `My LIVE "HOME"` / `A Plea for Shelter` se sitúa después de `When the Sky Turned Crimson (and warm)` (1.9). Su recorrido material —calle, hambre, refugios, hoteles y supervivencia— converge con la travesía urbana que `Walking Through the Blue Street` narra desde la dimensión emocional. El «You» de `Erase You`, `Broken` y `When You Left` remite a Toño. `Echoes of Blue` (3.9) recupera esa experiencia como eco y relectura; las transmutaciones no deben contarse automáticamente como eventos nuevos.
 
 ### Era Z y la persistencia de las defensas
 
