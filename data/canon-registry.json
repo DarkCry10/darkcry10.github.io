@@ -205,5 +205,11 @@
       "announcedReleaseDate": "2026-11-26",
       "note": "Do not describe as released before the confirmed publication date."
     }
+  },
+  "coverInventory": {
+    "extractedFromMasterDocument": 59,
+    "atlasGalleryEntries": 60,
+    "activeCentralLibraryFiles": 62,
+    "rule": "These figures refer to different inventories and must not be presented as one shared total until the catalogue is reconciled."
   }
 }
