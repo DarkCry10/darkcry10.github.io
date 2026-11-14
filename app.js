@@ -1,8 +1,8 @@
 // 1. BASE DE DATOS DE INTEGRANTES (CON TUS IMÁGENES EN ASSETS)
 const charactersData = [
 {id:"ib",name:"Invisible Boy (I.B.) 🫥",role:"El Kernel · sujeto basal · voz excepcional",image:"assets/I.B..jpg",accentColor:"var(--accent-sepia)",desc:"Raíz biográfica del sistema: abandono, Cold Law y explotación primaria. Camisa blanca, moño negro, reloj de bolsillo y pin Kitsune conservan la iconografía del niño detrás de diarios y semillas manuscritas.",traits:["Paleta: sepia, blanco gastado y sombras domésticas","Símbolo: reloj de bolsillo, león de peluche, cuadernos y pin Kitsune","Voz directa: The Worst Son, Self Love, The empty plate y la rama Your Eromenos"]},
-{id:"violet",name:"Violet 🎧",role:"Repliegue · vasija del dolor · Eras 1.0–3.0",image:"assets/Violet.jpg",accentColor:"var(--accent-blue)",desc:"Escudo depresivo y puente vocal entre I.B. y el exterior. Sumisión, autoculpa y repliegue buscan evitar castigo y abandono. La lluvia, el paraguas y la ropa holgada construyen su refugio azul.",traits:["Paleta: azul nocturno, gris lluvia y ámbar distante","Símbolo: paraguas, suéter holgado, casetes y agua","Filtro: SadMuse 1.0 / 1.5; Donna AI en etapas de crisis y transición"]},
-{id:"dcx",name:"DCX (DarkCryXXX) 🦊",role:"Libido desacoplada · anonimato · máscara Kitsune",image:"assets/DCX.jpg",accentColor:"var(--accent-pink)",desc:"No es una segunda Dolly: DCX representa una presencia corporal despersonalizada, separada del apego y de la biografía. La máscara Kitsune blanca con vivos rojos oculta los ojos; camisa abierta y corbata deshecha completan su fachada.",traits:["Paleta: blanco, rojo Kitsune, negro y neón","Símbolo: máscara sin rostro, camisa blanca abierta y brazalete oscuro","Función: anonimato erótico y curaduría de lanzamientos de choque, incluida Therian"]},
+{id:"violet",name:"Violet 🎧",role:"Repliegue · vasija del dolor · Eras 1.0–3.0",image:"assets/Violet.jpg",accentColor:"var(--accent-blue)",desc:"Escudo depresivo y puente vocal entre I.B. y el exterior. Sumisión, autoculpa y repliegue buscan evitar castigo y abandono. La lluvia, el paraguas y la ropa holgada construyen su refugio azul.",traits:["Paleta: azul nocturno, gris lluvia y ámbar distante","Símbolo: paraguas, suéter holgado, casetes y agua","Herramientas: SadMuse adapta poemas ya escritos; Donna AI se utilizó solo en la etapa inicial y durante la creación de los cuatro Pilares"]},
+{id:"dcx",name:"DCX (DarkCryXXX) 🦊",role:"Libido desacoplada · anonimato · máscara Kitsune",image:"assets/DCX.jpg",accentColor:"var(--accent-pink)",desc:"No es una segunda Dolly: DCX representa una presencia corporal despersonalizada, separada del apego y de la biografía. La máscara Kitsune blanca con vivos rojos oculta los ojos; camisa abierta y corbata deshecha completan su fachada.",traits:["Paleta: blanco, rojo Kitsune, negro y neón","Símbolo: máscara sin rostro, camisa blanca abierta y brazalete oscuro","Función: anonimato erótico y despersonalización del deseo; presencia narrativa en la Therian Collection"]},
 {id:"dolly",name:"Dolly 💛🖤",role:"Contraataque · armadura de neón · Era 4.0",image:"assets/Dolly.jpg",accentColor:"var(--accent-gold)",desc:"Respuesta desafiante y reinicio de la Era 4.0: convierte vulnerabilidad en desafío, cinismo y performance. Cabello mitad rubio platinado y mitad negro, heterocromía y sonrisa desafiante señalan una identidad que habla sin filtro algorítmico.",traits:["Paleta: magenta, carmesí, negro y destellos ámbar","Símbolo: cabello bicolor, ojos heterocromáticos, arañas y fuego","Sonido: Spanglish, hyperpop abrasivo y 130–155 BPM; sin SadMuse ni Donna AI"]}
 ];
 
@@ -94,10 +94,10 @@ const COVER_ROOT = "https://darkcry10.github.io/assets/covers/";
 
 const pillarEraData = [
   { id: "pilar-01", number: "01", title: "The Invisible Boy", subtitle: "Era 1.0 · Herida primaria · Infancia doméstica",
-    description: "La génesis de la discografía: I.B. aprende a hacerse invisible bajo la Cold Law y crea un primer filtro para soportar el recuerdo. Violet y SadMuse 1.0 convierten las semillas del sufrimiento en melodías que parecen inofensivas.",
+    description: "La génesis de la discografía: I.B. aprende a hacerse invisible bajo la Cold Law. Violet articula los recuerdos escritos por el autor; SadMuse 1.0 da forma a poemas que ya existen, mientras Suno aporta su sonido y voz en un bedroom pop íntimo y contenido.",
     anchor: "pilar-01", cover: "01-p01-the-invisible-boy.webp" },
   { id: "pilar-02", number: "02", title: "Crying in the Bubblebath", subtitle: "Era 2.0 · Transacción fallida · Purificación imposible",
-    description: "El cuerpo intenta negociar el afecto y el agua no puede lavar la memoria. SadMuse deja de bastar y Donna AI articula un registro más árido, atravesado por ecos, pulsos y despertares cíclicos.",
+    description: "El cuerpo intenta negociar el afecto y el agua no puede lavar la memoria. Durante la creación de este Pilar se utilizó Donna AI, dentro de la etapa inicial del proyecto, para dar tratamiento a un registro más árido, atravesado por ecos, pulsos y despertares cíclicos. La escritura de las letras permaneció en manos del autor.",
     anchor: "pilar-02", cover: "12-p11-crying-in-the-bubblebath.webp" },
   { id: "pilar-03", number: "03", title: "Walking through the Blue street", subtitle: "Era 3.0 · Ciudad · Entumecimiento",
     description: "La metrópolis no cura la herida: amplifica el aislamiento. Violet camina entre lluvia, neón y sintetizadores repetitivos mientras la sensibilidad orgánica se extingue.",
@@ -116,22 +116,27 @@ const archiveProjectData = [
     relation: "Continuación conectada con My LIVE “HOME”", cover: "35-p33-a-plea-for-shelter-my-live-home-side-b.webp", links: [{ label: "Abrir el expediente", url: "https://darkcry10.github.io/APleaforShelter/" }] },
   { eyebrow: "PERSPECTIVA · ARCHIVO MATERNO", title: "Mommy's Playground", subtitle: "La infancia narrada desde la lógica de los juguetes.",
     description: "Yoyos, trompos y pelotas dejan de ser objetos inocentes: la metáfora del juego permite observar el control y la manipulación desde una voz distinta a la de I.B.",
-    relation: "Obra conceptual conectada con el origen", cover: "34-p32-mommy-s-playground.webp" },
+    relation: "Obra conceptual conectada con el origen", cover: "34-p32-mommy-s-playground.webp",
+    links: [
+      { label: "Abrir el sitio", url: "https://darkcry10.github.io/MommysPlayground/" },
+      { label: "Ver repositorio en GitHub", url: "https://github.com/DarkCry10/MommysPlayground" }
+    ] },
   { eyebrow: "TRANSVERSAL · ÁLBUM 0", title: "The Invisible Boy 2.0: The Dark Side of the Moon", subtitle: "Una dimensión no lineal organizada en X, Y y Z.",
     description: "Las versiones oscuras no se colocan como una continuación cronológica sencilla. Reescriben motivos de la obra original en coordenadas paralelas, puentes de evasión y sentencias finales.",
     relation: "Archivo transversal", cover: "29-p27-the-invisible-boy-2-0-the-dark-side-of-the-moon.webp" },
   { eyebrow: "DIARIO · ARCHIVO RELACIONAL", title: "Your Eromenos", subtitle: "Confesión, doce entradas y una segunda historia en las láminas.",
     description: "Un manifiesto íntimo construido con apuntes escolares, llaves, espejos, puertas y referencias clásicas. El diario cuenta una versión; los objetos y las imágenes conservan indicios que no siempre se verbalizan.",
-    relation: "Vínculo de Eros · no debe confundirse con la historia de Toño", links: [{ label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }] },
+    relation: "Vínculo de Eros · no debe confundirse con la historia de Toño", cover: "Your Eromenos.webp", coverThumb: "01-webp-alta/Your Eromenos.webp",
+    links: [{ label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }] },
   { eyebrow: "DIARIO · ERA 1.9", title: "When the sky turned crimson (and warm)", subtitle: "Una libreta perdida organizada por días, semanas y meses.",
     description: "El relato de I.B. y Toño se despliega como un doble acto: ilusión de refugio, encuentro, conflicto religioso, memoria corporal y pérdida. Es un vínculo distinto al de Your Eromenos.",
     relation: "Toño y Eros son personajes distintos", cover: "10-p09-when-the-sky-turned-crimson-and-warm-side-a.webp", links: [{ label: "Abrir CrimsonSky", url: "https://darkcry10.github.io/CrimsonSky/" }] },
   { eyebrow: "MASTER TAPE · 13 PISTAS", title: "The Horror Film That Is My Life", subtitle: "La biografía convertida en una cinta VHS de terror.",
-    description: "Trece películas y tres Tracking Markers organizan la mirada retrospectiva: infancia, juventud y apagado final. El terror funciona como lenguaje para nombrar aquello que antes no podía explicarse.",
-    relation: "Lectura retrospectiva y transversal", cover: "30-p28-the-horror-film-that-is-my-life.webp", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
+    description: "Trece películas y tres Tracking Markers organizan experiencias de infancia, juventud y adultez. El terror funciona como lenguaje para nombrar aquello que antes no podía explicarse.",
+    relation: "Lectura biográfica y transversal", cover: "30-p28-the-horror-film-that-is-my-life.webp", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
   { eyebrow: "AMPLIACIONES · ERA 4 / 5", title: "Dolly & DCX — Ice Throne, Therian & Shadow & Ban",
     subtitle: "Identidad, máscara, autonomía y conflicto con la interfaz.",
-    description: "Las expansiones asociadas a Dolly y DCX desplazan el conflicto hacia la performance, la noche y el control de la propia imagen. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 como proyectos complementarios; no sustituyen el Pilar I'm bad, so Bad.",
+    description: "Las expansiones asociadas a Dolly y DCX desarrollan la relación entre identidad, máscara, deseo y control de la propia imagen. En la Therian Collection, las figuras felinas, caninas y ferales expresan instinto, territorialidad y una respuesta simbólica frente a la contención. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 sin sustituir el Pilar I'm bad, so Bad.",
     relation: "Proyectos y colecciones complementarias · no son nuevos pilares cronológicos", covers: ["38-p36-the-ice-throne.webp", "51-p46-therian-collection-kitty-kitty.webp", "59-p49-shadow-ban.webp"] },
   { eyebrow: "ERA 3 · RAMA CONCEPTUAL", title: "Black Tuesday EP", subtitle: "La asfixia económica y el cansancio de la vida adulta.",
     description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices.",
@@ -788,7 +793,7 @@ function renderArchiveProjects() {
   if (!container) return;
   container.innerHTML = archiveProjectData.map((project, index) => `
     <article class="archive-card">
-      ${project.covers?.length ? `<div class="archive-card__cover-strip">${project.covers.map((file, coverIndex) => `<a href="${COVER_ROOT}01-webp-alta/${file}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${file}" alt="Imagen ${coverIndex + 1} de la colección ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>`).join("")}</div>` : project.cover ? `<a class="archive-card__cover" href="${COVER_ROOT}01-webp-alta/${project.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${project.cover}" alt="Portada de ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>` : ""}
+      ${project.covers?.length ? `<div class="archive-card__cover-strip">${project.covers.map((file, coverIndex) => `<a href="${COVER_ROOT}01-webp-alta/${file}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${file}" alt="Imagen ${coverIndex + 1} de la colección ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>`).join("")}</div>` : project.cover ? `<a class="archive-card__cover" href="${COVER_ROOT}01-webp-alta/${project.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}${project.coverThumb || `02-miniaturas/${project.cover}`}" alt="Portada de ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>` : ""}
       <div class="archive-card__top">
         <span class="archive-card__number">${String(index + 1).padStart(2, "0")}</span>
         <span class="archive-card__eyebrow">${escapeHTML(project.eyebrow)}</span>
