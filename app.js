@@ -75,7 +75,7 @@ const transmutationData = [
       "<strong>Era Y (Puente de evasión):</strong> <em>Razor Heart</em> (oscura de <em>Paper Heart</em>) • <em>The Rusty Shell</em> (oscura de <em>Unseen Brilliance</em>) • <em>I Don't Wanna Know</em> (oscura de <em>Disappear</em>) • <em>Attention</em> (oscura de <em>Invisible Boy</em>) • <em>ADDICTED</em> (oscura de <em>Long Nights</em>).",
       "<strong>Era Z (Sentencia final):</strong> <em>Immaculate Prison</em> (oscura de <em>Take Me Home</em>) • <em>Plastic Flowers</em> (oscura de <em>Withered Roses</em>) • <em>Broken Doll</em> (oscura de <em>Hide & Seek</em>)."
     ]
-  }
+  },
   {
     title: "🧭 Temporalidad · una transmutación no duplica el evento",
     subtitle: "Primero identifica la semilla y la operación; después decide si existe una escena nueva o una relectura.",
