@@ -38,7 +38,7 @@ Un álbum satélite, EP o entrega intermedia puede documentar detonantes especí
 | The Day I Told You | Era 1.5 |
 | When the sky turned crimson (and warm) | Era 1.9 |
 | In hell, I'm well | Era 2.9 |
-| Echoes in Blue | Era 3.9 |
+| Echoes of Blue | Era 3.9 |
 | Bad baby | Obra satélite de la Era 4 |
 
 No se deben forzar todos los proyectos a una secuencia lineal. La fecha de publicación de una página o de un commit no equivale a la cronología interna de la historia.
