@@ -1,7 +1,7 @@
 # Registro visual — DarkCry 1.0
 
 ## Estado de la curaduría
-Este registro documenta las 59 imágenes extraídas del Documento maestro de DarkCry 1.0 (49 páginas). Las imágenes fueron clasificadas por página, función, era y destino editorial. La biblioteca WebP utilizada por el portal se publica en este repositorio; los archivos originales maestros y materiales de trabajo se conservan en el archivo de producción.
+Este registro conserva la procedencia de las 59 imágenes extraídas del Documento maestro de DarkCry 1.0 (49 páginas). Ese conteo corresponde a la extracción original del PDF. La biblioteca pública actual contiene **62 piezas visuales disponibles** en `assets/covers/01-webp-alta/`; 61 también tienen miniatura en `02-miniaturas/` y `Your Eromenos.webp` está disponible por ahora solo en alta calidad.
 
 ## Portadas matrices para el portal
 | Pilar | Obra matriz | Página fuente |
@@ -11,7 +11,7 @@ Este registro documenta las 59 imágenes extraídas del Documento maestro de Dar
 | 3 | Walking Through the Blue Street | 16 |
 | 4 | I'm bad, so bad | 18 |
 
-Estas cuatro portadas deben funcionar como imagen principal de sus respectivas tarjetas. No intercambiar su orden ni usar portadas satélite como sustitutos de las matrices.
+Estas cuatro portadas deben funcionar como imagen principal de sus respectivas tarjetas. El orden canónico vigente se mantiene hasta una revisión futura explícita: Pilar 03 es `Walking Through the Blue Street`. La anotación heredada «Era 1.9 (Pilar 3)» junto al Side B de `When the Sky Turned Crimson (and warm)` no se adopta; esa obra sigue siendo una línea satélite de Era 1.9. No intercambiar el orden ni usar portadas satélite como sustitutos de las matrices.
 
 ## Colecciones y obras conectadas
 - Era 1 / satélites: The Day I Told You (págs. 7–8); When the Sky Turned Crimson (and warm), Side A y Side B (págs. 9–10); adaptaciones y artes de canciones (págs. 2–6).
@@ -38,7 +38,7 @@ Estas cuatro portadas deben funcionar como imagen principal de sus respectivas t
 - assets/covers/collections/ — Therian y colecciones relacionadas.
 - assets/covers/identity/ — escudo e isologo.
 
-Estado: la biblioteca de imágenes está publicada en `assets/covers/`; las páginas de los tres proyectos utilizan sus rutas públicas. El archivo conserva las variantes históricas separadas y la biblioteca activa incluye 62 portadas: 61 cuentan con versión de alta calidad y miniatura, y `Your Eromenos.webp` está publicada por ahora solo en alta calidad.
+Estado: la biblioteca de imágenes está publicada en `assets/covers/`; las páginas de los tres proyectos utilizan sus rutas públicas. El archivo conserva las variantes históricas separadas y la biblioteca pública unificada contiene **62 piezas visuales**: 62 archivos en alta calidad y 61 miniaturas. `Your Eromenos.webp` es la única pieza sin miniatura separada y se usa directamente como vista previa.
 
 
 ## Integración efectiva de portadas
@@ -51,4 +51,4 @@ La biblioteca pública central se encuentra en [assets/covers](https://github.co
 - Smoke In The Kitchen — proyecto anunciado para el 26 de noviembre de 2026.
 
 
-- **Your Eromenos** — portada WebP incorporada posteriormente por el artista en `assets/covers/01-webp-alta/Your Eromenos.webp`. El portal principal la utiliza en la ficha de la obra; al no existir una miniatura separada, la vista de tarjeta utiliza el archivo WebP de alta calidad.
+- **Your Eromenos** — portada WebP incorporada posteriormente por el artista en `assets/covers/01-webp-alta/Your Eromenos.webp`. El portal y el Atlas la cuentan como pieza 62; al no existir una miniatura separada, la vista de tarjeta utiliza el archivo WebP de alta calidad.
