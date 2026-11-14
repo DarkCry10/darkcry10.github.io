@@ -25,7 +25,7 @@
     {
       "number": 3,
       "era": "3.0",
-      "title": "Walking through the Blue Street",
+      "title": "Walking Through the Blue Street",
       "function": "urban alienation, grief and emotional numbing"
     },
     {
@@ -207,9 +207,31 @@
     }
   },
   "coverInventory": {
-    "extractedFromMasterDocument": 59,
-    "atlasGalleryEntries": 60,
-    "activeCentralLibraryFiles": 62,
-    "rule": "These figures refer to different inventories and must not be presented as one shared total until the catalogue is reconciled."
+    "publicUnifiedCount": 62,
+    "unit": "published visual assets",
+    "highQualityWebpFiles": 62,
+    "thumbnailWebpFiles": 61,
+    "atlasGalleryEntries": 62,
+    "catalogJsonRecords": 62,
+    "catalogCsvRecords": 62,
+    "catalogHtmlCards": 62,
+    "withoutSeparateThumbnail": [
+      "Your Eromenos"
+    ],
+    "masterDocumentExtraction": {
+      "pages": 49,
+      "extractedImages": 59
+    },
+    "countingRule": "The public total is counted once per published visual asset in assets/covers/01-webp-alta. Thumbnail renditions are not additional assets. Your Eromenos is counted once and uses its high-quality file as its preview. The 59-image master-document extraction is provenance, not the current public-library total."
+  },
+  "pillarOrderPolicy": {
+    "status": "current_canon_until_explicit_future_revision",
+    "orderedPillars": [
+      "The Invisible Boy",
+      "Crying in the Bubblebath",
+      "Walking Through the Blue Street",
+      "I'm bad, so Bad"
+    ],
+    "clarification": "Pilar 03 is Walking Through the Blue Street. The legacy annotation 'Era 1.9 (Pilar 3)' attached to When the Sky Turned Crimson (and warm) Side B in the source document is not adopted; that work remains a satellite line in Era 1.9. Only a future explicit canon revision may change the order."
   }
 }
