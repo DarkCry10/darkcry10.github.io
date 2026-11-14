@@ -511,3 +511,25 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 
 /* Emblema circular también en la cabecera */
 .brand__mark{display:block;width:39px;height:39px;flex:0 0 39px;object-fit:cover;object-position:center;border-radius:50%;overflow:hidden;border:1px solid var(--line-strong)}
+
+/* Canon expansion: layered continuity and Era Z */
+.canon-reading-grid,.era-z-dimensions,.era-z-routes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.canon-reading-grid article,.era-z-dimensions article,.route-a-card,.route-b-card,.era-z-common,.convergence-note{
+  border:1px solid var(--line,rgba(255,255,255,.12));border-radius:18px;padding:1.2rem;
+  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));
+}
+.canon-reading-grid article small,.era-z-dimensions article span,.era-z-common small,.route-a-card small,.route-b-card small{
+  display:block;margin-bottom:.55rem;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-blue,#91b8dc)
+}
+.canon-reading-grid h3,.era-z-dimensions h3,.era-z-routes h3{margin:.2rem 0 .65rem}
+.canon-reading-grid p,.era-z-dimensions p,.era-z-routes p,.era-z-common p{line-height:1.7;color:var(--text-muted,#b8becb)}
+.convergence-note{margin-top:1rem;line-height:1.75;background:rgba(90,125,170,.09)}
+.convergence-note a,.era-z-links a{color:var(--accent-blue,#a8c5e4);text-decoration:none}
+.era-z-matrix{display:grid;gap:1rem;margin-top:1rem}
+.era-z-common{background:rgba(190,120,65,.09)}
+.era-z-routes{grid-template-columns:repeat(2,minmax(0,1fr))}
+.route-a-card{border-color:rgba(221,86,111,.35);background:linear-gradient(145deg,rgba(120,32,51,.18),rgba(255,255,255,.02))}
+.route-b-card{border-color:rgba(87,133,188,.35);background:linear-gradient(145deg,rgba(37,68,112,.2),rgba(255,255,255,.02))}
+.route-a-card small{color:#e994a5}.route-b-card small{color:#a9c8ee}
+.era-z-links{margin-top:1.2rem;font-size:.92rem}
+@media(max-width:760px){.canon-reading-grid,.era-z-dimensions,.era-z-routes{grid-template-columns:1fr}}

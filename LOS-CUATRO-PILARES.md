@@ -10,6 +10,8 @@ Un Pilar no equivale a cualquier álbum. Su jerarquía es fundacional: inaugura 
 
 Los álbumes satélite, EPs y entregas intermedias son puentes somáticos, líneas alternativas convergentes o desgloses transversales. Documentan detonantes concretos y explican cómo la mente transita entre fases; no sustituyen ni elevan la jerarquía de los cuatro Pilares.
 
+**Orden canónico vigente:** 01 *The Invisible Boy* → 02 *Crying in the Bubblebath* → 03 *Walking Through the Blue Street* → 04 *I'm bad, so Bad*. Se mantiene hasta una revisión futura explícita. El Side B de *When the Sky Turned Crimson (and warm)* permanece en Era 1.9; cualquier anotación anterior que lo denomine «Pilar 3» es una etiqueta heredada no adoptada.
+
 ---
 
 ## Pilar 01 — The Invisible Boy
@@ -78,12 +80,12 @@ La consecuencia narrativa es la consagración de la prostitución emocional de I
 
 ---
 
-## Pilar 03 — Walking through the Blue street
+## Pilar 03 — Walking Through the Blue Street
 
 **Era 3.0 · Metrópolis, alienación geográfica y muerte de la sensibilidad orgánica**
 
 ### Portada
-La imagen se satura de azul cobalto, lluvia y neblina de asfalto. En el centro, Violet camina sola por una avenida metropolitana flanqueada por farolas húmedas y reflejos titilantes. Lleva audífonos de diadema, la cabeza cabizbaja y las manos dentro de los bolsillos. El título *Walking through the Blue street* y la rúbrica *DarkCry 1.0* aparecen en blanco con resplandores azulados, integrados al frío y a la desconexión urbana.
+La imagen se satura de azul cobalto, lluvia y neblina de asfalto. En el centro, Violet camina sola por una avenida metropolitana flanqueada por farolas húmedas y reflejos titilantes. Lleva audífonos de diadema, la cabeza cabizbaja y las manos dentro de los bolsillos. El título *Walking Through the Blue Street* y la rúbrica *DarkCry 1.0* aparecen en blanco con resplandores azulados, integrados al frío y a la desconexión urbana.
 
 ### Tracklist
 1. *I'm down*
@@ -151,7 +153,7 @@ Los siguientes proyectos pueden documentar detonantes, consecuencias o transicio
 | *The Day I Told You* | Era 1.5 | Obra satélite y puente dentro del tramo posterior al Pilar de origen. |
 | *When the sky turned crimson (and warm)* | Era 1.9 | Línea conectada que documenta acontecimientos y detonantes específicos antes de la Era 2.0. |
 | *In hell, I'm well* | Era 2.9 | Desglose y puente que amplía las consecuencias de la etapa de colapso. |
-| *Echoes in Blue* | Era 3.9 | Línea convergente que acompaña la transición hacia la mutación de la Era 4.0. |
+| *Echoes of Blue* | Era 3.9 | Línea convergente que acompaña la transición hacia la mutación de la Era 4.0. |
 | *Bad baby* | Obra satélite de la Era 4 | Expansión complementaria; no sustituye el Pilar *I'm bad, so Bad*. |
 
 Las obras satélite pueden abrir bifurcaciones, retrospecciones y perspectivas laterales. No deben forzarse a una cronología absoluta si el propio material no la establece.
@@ -164,7 +166,23 @@ En la arquitectura de DarkCry 1.0, las herramientas de producción no son solo u
 
 1. **The Invisible Boy:** el niño aprende a ocultarse y crea un filtro para tolerar el recuerdo.
 2. **Crying in the Bubblebath:** el cuerpo intenta negociar el afecto y la purificación fracasa.
-3. **Walking through the Blue street:** la huida urbana anestesia la sensibilidad, pero no resuelve el trauma.
+3. **Walking Through the Blue Street:** la huida urbana anestesia la sensibilidad, pero no resuelve el trauma.
 4. **I'm bad, so Bad:** Dolly convierte la desconexión en una armadura de poder y silencia la voz vulnerable.
 
 **De la invisibilidad a la armadura:** los cuatro Pilares no son simplemente cuatro discos; son cuatro estados estructurales de una misma fractura.
+
+## Continuidad convergente y consecuencias posteriores
+
+Los cuatro Pilares conservan su orden y jerarquía: `The Invisible Boy` (1.0), `Crying in the Bubblebath` (2.0), `Walking Through the Blue Street` (3.0) e `I'm bad, so Bad` (4.0). Las obras complementarias amplían el mapa sin constituir un quinto Pilar.
+
+### A Plea for Shelter y Walking Through the Blue Street
+
+El Side B de `My LIVE "HOME"` / `A Plea for Shelter` se sitúa después de `When the Sky Turned Crimson (and warm)` (1.9). Su recorrido material —calle, hambre, refugios, hoteles y supervivencia— converge con la travesía urbana que `Walking Through the Blue Street` narra desde la dimensión emocional. El «You» de `Erase You`, `Broken` y `When You Left` remite a Toño. `Echoes of Blue` (3.9) recupera esa experiencia como eco y relectura; las transmutaciones no deben contarse automáticamente como eventos nuevos.
+
+### Era Z y la persistencia de las defensas
+
+`The Dark Side of the Moon` / `The Invisible Boy 2.0` funciona como expediente transversal X/Y/Z, no como quinto Pilar ni como una fase posterior lineal. En Era Z, entre los 22 y 26 años de I.B., la dimensión afectiva (matrimonio y hogar con Cristopher) convive con la dimensión material (trabajo, corporaciones y deudas).
+
+`Smoke in the Kitchen` es la matriz conyugal: cinco canciones comunes anteceden a dos rutas divergentes. Z-A expresa el contraataque de Dolly y se expande en `The Ice Throne`; Z-B expresa el repliegue de Violet y se expande en `An Oxbow Made, from Me`. Las voces no determinan automáticamente la ruta: una canción puede pertenecer a Z-B y contener intervenciones de Dolly. A/B solo se asigna cuando existe una contraparte narrativa deliberada.
+
+La guía estructurada y compartida se mantiene en [canon-registry.json](https://github.com/DarkCry10/darkcry10.github.io/blob/main/data/canon-registry.json).

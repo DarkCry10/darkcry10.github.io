@@ -22,8 +22,10 @@ Un Pilar es una de las cuatro obras discográficas matrices e inamovibles que so
 | --- | --- | --- | --- |
 | 01 | 1.0 | The Invisible Boy | Herida primaria, infancia doméstica y génesis de Violet |
 | 02 | 2.0 | Crying in the Bubblebath | Transacción fallida, purificación imposible y colapso del traductor |
-| 03 | 3.0 | Walking through the Blue street | Alienación urbana, entumecimiento y muerte de la sensibilidad orgánica |
+| 03 | 3.0 | Walking Through the Blue Street | Alienación urbana, entumecimiento y muerte de la sensibilidad orgánica |
 | 04 | 4.0 | I'm bad, so Bad | Mutación psíquica, armadura de neón y voz de Dolly |
+
+El orden anterior es el canon vigente hasta una revisión futura explícita. Pilar 03 es **Walking Through the Blue Street**. La anotación «Era 1.9 (Pilar 3)» que aparece en una versión del documento fuente junto al Side B de *When the Sky Turned Crimson (and warm)* no se adopta; esa obra sigue siendo una línea satélite de Era 1.9.
 
 La jerarquía detallada, las descripciones de las portadas, los tracklists y la lectura narrativa se mantienen en `pilares.html` y `LOS-CUATRO-PILARES.md`.
 
@@ -36,7 +38,7 @@ Un álbum satélite, EP o entrega intermedia puede documentar detonantes especí
 | The Day I Told You | Era 1.5 |
 | When the sky turned crimson (and warm) | Era 1.9 |
 | In hell, I'm well | Era 2.9 |
-| Echoes in Blue | Era 3.9 |
+| Echoes of Blue | Era 3.9 |
 | Bad baby | Obra satélite de la Era 4 |
 
 No se deben forzar todos los proyectos a una secuencia lineal. La fecha de publicación de una página o de un commit no equivale a la cronología interna de la historia.
@@ -91,3 +93,7 @@ La versión editorial 1.5 amplía el portal sin alterar la jerarquía del canon 
 ## Autoría textual y proceso creativo
 
 La escritura narrativa, poética y lírica de las letras de DarkCry 1.0 es 100 % obra de Jesús Ríos Vásquez. La mayoría de las canciones se basa en experiencias propias, narradas y compuestas por el artista mediante su trabajo de composición, poesía y escritura de letras. SadMuse no redacta ni inventa letras: únicamente da forma y adapta poemas que ya existen. Suno aporta sonido, voz y realización musical para dar vida a esos textos. Donna AI se utilizó solo durante la etapa inicial del proyecto y en la creación de los cuatro Pilares. La tecnología participa en la adaptación y producción; no sustituye la autoría humana del texto.
+
+## Registro canónico compartido
+
+El archivo `data/canon-registry.json` reúne la taxonomía común utilizada por el portal, The Atlas y Los cuatro Pilares: jerarquía de obras, cronología y simultaneidad, coordenadas X/Y/Z, rutas A/B, transmutaciones, perfiles de voz y cadenas simbólicas. Es una referencia editorial; los CT y documentos maestros de Dropbox siguen siendo las fuentes de detalle. No deducir un acontecimiento nuevo de una transmutación o de una versión repetida.
