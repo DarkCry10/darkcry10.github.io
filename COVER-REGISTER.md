@@ -1,7 +1,7 @@
 # Registro visual — DarkCry 1.0
 
 ## Estado de la curaduría
-Este registro documenta las 59 imágenes extraídas del Documento maestro de DarkCry 1.0 (49 páginas). Las imágenes fueron clasificadas por página, función, era y destino editorial. La colección de originales y sus derivados WebP está organizada fuera de este repositorio; este registro no afirma que los binarios ya estén publicados aquí.
+Este registro documenta las 59 imágenes extraídas del Documento maestro de DarkCry 1.0 (49 páginas). Las imágenes fueron clasificadas por página, función, era y destino editorial. La biblioteca WebP utilizada por el portal se publica en este repositorio; los archivos originales maestros y materiales de trabajo se conservan en el archivo de producción.
 
 ## Portadas matrices para el portal
 | Pilar | Obra matriz | Página fuente |
@@ -38,7 +38,7 @@ Estas cuatro portadas deben funcionar como imagen principal de sus respectivas t
 - assets/covers/collections/ — Therian y colecciones relacionadas.
 - assets/covers/identity/ — escudo e isologo.
 
-Estado: la biblioteca de imágenes está publicada en `assets/covers/`; las páginas de los tres proyectos utilizan sus rutas públicas. El archivo conserva las variantes históricas separadas y la biblioteca activa incluye 60 piezas.
+Estado: la biblioteca de imágenes está publicada en `assets/covers/`; las páginas de los tres proyectos utilizan sus rutas públicas. El archivo conserva las variantes históricas separadas y la biblioteca activa incluye 62 portadas: 61 cuentan con versión de alta calidad y miniatura, y `Your Eromenos.webp` está publicada por ahora solo en alta calidad.
 
 
 ## Integración efectiva de portadas
