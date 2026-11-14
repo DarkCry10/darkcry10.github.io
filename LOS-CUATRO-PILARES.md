@@ -153,7 +153,7 @@ Los siguientes proyectos pueden documentar detonantes, consecuencias o transicio
 | *The Day I Told You* | Era 1.5 | Obra satélite y puente dentro del tramo posterior al Pilar de origen. |
 | *When the sky turned crimson (and warm)* | Era 1.9 | Línea conectada que documenta acontecimientos y detonantes específicos antes de la Era 2.0. |
 | *In hell, I'm well* | Era 2.9 | Desglose y puente que amplía las consecuencias de la etapa de colapso. |
-| *Echoes in Blue* | Era 3.9 | Línea convergente que acompaña la transición hacia la mutación de la Era 4.0. |
+| *Echoes of Blue* | Era 3.9 | Línea convergente que acompaña la transición hacia la mutación de la Era 4.0. |
 | *Bad baby* | Obra satélite de la Era 4 | Expansión complementaria; no sustituye el Pilar *I'm bad, so Bad*. |
 
 Las obras satélite pueden abrir bifurcaciones, retrospecciones y perspectivas laterales. No deben forzarse a una cronología absoluta si el propio material no la establece.
