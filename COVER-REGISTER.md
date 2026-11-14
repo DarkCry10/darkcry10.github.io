@@ -49,3 +49,6 @@ La biblioteca pública central se encuentra en [assets/covers](https://github.co
 - The Horror Film That Is My Life — portada final suministrada por el artista.
 - Black Tuesday EP — Era 3 / obra conceptual conectada.
 - Smoke In The Kitchen — proyecto anunciado para el 26 de noviembre de 2026.
+
+
+- **Your Eromenos** — portada WebP incorporada posteriormente por el artista en `assets/covers/01-webp-alta/Your Eromenos.webp`. El portal principal la utiliza en la ficha de la obra; al no existir una miniatura separada, la vista de tarjeta utiliza el archivo WebP de alta calidad.
