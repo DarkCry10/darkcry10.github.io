@@ -1,32 +1,48 @@
-# Biblioteca de portadas — DarkCry 1.0
+# Biblioteca visual — DarkCry 1.0
 
-Colección web extraída del PDF maestro de 49 páginas. Los archivos originales de alta resolución se conservan aparte; este directorio contiene derivados WebP y material de consulta.
+Biblioteca pública de piezas visuales del proyecto. Los originales y el documento maestro se conservan como fuentes de producción; esta carpeta reúne sus derivados WebP, el catálogo y las miniaturas disponibles.
 
-## Estructura publicada
-- `01-webp-alta/`: 61 archivos WebP de alta calidad; incluye 60 piezas activas y una versión histórica de la portada previa de The Horror Film.
-- `02-miniaturas/`: 61 recursos WebP para tarjetas y listados; incluye las miniaturas de la colección activa y la referencia histórica.
-- `03-catalogo/`: galería HTML, inventarios CSV/JSON y hojas de contacto.
+## Conteo público unificado · 14 de noviembre de 2026
+
+**62 piezas visuales publicadas** en `01-webp-alta/`. Esta es la cifra única que deben mostrar el Portal, The Atlas, el catálogo HTML y los registros compartidos.
+
+- `01-webp-alta/`: **62 archivos WebP** de alta calidad.
+- `02-miniaturas/`: **61 miniaturas WebP**.
+- `Your Eromenos.webp`: pieza número 62, disponible por ahora solo en alta calidad; el catálogo utiliza esa misma imagen como vista previa.
+- `03-catalogo/`: inventarios JSON y CSV de **62 registros**, galería HTML y hojas de contacto.
+
+Las miniaturas son derivados de visualización y no se cuentan como piezas adicionales. La versión histórica de la portada de `The Horror Film That Is My Life` sí se conserva como una pieza visual separada porque documenta una variante distinta del arte.
+
+## Procedencia y criterio de conteo
+
+El Documento maestro de 49 páginas aportó **59 imágenes extraídas** en el inventario de origen. Ese número describe la extracción del PDF, no el tamaño final de la biblioteca pública. La carpeta publicada creció y conserva variantes/obras incorporadas posteriormente; por ello, el número vigente se calcula directamente a partir de los 62 archivos de alta calidad publicados.
+
+El criterio operativo es contar una vez cada archivo visual publicado en `01-webp-alta/`. No duplicar el conteo por tener una miniatura, ni colapsar una versión histórica distinta en otra imagen del mismo proyecto.
 
 ## Cómo usar las imágenes
+
 - Para portadas, galerías y enlaces de ampliación, utilizar `01-webp-alta/nombre.webp`.
-- Para tarjetas pequeñas y vistas de lista, utilizar `02-miniaturas/nombre.webp`.
-- La galería `03-catalogo/catalogo.html` ya utiliza rutas relativas compatibles con esta estructura.
+- Para tarjetas pequeñas y vistas de lista, utilizar la miniatura correspondiente en `02-miniaturas/`.
+- Cuando una pieza no tenga miniatura, utilizar su WebP de alta calidad también como vista previa.
+- `catalogo.html` debe contener una tarjeta por cada uno de los 62 registros de `inventario_portadas.json`.
 
-## Integridad y criterio editorial
-El Documento maestro aportó 59 imágenes distintas por SHA-256. La biblioteca pública actual contiene 60 piezas activas: las imágenes del documento que permanecen en el archivo, más Black Tuesday EP y Smoke In The Kitchen. La versión previa del arte de The Horror Film se conserva aparte como referencia histórica.
+## Continuidad y jerarquía
 
-Los cuatro Pilares matrices son `The Invisible Boy`, `Crying in the Bubblebath`, `Walking Through the Blue Street` e `I'm bad, so bad`. El Side B de `When the Sky Turned Crimson (and warm)` se conserva como Era 1.9. 
+Los cuatro Pilares matrices, en el orden canónico vigente, son:
 
-Las imágenes de las páginas 5, 6, 41 y parte de la colección Therian no cuentan con identificación individual completa en el texto del documento; se conservan como referencias o variantes sin forzarles un título/canon. `Captivity` se conserva como easter egg / no canon formal, según la descripción del propio documento.
+1. `The Invisible Boy` — Era 1.0.
+2. `Crying in the Bubblebath` — Era 2.0.
+3. `Walking Through the Blue Street` — Era 3.0.
+4. `I'm bad, so bad` — Era 4.0.
 
-## Carátulas añadidas posteriormente
-- `Black Tuesday EP` — Era 3 / obra conceptual conectada.
-- `Smoke In The Kitchen` — proyecto anunciado para el 26 de noviembre de 2026.
-- `The Horror Film That Is My Life` — portada final suministrada posteriormente por el artista; el WebP previo extraído del PDF se conserva con sufijo `-documento-maestro`.
+El Side B de `When the Sky Turned Crimson (and warm)` permanece en Era 1.9 y no es el Pilar 3. Si una versión anterior del Documento maestro lo rotula como «Pilar 3», esa anotación no se adopta: **Pilar 03 es Walking Through the Blue Street**, hasta una revisión futura explícita del canon.
+
+Las imágenes sin identificación narrativa concluyente se conservan como referencias visuales sin forzarles un título/canon. `Captivity` se mantiene como easter egg / no canon formal, según la descripción del documento fuente.
 
 ## Correspondencia por proyecto
+
 - **Portal principal:** cuatro Pilares, sub-eras, proyectos conectados, líneas alternativas, identidad y Therian.
-- **Los 4 Pilares:** cuatro carátulas matrices y las obras satélite correspondientes a cada Era.
+- **Los cuatro Pilares:** cuatro carátulas matrices y las obras satélite correspondientes a cada Era.
 - **The Atlas:** dimensiones transversales, ramas alternativas, `My LIVE “HOME”`, `Mommy's Playground`, `The Horror Film That Is My Life`, `Captivity` como easter egg y Therian Collection.
 
-Las imágenes WebP son derivados; el PDF y los originales deben permanecer como fuente de verdad.
+Las imágenes WebP son derivados editoriales; el PDF y los originales deben permanecer como fuente de verdad.
