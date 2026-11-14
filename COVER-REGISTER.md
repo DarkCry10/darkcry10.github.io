@@ -16,7 +16,7 @@ Estas cuatro portadas deben funcionar como imagen principal de sus respectivas t
 ## Colecciones y obras conectadas
 - Era 1 / satélites: The Day I Told You (págs. 7–8); When the Sky Turned Crimson (and warm), Side A y Side B (págs. 9–10); adaptaciones y artes de canciones (págs. 2–6).
 - Era 2: Crying in the Bubblebath (pág. 11); In hell, I'm well (pág. 13); S.O.S / Cry for help — Espejo (págs. 14–15).
-- Era 3: Echoes in Blue (pág. 17).
+- Era 3.9: Echoes of Blue (pág. 17).
 - Era 4: Bad baby, Greys Pants, Double Trouble, álbumes de versiones y More / Dame más (págs. 19–24).
 - Transversal y raíz: The Invisible Boy 2.0 (pág. 27); The Horror Film That Is My Life (pág. 28); My LIVE “HOME” Side A, Mommy's Playground y A Plea for Shelter (págs. 31–33).
 - Ramas y obras conectadas: Captivity (pág. 34, easter egg); The End of My Blue Hell y The Ice Throne (págs. 35–36); Drive, Poli / Amor, Más / AG, Another EP Remixes, Ring Ring, DELETE My Age, Forbidden Biter y Man, Better Be Hung (págs. 37–44).
@@ -47,7 +47,7 @@ La biblioteca pública central se encuentra en [assets/covers](https://github.co
 
 ## Carátulas incorporadas posteriormente
 - The Horror Film That Is My Life — portada final suministrada por el artista.
-- Black Tuesday EP — Era 3 / obra conceptual conectada.
+- Black Tuesday EP — Era Z / dimensión material y económica; no recibe ruta A/B automáticamente.
 - Smoke In The Kitchen — proyecto anunciado para el 26 de noviembre de 2026.
 
 
