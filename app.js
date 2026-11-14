@@ -1,9 +1,9 @@
 // 1. BASE DE DATOS DE INTEGRANTES (CON TUS IMÁGENES EN ASSETS)
 const charactersData = [
 {id:"ib",name:"Invisible Boy (I.B.) 🫥",role:"El Kernel · sujeto basal · voz excepcional",image:"assets/I.B..jpg",accentColor:"var(--accent-sepia)",desc:"Raíz biográfica del sistema: abandono, Cold Law y explotación primaria. Camisa blanca, moño negro, reloj de bolsillo y pin Kitsune conservan la iconografía del niño detrás de diarios y semillas manuscritas.",traits:["Paleta: sepia, blanco gastado y sombras domésticas","Símbolo: reloj de bolsillo, león de peluche, cuadernos y pin Kitsune","Voz directa: The Worst Son, Self Love, The empty plate y la rama Your Eromenos"]},
-{id:"violet",name:"Violet 🎧",role:"Repliegue · vasija del dolor · Eras 1.0–3.0",image:"assets/Violet.jpg",accentColor:"var(--accent-blue)",desc:"Escudo depresivo y puente vocal entre I.B. y el exterior. Sumisión, autoculpa y repliegue buscan evitar castigo y abandono. La lluvia, el paraguas y la ropa holgada construyen su refugio azul.",traits:["Paleta: azul nocturno, gris lluvia y ámbar distante","Símbolo: paraguas, suéter holgado, casetes y agua","Herramientas: SadMuse adapta poemas ya escritos; Donna AI se utilizó solo en la etapa inicial y durante la creación de los cuatro Pilares"]},
+{id:"violet",name:"Violet 🎧",role:"Defensa de repliegue · autoculpa · adaptación",image:"assets/Violet.jpg",accentColor:"var(--accent-blue)",desc:"Voz mediadora en las primeras Eras, pero no desaparece cuando emerge Dolly. En Era Z reaparece en la Ruta B: intenta conservar el vínculo mediante negociación, renuncia y desconexión de sus propias necesidades.",traits:["Paleta: azul nocturno, gris lluvia y ámbar distante","Símbolo: paraguas, suéter holgado, casetes, agua y seda negra","SadMuse adapta poemas ya escritos; no sustituye la autoría textual"]},
 {id:"dcx",name:"DCX (DarkCryXXX) 🦊",role:"Libido desacoplada · anonimato · máscara Kitsune",image:"assets/DCX.jpg",accentColor:"var(--accent-pink)",desc:"No es una segunda Dolly: DCX representa una presencia corporal despersonalizada, separada del apego y de la biografía. La máscara Kitsune blanca con vivos rojos oculta los ojos; camisa abierta y corbata deshecha completan su fachada.",traits:["Paleta: blanco, rojo Kitsune, negro y neón","Símbolo: máscara sin rostro, camisa blanca abierta y brazalete oscuro","Función: anonimato erótico y despersonalización del deseo; presencia narrativa en la Therian Collection"]},
-{id:"dolly",name:"Dolly 💛🖤",role:"Contraataque · armadura de neón · Era 4.0",image:"assets/Dolly.jpg",accentColor:"var(--accent-gold)",desc:"Respuesta desafiante y reinicio de la Era 4.0: convierte vulnerabilidad en desafío, cinismo y performance. Cabello mitad rubio platinado y mitad negro, heterocromía y sonrisa desafiante señalan una identidad que habla sin filtro algorítmico.",traits:["Paleta: magenta, carmesí, negro y destellos ámbar","Símbolo: cabello bicolor, ojos heterocromáticos, arañas y fuego","Sonido: Spanglish, hyperpop abrasivo y 130–155 BPM; sin SadMuse ni Donna AI"]}
+{id:"dolly",name:"Dolly 💛🖤",role:"Defensa de contraataque · armadura de neón · Era 4.0 y Ruta Z-A",image:"assets/Dolly.jpg",accentColor:"var(--accent-gold)",desc:"Dolly domina la expresión de Era 4.0 y reaparece en la Ruta A de Era Z. Intenta evitar una nueva posición de víctima mediante control, provocación, fuga y dominio. Su presencia no elimina a Violet: ambas defensas pueden coexistir.",traits:["Paleta: magenta, carmesí, negro y destellos ámbar","Símbolo: cabello bicolor, ojos heterocromáticos, arañas y fuego","Sonido: Spanglish e hyperpop abrasivo; el perfil vocal no determina por sí solo una ruta"]}
 ];
 
 // 2. CINTA MAESTRA: THE HORROR FILM THAT IS MY LIFE (REPORTE CURATORIAL)
@@ -45,7 +45,7 @@ const masterTapeData = [
 const transmutationData = [
   {
     title: "🪙 Concepto 1: Moneda (Dos Caras de una Idea)",
-    subtitle: "Comparten el núcleo conceptual pero mutan en ritmo, perspectiva y letra.",
+    subtitle: "Dos caras de una misma semilla: pueden cambiar letra, perspectiva, ritmo o estructura sin perder el núcleo compartido.",
     items: [
       "<strong>I don't wanna know 1.0 vs. 2.0:</strong> La 1.0 es evasión pasiva; la 2.0 es la victoria defensiva del ego.",
       "<strong>Children's game / Hide & seek:</strong> Del acto de huir de casa a la mecánica táctica para que 'Ella' no lo encuentre.",
@@ -58,7 +58,7 @@ const transmutationData = [
   },
   {
     title: "🪞 Concepto 2: Espejo (Misma Letra, Distinta Alma)",
-    subtitle: "Disonancia cognitiva donde el cambio de arreglo musical transforma el significado sin alterar las palabras.",
+    subtitle: "Contraparte deliberada: conserva la materia verbal o conceptual y cambia su temperatura mediante arreglo, interpretación o perspectiva. No toda canción con letra repetida es automáticamente un espejo.",
     items: [
       "<strong>Más/Age vs. Más/Ag:</strong> 'Hermanas siamesas'. La V1 crea un shock silencioso con ritmo hipnótico/relajante; la V2 explota en Electro-Hyperpop y Reguetón.",
       "<strong>I'm Ok (1.0 vs. 2.0):</strong> La 1.0 es la mentira cotidiana para encajar; la 2.0 es el 'funeral de la paz mental' con cuerdas y coros de iglesia.",
@@ -69,11 +69,20 @@ const transmutationData = [
   },
   {
     title: "🌑 Concepto 3: Versión Oscura (Corrupción X-Y-Z)",
-    subtitle: "La canción original de la Era 1 se oxida y afila en 'The Dark Side of the Moon' (Álbum 0).",
+    subtitle: "Una semilla anterior se corrompe o endurece y adquiere una nueva función defensiva. No sustituye la fuente ni demuestra por sí sola un acontecimiento nuevo.",
     items: [
       "<strong>Era X (Paralela al origen):</strong> <em>Corpse Party</em> (oscura de <em>Bittersweet Loneliness</em>) • <em>Poltergeist</em> (oscura de <em>Ghost Love</em>) • <em>The Way You Made Me</em> (oscura de <em>The Worst Son</em>).",
       "<strong>Era Y (Puente de evasión):</strong> <em>Razor Heart</em> (oscura de <em>Paper Heart</em>) • <em>The Rusty Shell</em> (oscura de <em>Unseen Brilliance</em>) • <em>I Don't Wanna Know</em> (oscura de <em>Disappear</em>) • <em>Attention</em> (oscura de <em>Invisible Boy</em>) • <em>ADDICTED</em> (oscura de <em>Long Nights</em>).",
       "<strong>Era Z (Sentencia final):</strong> <em>Immaculate Prison</em> (oscura de <em>Take Me Home</em>) • <em>Plastic Flowers</em> (oscura de <em>Withered Roses</em>) • <em>Broken Doll</em> (oscura de <em>Hide & Seek</em>)."
+    ]
+  },
+  {
+    title: "🧭 Temporalidad · una transmutación no duplica el evento",
+    subtitle: "Primero identifica la semilla y la operación; después decide si existe una escena nueva o una relectura.",
+    items: [
+      "<strong>When You Left / Erase You / Broken:</strong> el «You» remite a Toño; las canciones conectan ausencia, intento de olvido y sustitución afectiva durante la travesía urbana.",
+      "<strong>Hotel Bed / Hotel Bed 2.0 / Midnight Steps:</strong> las transmutaciones y versiones espejo pueden volver sobre la misma experiencia de supervivencia; no deben contarse automáticamente como noches diferentes.",
+      "<strong>A Plea for Shelter / Walking through the Blue Street / Echoes of Blue:</strong> perspectivas materiales, emocionales y retrospectivas de una travesía convergente."
     ]
   }
 ];
@@ -111,9 +120,9 @@ const archiveProjectData = [
   { eyebrow: "ORIGEN · SIDE A", title: "My LIVE “HOME”", subtitle: "El cuaderno que conserva la infancia de Invisible Boy.",
     description: "Una memoria doméstica presentada como cuaderno infantil: dibujos, crayones, pequeños objetos y anotaciones que dejan ver lo que el niño todavía no sabe explicar.",
     relation: "Archivo de origen", cover: "33-p31-my-live-home-side-a.webp", links: [{ label: "Abrir el cuaderno de dibujo", url: "https://darkcry10.github.io/MyLIVEHOME/" }] },
-  { eyebrow: "SUPERVIVENCIA · SIDE B", title: "A Plea for Shelter", subtitle: "Un teléfono encontrado y dos particiones de memoria.",
-    description: "El registro abandona el hogar y adopta la forma de un expediente recuperado. La ruta final se divide entre Soul Road y Body Road: dos respuestas distintas a una misma desprotección.",
-    relation: "Continuación conectada con My LIVE “HOME”", cover: "35-p33-a-plea-for-shelter-my-live-home-side-b.webp", links: [{ label: "Encontrar el teléfono", url: "https://darkcry10.github.io/APleaforShelter/" }] },
+  { eyebrow: "SUPERVIVENCIA · SIDE B", title: "A Plea for Shelter", subtitle: "El recorrido material que converge con la ciudad azul.",
+    description: "Ubicado después de When the Sky Turned Crimson (and warm) (1.9), el Side B documenta la dimensión material de la misma travesía urbana que atraviesa Walking through the Blue Street: frío, hambre, refugios, hoteles, encuentros y supervivencia. Sus rutas y versiones no deben sumarse automáticamente como noches nuevas.",
+    relation: "Línea material convergente con Walking through the Blue Street y Echoes of Blue", cover: "35-p33-a-plea-for-shelter-my-live-home-side-b.webp", links: [{ label: "Encontrar el teléfono", url: "https://darkcry10.github.io/APleaforShelter/" }] },
   { eyebrow: "PERSPECTIVA · ARCHIVO MATERNO", title: "Mommy's Playground", subtitle: "La infancia narrada desde la lógica de los juguetes.",
     description: "Yoyos, trompos y pelotas dejan de ser objetos inocentes: la metáfora del juego permite observar el control y la manipulación desde una voz distinta a la de I.B.",
     relation: "Obra conceptual conectada con el origen", cover: "34-p32-mommy-s-playground.webp",
@@ -121,8 +130,8 @@ const archiveProjectData = [
       { label: "Abrir la guía disciplinaria", url: "https://darkcry10.github.io/MommysPlayground/" }
     ] },
   { eyebrow: "TRANSVERSAL · ÁLBUM 0", title: "The Invisible Boy 2.0: The Dark Side of the Moon", subtitle: "Una dimensión no lineal organizada en X, Y y Z.",
-    description: "Las versiones oscuras no se colocan como una continuación cronológica sencilla. Reescriben motivos de la obra original en coordenadas paralelas, puentes de evasión y sentencias finales.",
-    relation: "Archivo transversal", cover: "29-p27-the-invisible-boy-2-0-the-dark-side-of-the-moon.webp" },
+    description: "Álbum 0 y expediente transversal: organiza motivos de la infancia, adolescencia y adultez mediante las coordenadas X/Y/Z. Sus canciones pueden funcionar como transmutaciones y lecturas paralelas sin inaugurar una nueva etapa lineal ni añadir acontecimientos automáticamente.",
+    relation: "Archivo transversal · coordenadas abiertas X/Y/Z", links: [{ label: "Consultar X/Y/Z en The Atlas", url: "https://darkcry10.github.io/theatlas/#xyz" }], cover: "29-p27-the-invisible-boy-2-0-the-dark-side-of-the-moon.webp" },
   { eyebrow: "DIARIO · ARCHIVO RELACIONAL", title: "Your Eromenos", subtitle: "Confesión, doce entradas y una segunda historia en las láminas.",
     description: "Un manifiesto íntimo construido con apuntes escolares, llaves, espejos, puertas y referencias clásicas. El diario cuenta una versión; los objetos y las imágenes conservan indicios que no siempre se verbalizan.",
     relation: "Vínculo de Eros · no debe confundirse con la historia de Toño", cover: "Your Eromenos.webp", coverThumb: "01-webp-alta/Your Eromenos.webp",
@@ -141,8 +150,8 @@ const archiveProjectData = [
     description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices.",
     cover: "60-black-tuesday-ep.webp" },
   { eyebrow: "PROYECTO ANUNCIADO · ARCHIVO DOMÉSTICO", title: "Smoke In The Kitchen", subtitle: "Un recetario de 1955 que se abre en dos decisiones.",
-    description: "Cinco recetas forman el tronco común. Después, Dolly's Path aviva el fuego y Violet's Decision permanece entre humo y anestesia. El formato de cocina transforma el deseo, el hambre y la resignación en lenguaje doméstico.",
-    relation: "Proyecto anunciado para el 26 de noviembre de 2026", cover: "61-smoke-in-the-kitchen.webp", links: [{ label: "Abrir el recetario de 1955", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
+    description: "Cinco canciones —Gingerbread House, Substitute Milk, Heavy Meal, «Filet, Ribeye» y Coffee— forman la matriz conyugal. Después se abren dos desarrollos: la Ruta A de Dolly (incineración) y la Ruta B de Violet (negociación que puede desembocar en asfixia). The Ice Throne y An Oxbow Made, from Me amplían sus desenlaces sin convertirse en nuevos Pilares.",
+    relation: "Proyecto anunciado para el 26 de noviembre de 2026 · Era Z afectiva", cover: "61-smoke-in-the-kitchen.webp", links: [{ label: "Abrir el recetario de 1955", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
 ];
 
 const songLoreDatabase = [
@@ -782,7 +791,7 @@ function renderPillarEras() {
       <h3>${escapeHTML(pillar.title)}</h3>
       <p class="era-card__subtitle">${escapeHTML(pillar.subtitle)}</p>
       <p class="era-card__description">${escapeHTML(pillar.description)}</p>
-      <a class="pillar-card-link" href="pilares.html#${escapeHTML(pillar.anchor)}">Leer la ficha completa <span aria-hidden="true">↗</span></a>
+      <a class="pillar-card-link" href="https://darkcry10.github.io/los4pilares/#${escapeHTML(pillar.anchor)}">Leer la ficha completa <span aria-hidden="true">↗</span></a>
     </article>
   `).join("");
 }

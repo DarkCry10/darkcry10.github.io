@@ -168,3 +168,19 @@ En la arquitectura de DarkCry 1.0, las herramientas de producción no son solo u
 4. **I'm bad, so Bad:** Dolly convierte la desconexión en una armadura de poder y silencia la voz vulnerable.
 
 **De la invisibilidad a la armadura:** los cuatro Pilares no son simplemente cuatro discos; son cuatro estados estructurales de una misma fractura.
+
+## Continuidad convergente y consecuencias posteriores
+
+Los cuatro Pilares conservan su orden y jerarquía: `The Invisible Boy` (1.0), `Crying in the Bubblebath` (2.0), `Walking through the Blue Street` (3.0) e `I'm bad, so Bad` (4.0). Las obras complementarias amplían el mapa sin constituir un quinto Pilar.
+
+### A Plea for Shelter y Walking through the Blue Street
+
+El Side B de `My LIVE "HOME"` / `A Plea for Shelter` se sitúa después de `When the Sky Turned Crimson (and warm)` (1.9). Su recorrido material —calle, hambre, refugios, hoteles y supervivencia— converge con la travesía urbana que `Walking through the Blue Street` narra desde la dimensión emocional. El «You» de `Erase You`, `Broken` y `When You Left` remite a Toño. `Echoes of Blue` (3.9) recupera esa experiencia como eco y relectura; las transmutaciones no deben contarse automáticamente como eventos nuevos.
+
+### Era Z y la persistencia de las defensas
+
+`The Dark Side of the Moon` / `The Invisible Boy 2.0` funciona como expediente transversal X/Y/Z, no como quinto Pilar ni como una fase posterior lineal. En Era Z, entre los 22 y 26 años de I.B., la dimensión afectiva (matrimonio y hogar con Cristopher) convive con la dimensión material (trabajo, corporaciones y deudas).
+
+`Smoke in the Kitchen` es la matriz conyugal: cinco canciones comunes anteceden a dos rutas divergentes. Z-A expresa el contraataque de Dolly y se expande en `The Ice Throne`; Z-B expresa el repliegue de Violet y se expande en `An Oxbow Made, from Me`. Las voces no determinan automáticamente la ruta: una canción puede pertenecer a Z-B y contener intervenciones de Dolly. A/B solo se asigna cuando existe una contraparte narrativa deliberada.
+
+La guía estructurada y compartida se mantiene en [canon-registry.json](https://github.com/DarkCry10/darkcry10.github.io/blob/main/data/canon-registry.json).
