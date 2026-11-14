@@ -150,7 +150,7 @@ const archiveProjectData = [
     description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices.",
     cover: "60-black-tuesday-ep.webp" },
   { eyebrow: "PROYECTO ANUNCIADO · ARCHIVO DOMÉSTICO", title: "Smoke In The Kitchen", subtitle: "Un recetario de 1955 que se abre en dos decisiones.",
-    description: "Cinco canciones —Gingerbread House, Substitute Milk, Heavy Meal, Filet, Ribeye y Coffee— forman la matriz conyugal. Después se abren dos desarrollos: la Ruta A de Dolly (incineración) y la Ruta B de Violet (negociación que puede desembocar en asfixia). The Ice Throne y An Oxbow Made, from Me amplían sus desenlaces sin convertirse en nuevos Pilares.",
+    description: "Cinco canciones —Gingerbread House, Substitute Milk, Heavy Meal, «Filet, Ribeye» y Coffee— forman la matriz conyugal. Después se abren dos desarrollos: la Ruta A de Dolly (incineración) y la Ruta B de Violet (negociación que puede desembocar en asfixia). The Ice Throne y An Oxbow Made, from Me amplían sus desenlaces sin convertirse en nuevos Pilares.",
     relation: "Proyecto anunciado para el 26 de noviembre de 2026 · Era Z afectiva", cover: "61-smoke-in-the-kitchen.webp", links: [{ label: "Abrir el recetario de 1955", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
 ];
 
@@ -791,7 +791,7 @@ function renderPillarEras() {
       <h3>${escapeHTML(pillar.title)}</h3>
       <p class="era-card__subtitle">${escapeHTML(pillar.subtitle)}</p>
       <p class="era-card__description">${escapeHTML(pillar.description)}</p>
-      <a class="pillar-card-link" href="pilares.html#${escapeHTML(pillar.anchor)}">Leer la ficha completa <span aria-hidden="true">↗</span></a>
+      <a class="pillar-card-link" href="https://darkcry10.github.io/los4pilares/#${escapeHTML(pillar.anchor)}">Leer la ficha completa <span aria-hidden="true">↗</span></a>
     </article>
   `).join("");
 }
