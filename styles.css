@@ -507,3 +507,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 .authorship-note strong{display:block;margin-bottom:6px;color:var(--gold);font:800 .64rem var(--display);letter-spacing:.13em;text-transform:uppercase}
 .authorship-note p{margin:0;color:var(--muted);font-size:.73rem;line-height:1.8}
 .site-footer__mark{display:block;flex:0 0 38px;width:38px;height:38px;object-fit:cover;border-radius:50%;border:1px solid var(--line-strong)}
+
+
+/* Emblema circular también en la cabecera */
+.brand__mark{display:block;width:39px;height:39px;flex:0 0 39px;object-fit:cover;object-position:center;border-radius:50%;overflow:hidden;border:1px solid var(--line-strong)}
