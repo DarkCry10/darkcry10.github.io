@@ -500,3 +500,10 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 .archive-card__cover-strip a{display:block;min-width:0;overflow:hidden}
 .archive-card__cover-strip img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
 .archive-card__cover-strip a:hover img{transform:scale(1.05)}
+
+
+/* AUTORÍA TEXTUAL Y PROCESO CREATIVO */
+.authorship-note{max-width:980px;margin:16px 0 22px;padding:15px 18px;border:1px solid var(--line-strong);border-left:3px solid var(--gold);border-radius:10px;background:linear-gradient(100deg,rgba(216,189,130,.085),rgba(18,24,39,.55))}
+.authorship-note strong{display:block;margin-bottom:6px;color:var(--gold);font:800 .64rem var(--display);letter-spacing:.13em;text-transform:uppercase}
+.authorship-note p{margin:0;color:var(--muted);font-size:.73rem;line-height:1.8}
+.site-footer__mark{display:block;flex:0 0 38px;width:38px;height:38px;object-fit:cover;border-radius:50%;border:1px solid var(--line-strong)}
