@@ -110,16 +110,15 @@ const pillarEraData = [
 const archiveProjectData = [
   { eyebrow: "ORIGEN · SIDE A", title: "My LIVE “HOME”", subtitle: "El cuaderno que conserva la infancia de Invisible Boy.",
     description: "Una memoria doméstica presentada como cuaderno infantil: dibujos, crayones, pequeños objetos y anotaciones que dejan ver lo que el niño todavía no sabe explicar.",
-    relation: "Archivo de origen", cover: "33-p31-my-live-home-side-a.webp", links: [{ label: "Abrir el cuaderno", url: "https://darkcry10.github.io/MyLIVEHOME/" }] },
+    relation: "Archivo de origen", cover: "33-p31-my-live-home-side-a.webp", links: [{ label: "Abrir el cuaderno de dibujo", url: "https://darkcry10.github.io/MyLIVEHOME/" }] },
   { eyebrow: "SUPERVIVENCIA · SIDE B", title: "A Plea for Shelter", subtitle: "Un teléfono encontrado y dos particiones de memoria.",
     description: "El registro abandona el hogar y adopta la forma de un expediente recuperado. La ruta final se divide entre Soul Road y Body Road: dos respuestas distintas a una misma desprotección.",
-    relation: "Continuación conectada con My LIVE “HOME”", cover: "35-p33-a-plea-for-shelter-my-live-home-side-b.webp", links: [{ label: "Abrir el expediente", url: "https://darkcry10.github.io/APleaforShelter/" }] },
+    relation: "Continuación conectada con My LIVE “HOME”", cover: "35-p33-a-plea-for-shelter-my-live-home-side-b.webp", links: [{ label: "Encontrar el teléfono", url: "https://darkcry10.github.io/APleaforShelter/" }] },
   { eyebrow: "PERSPECTIVA · ARCHIVO MATERNO", title: "Mommy's Playground", subtitle: "La infancia narrada desde la lógica de los juguetes.",
     description: "Yoyos, trompos y pelotas dejan de ser objetos inocentes: la metáfora del juego permite observar el control y la manipulación desde una voz distinta a la de I.B.",
     relation: "Obra conceptual conectada con el origen", cover: "34-p32-mommy-s-playground.webp",
     links: [
-      { label: "Abrir el sitio", url: "https://darkcry10.github.io/MommysPlayground/" },
-      { label: "Ver repositorio en GitHub", url: "https://github.com/DarkCry10/MommysPlayground" }
+      { label: "Abrir la guía disciplinaria", url: "https://darkcry10.github.io/MommysPlayground/" }
     ] },
   { eyebrow: "TRANSVERSAL · ÁLBUM 0", title: "The Invisible Boy 2.0: The Dark Side of the Moon", subtitle: "Una dimensión no lineal organizada en X, Y y Z.",
     description: "Las versiones oscuras no se colocan como una continuación cronológica sencilla. Reescriben motivos de la obra original en coordenadas paralelas, puentes de evasión y sentencias finales.",
@@ -127,13 +126,13 @@ const archiveProjectData = [
   { eyebrow: "DIARIO · ARCHIVO RELACIONAL", title: "Your Eromenos", subtitle: "Confesión, doce entradas y una segunda historia en las láminas.",
     description: "Un manifiesto íntimo construido con apuntes escolares, llaves, espejos, puertas y referencias clásicas. El diario cuenta una versión; los objetos y las imágenes conservan indicios que no siempre se verbalizan.",
     relation: "Vínculo de Eros · no debe confundirse con la historia de Toño", cover: "Your Eromenos.webp", coverThumb: "01-webp-alta/Your Eromenos.webp",
-    links: [{ label: "Abrir Your Eromenos", url: "https://darkcry10.github.io/YourEromenos/" }] },
+    links: [{ label: "Abrir la investigación escolar", url: "https://darkcry10.github.io/YourEromenos/" }] },
   { eyebrow: "DIARIO · ERA 1.9", title: "When the sky turned crimson (and warm)", subtitle: "Una libreta perdida organizada por días, semanas y meses.",
     description: "El relato de I.B. y Toño se despliega como un doble acto: ilusión de refugio, encuentro, conflicto religioso, memoria corporal y pérdida. Es un vínculo distinto al de Your Eromenos.",
-    relation: "Toño y Eros son personajes distintos", cover: "10-p09-when-the-sky-turned-crimson-and-warm-side-a.webp", links: [{ label: "Abrir CrimsonSky", url: "https://darkcry10.github.io/CrimsonSky/" }] },
+    relation: "Toño y Eros son personajes distintos", cover: "10-p09-when-the-sky-turned-crimson-and-warm-side-a.webp", links: [{ label: "Leer el diario perdido", url: "https://darkcry10.github.io/CrimsonSky/" }] },
   { eyebrow: "MASTER TAPE · 13 PISTAS", title: "The Horror Film That Is My Life", subtitle: "La biografía convertida en una cinta VHS de terror.",
     description: "Trece películas y tres Tracking Markers organizan experiencias de infancia, juventud y adultez. El terror funciona como lenguaje para nombrar aquello que antes no podía explicarse.",
-    relation: "Lectura biográfica y transversal", cover: "30-p28-the-horror-film-that-is-my-life.webp", links: [{ label: "Abrir la cinta", url: "https://darkcry10.github.io/HorrorFilm/" }] },
+    relation: "Lectura biográfica y transversal", cover: "30-p28-the-horror-film-that-is-my-life.webp", links: [{ label: "Reproducir la cinta maldita", url: "https://darkcry10.github.io/HorrorFilm/" }] },
   { eyebrow: "AMPLIACIONES · ERA 4 / 5", title: "Dolly & DCX — Ice Throne, Therian & Shadow & Ban",
     subtitle: "Identidad, máscara, autonomía y conflicto con la interfaz.",
     description: "Las expansiones asociadas a Dolly y DCX desarrollan la relación entre identidad, máscara, deseo y control de la propia imagen. En la Therian Collection, las figuras felinas, caninas y ferales expresan instinto, territorialidad y una respuesta simbólica frente a la contención. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 sin sustituir el Pilar I'm bad, so Bad.",
@@ -143,7 +142,7 @@ const archiveProjectData = [
     cover: "60-black-tuesday-ep.webp" },
   { eyebrow: "PROYECTO ANUNCIADO · ARCHIVO DOMÉSTICO", title: "Smoke In The Kitchen", subtitle: "Un recetario de 1955 que se abre en dos decisiones.",
     description: "Cinco recetas forman el tronco común. Después, Dolly's Path aviva el fuego y Violet's Decision permanece entre humo y anestesia. El formato de cocina transforma el deseo, el hambre y la resignación en lenguaje doméstico.",
-    relation: "Proyecto anunciado para el 26 de noviembre de 2026", cover: "61-smoke-in-the-kitchen.webp", links: [{ label: "Abrir el recetario", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
+    relation: "Proyecto anunciado para el 26 de noviembre de 2026", cover: "61-smoke-in-the-kitchen.webp", links: [{ label: "Abrir el recetario de 1955", url: "https://darkcry10.github.io/SmokeInTheKitchen/" }] }
 ];
 
 const songLoreDatabase = [
