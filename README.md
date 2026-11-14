@@ -22,8 +22,10 @@ Un Pilar es una de las cuatro obras discográficas matrices e inamovibles que so
 | --- | --- | --- | --- |
 | 01 | 1.0 | The Invisible Boy | Herida primaria, infancia doméstica y génesis de Violet |
 | 02 | 2.0 | Crying in the Bubblebath | Transacción fallida, purificación imposible y colapso del traductor |
-| 03 | 3.0 | Walking through the Blue street | Alienación urbana, entumecimiento y muerte de la sensibilidad orgánica |
+| 03 | 3.0 | Walking Through the Blue Street | Alienación urbana, entumecimiento y muerte de la sensibilidad orgánica |
 | 04 | 4.0 | I'm bad, so Bad | Mutación psíquica, armadura de neón y voz de Dolly |
+
+El orden anterior es el canon vigente hasta una revisión futura explícita. Pilar 03 es **Walking Through the Blue Street**. La anotación «Era 1.9 (Pilar 3)» que aparece en una versión del documento fuente junto al Side B de *When the Sky Turned Crimson (and warm)* no se adopta; esa obra sigue siendo una línea satélite de Era 1.9.
 
 La jerarquía detallada, las descripciones de las portadas, los tracklists y la lectura narrativa se mantienen en `pilares.html` y `LOS-CUATRO-PILARES.md`.
 
