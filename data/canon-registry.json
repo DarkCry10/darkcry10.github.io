@@ -95,7 +95,12 @@
         "expansion": "An Oxbow Made, from Me",
         "outcome": "provisional defensive victory through staying, self-silencing and somatic withdrawal"
       },
-      "routeRule": "A/B labels describe narrative counterpart/route affiliation, not voice identity. A song may belong to Route B while containing Dolly's interventions."
+      "routeRule": "A/B labels describe narrative counterpart/route affiliation, not voice identity. A song may belong to Route B while containing Dolly's interventions. Material/economic works such as Black Tuesday EP, Diss-Miss-Ed and Drowning in Dues belong to the Era Z material dimension; they are not assigned A/B automatically.",
+      "materialProjects": [
+        "Black Tuesday EP",
+        "Diss-Miss-Ed",
+        "Drowning in Dues"
+      ]
     }
   },
   "convergentLines": [
