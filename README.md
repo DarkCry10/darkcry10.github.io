@@ -91,3 +91,7 @@ La versión editorial 1.5 amplía el portal sin alterar la jerarquía del canon 
 ## Autoría textual y proceso creativo
 
 La escritura narrativa, poética y lírica de las letras de DarkCry 1.0 es 100 % obra de Jesús Ríos Vásquez. La mayoría de las canciones se basa en experiencias propias, narradas y compuestas por el artista mediante su trabajo de composición, poesía y escritura de letras. SadMuse no redacta ni inventa letras: únicamente da forma y adapta poemas que ya existen. Suno aporta sonido, voz y realización musical para dar vida a esos textos. Donna AI se utilizó solo durante la etapa inicial del proyecto y en la creación de los cuatro Pilares. La tecnología participa en la adaptación y producción; no sustituye la autoría humana del texto.
+
+## Registro canónico compartido
+
+El archivo `data/canon-registry.json` reúne la taxonomía común utilizada por el portal, The Atlas y Los cuatro Pilares: jerarquía de obras, cronología y simultaneidad, coordenadas X/Y/Z, rutas A/B, transmutaciones, perfiles de voz y cadenas simbólicas. Es una referencia editorial; los CT y documentos maestros de Dropbox siguen siendo las fuentes de detalle. No deducir un acontecimiento nuevo de una transmutación o de una versión repetida.
