@@ -133,10 +133,19 @@ const archiveProjectData = [
   { eyebrow: "MASTER TAPE · 13 PISTAS", title: "The Horror Film That Is My Life", subtitle: "La biografía convertida en una cinta VHS de terror.",
     description: "Trece películas y tres Tracking Markers organizan experiencias de infancia, juventud y adultez. El terror funciona como lenguaje para nombrar aquello que antes no podía explicarse.",
     relation: "Lectura biográfica y transversal", cover: "30-p28-the-horror-film-that-is-my-life.webp", links: [{ label: "Reproducir la cinta maldita", url: "https://darkcry10.github.io/HorrorFilm/" }] },
-  { eyebrow: "AMPLIACIONES · ERA 4 / 5", title: "Dolly & DCX — Ice Throne, Therian & Shadow & Ban",
+  { eyebrow: "AMPLIACIONES · ERA 4 / 5", title: "Dolly & DCX — The Ice Throne / Shadow & Ban",
     subtitle: "Identidad, máscara, autonomía y conflicto con la interfaz.",
-    description: "Las expansiones asociadas a Dolly y DCX desarrollan la relación entre identidad, máscara, deseo y control de la propia imagen. En la Therian Collection, las figuras felinas, caninas y ferales expresan instinto, territorialidad y una respuesta simbólica frente a la contención. The Ice Throne, Therian Collection, Shadow & Ban y Bad baby amplían la Era 4 sin sustituir el Pilar I'm bad, so Bad.",
-    relation: "Proyectos y colecciones complementarias · no son nuevos pilares cronológicos", covers: ["38-p36-the-ice-throne.webp", "51-p46-therian-collection-kitty-kitty.webp", "59-p49-shadow-ban.webp"] },
+    description: "Las expansiones asociadas a Dolly y DCX desarrollan la relación entre identidad, máscara, deseo y control de la propia imagen. The Ice Throne y Shadow & Ban amplían la Era 4 mediante proyectos complementarios, sin sustituir el Pilar I'm bad, so Bad.",
+    relation: "Proyectos complementarios · no son nuevos pilares cronológicos", covers: ["38-p36-the-ice-throne.webp", "59-p49-shadow-ban.webp"] },
+  { eyebrow: "COLECCIÓN ANIMAL · ERA 4", title: "Therian Collection",
+    subtitle: "Tres ramas animales, nueve pistas y una metamorfosis simbólica.",
+    description: "Doggy / Wao, Kittens / Miau y Panthera / Feral organizan una colección musical y narrativa sobre deseo, fidelidad, autoridad, consentimiento, vulnerabilidad y territorialidad. Sus portadas originales, las convergencias con otras obras y la lectura de sus símbolos se reúnen en un sitio propio. Es una expansión complementaria de la Era 4, no un quinto Pilar.",
+    relation: "Colección complementaria · 3 ramas · 9 pistas",
+    covers: ["49-p45-therian-collection-daddy-s-big-c-ck.webp", "51-p46-therian-collection-kitty-kitty.webp", "52-p47-therian-collection-grrr-grrr.webp"],
+    links: [
+      { label: "Visitar el sitio", url: "https://darkcry10.github.io/TherianCollection/" },
+      { label: "Ver el repositorio", url: "https://github.com/DarkCry10/TherianCollection" }
+    ] },
   { eyebrow: "ERA 3 · RAMA CONCEPTUAL", title: "Black Tuesday EP", subtitle: "La asfixia económica y el cansancio de la vida adulta.",
     description: "Cadenas de números, deudas, intereses y trabajo convierten la precariedad en una presión cotidiana. Se conecta temáticamente con la ciudad y la vida adulta, sin ser uno de los cuatro Pilares matrices.",
     cover: "60-black-tuesday-ep.webp" },
@@ -792,7 +801,7 @@ function renderArchiveProjects() {
   if (!container) return;
   container.innerHTML = archiveProjectData.map((project, index) => `
     <article class="archive-card">
-      ${project.covers?.length ? `<div class="archive-card__cover-strip">${project.covers.map((file, coverIndex) => `<a href="${COVER_ROOT}01-webp-alta/${file}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${file}" alt="Imagen ${coverIndex + 1} de la colección ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>`).join("")}</div>` : project.cover ? `<a class="archive-card__cover" href="${COVER_ROOT}01-webp-alta/${project.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}${project.coverThumb || `02-miniaturas/${project.cover}`}" alt="Portada de ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>` : ""}
+      ${project.covers?.length ? `<div class="archive-card__cover-strip" style="grid-template-columns:repeat(${project.covers.length},minmax(0,1fr))">${project.covers.map((file, coverIndex) => `<a href="${COVER_ROOT}01-webp-alta/${file}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}02-miniaturas/${file}" alt="Imagen ${coverIndex + 1} de la colección ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>`).join("")}</div>` : project.cover ? `<a class="archive-card__cover" href="${COVER_ROOT}01-webp-alta/${project.cover}" target="_blank" rel="noopener noreferrer"><img src="${COVER_ROOT}${project.coverThumb || `02-miniaturas/${project.cover}`}" alt="Portada de ${escapeHTML(project.title)}" loading="lazy" decoding="async"></a>` : ""}
       <div class="archive-card__top">
         <span class="archive-card__number">${String(index + 1).padStart(2, "0")}</span>
         <span class="archive-card__eyebrow">${escapeHTML(project.eyebrow)}</span>

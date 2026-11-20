@@ -80,6 +80,8 @@ Consultas sobre el proyecto, solicitudes de acceso y contacto directo con el art
 La versión editorial 1.5 amplía el portal sin alterar la jerarquía del canon ni eliminar documentos preexistentes. Incorpora el modelo Kernel/avatares; la doctrina de Transmutación con ejemplos concretos; la semiótica cromática y textil; y la lectura de la colección Therian. La numeración editorial 1.5 identifica una revisión del portal, no una nueva Era narrativa. La terminología psiquiátrica se presenta como lenguaje simbólico del lore, no como diagnóstico clínico.
 
 ## Sitios hermanos
+
+- **Therian Collection:** colección complementaria de la Era 4, organizada en tres ramas animales (Doggy/Wao, Kittens/Miau y Panthera/Feral) y nueve pistas. Reúne sus portadas, convergencias narrativas y lectura simbólica. [Visitar sitio](https://darkcry10.github.io/TherianCollection/) · [Repositorio GitHub](https://github.com/DarkCry10/TherianCollection)
 - Los cuatro Pilares: https://github.com/DarkCry10/los4pilares
 - The Atlas: https://github.com/DarkCry10/theatlas
 
